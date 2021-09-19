@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://magaetube.github.io/sitemap.xml
