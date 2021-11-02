@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : "version 1.0" # site tagline that appears below site title in masthead
 name                     : "마개"
 description              : "마술을 좋아하는 개발자"
-url                      : "https://magaetube.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://magaeTube.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/magaeTube/magaeTube.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
