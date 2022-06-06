@@ -100,7 +100,7 @@ header-mask: true
 
 ### Apache Oozie
 
-![image](https://user-images.githubusercontent.com/78892113/172192514-7152f803-6218-480e-a5bd-9f0a80fd83fb.png)
+![image](https://user-images.githubusercontent.com/78892113/172192514-7152f803-6218-480e-a5bd-9f0a80fd83fb.png){: .align-center}{: width="80%" height="80%"} 
 
 * `하둡`의 잡을 관리하기 위한 서버 기반의 워크플로우
 * `xml` 코드로 `DAG`을 구성
@@ -112,7 +112,7 @@ header-mask: true
 
 ### Luigi
 
-![luigi](https://user-images.githubusercontent.com/78892113/172192664-8656eb12-3f74-4b6a-8103-60df4e2d62c7.png)
+![luigi](https://user-images.githubusercontent.com/78892113/172192664-8656eb12-3f74-4b6a-8103-60df4e2d62c7.png){: .align-center}
 
 * Spotify에서 개발한 워크플로우 오픈소스
 * `Python`으로 `DAG` 작성 
