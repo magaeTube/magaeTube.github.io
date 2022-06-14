@@ -346,7 +346,7 @@ worker_umask = 0002
 
 ```dockerfile
 FROM apache/airflow:2.1.0-python3.8
-MAINTAINER "shkim1@tidesquare.com"
+MAINTAINER "magae.tube@gmail.com"
 ...
 USER root
 RUN apt-get update
