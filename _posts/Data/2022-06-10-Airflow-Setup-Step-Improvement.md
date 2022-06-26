@@ -16,13 +16,13 @@ header-mask: true
 ---
 
 
-![airflow](https://user-images.githubusercontent.com/78892113/172186672-025cb8a1-cddf-4b90-b08c-a8c3634cbb90.png){: .align-center}{: width="80%" height="80%"} 
-
-<br>
-
 &nbsp;안녕하세요 마개입니다.  
 이전 글에서는 Airflow를 구축하고 기본적인 설정을 하는 과정을 정리하였습니다. 이번에는 기본적인 환경에서 겪은 불편함과 이를 해결하면서 개선하는 과정에 대해 정리하겠습니다. 
 {: .notice--info}
+
+<br>
+
+![airflow](https://user-images.githubusercontent.com/78892113/172186672-025cb8a1-cddf-4b90-b08c-a8c3634cbb90.png){: .align-center}{: width="80%" height="80%"} 
 
 <br><br><br>
 

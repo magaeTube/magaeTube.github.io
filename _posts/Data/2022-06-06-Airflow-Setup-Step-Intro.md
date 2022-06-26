@@ -15,14 +15,13 @@ header-mask: true
 
 ---
 
-
-![airflow](https://user-images.githubusercontent.com/78892113/172186672-025cb8a1-cddf-4b90-b08c-a8c3634cbb90.png){: .align-center}{: width="80%" height="80%"} 
-
-<br>
-
 &nbsp;안녕하세요 마개입니다.  
 현재의 회사에서 Airflow를 1년 정도 넘게 사용 중인데 처음 Airflow를 도입하게 된 배경과 그동안의 변천사, 그 과정에서 생긴 고민들에 대한 내용을 정리하고자 합니다.
 {: .notice--info}
+
+<br>
+
+![airflow](https://user-images.githubusercontent.com/78892113/172186672-025cb8a1-cddf-4b90-b08c-a8c3634cbb90.png){: .align-center}{: width="80%" height="80%"} s
 
 <br><br>
 
