@@ -21,7 +21,16 @@ header-mask: true
 
 <br>
 
-![airflow](https://user-images.githubusercontent.com/78892113/172186672-025cb8a1-cddf-4b90-b08c-a8c3634cbb90.png){: .align-center}{: width="80%" height="80%"} s
+관련 글들은 아래 링크로 확인하실 수 있습니다.
+
+* <a href="https://magaetube.github.io/data/Airflow-Setup-Step-Intro/">Airflow 구축 및 변천사 - 도입 배경 및 선정</a>
+* <a href="https://magaetube.github.io/data/Airflow-Setup-Step-Setup/">Airflow 구축 및 변천사 - 구축</a>
+* <a href="https://magaetube.github.io/data/Airflow-Setup-Step-Improvement/">Airflow 구축 및 변천사 - 개선</a>
+* <a href="https://magaetube.github.io/data/Airflow-Setup-Step-Monitoring/">Airflow 구축 및 변천사 - 모니터링</a>
+
+<br>
+
+![airflow](https://user-images.githubusercontent.com/78892113/172186672-025cb8a1-cddf-4b90-b08c-a8c3634cbb90.png){: .align-center}{: width="80%" height="80%"}
 
 <br><br>
 
