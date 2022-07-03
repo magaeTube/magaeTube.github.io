@@ -15,14 +15,15 @@ header-mask: true
 
 ---
 
-![image](https://user-images.githubusercontent.com/78892113/166944077-ca6a7bbf-f71e-4bb4-910e-c244124b3013.png){: .align-center}{: width="80%" height="80%"}
 
+
+&nbsp;안녕하세요 마개입니다.  
+​이번에는 NVIDIA 그래픽카드가 달린 PC에 TensorFlow GPU를 세팅해서 사용해 보겠습니다.
+{: .notice--info}
 
 <br>
 
-안녕하세요 마개입니다.  
-
-​이번에는 NVIDIA 그래픽카드가 달린 PC에 TensorFlow GPU를 세팅해서 사용해 보겠습니다.
+![image](https://user-images.githubusercontent.com/78892113/166944077-ca6a7bbf-f71e-4bb4-910e-c244124b3013.png){: .align-center}{: width="80%" height="80%"}
 
 <br><br>
 

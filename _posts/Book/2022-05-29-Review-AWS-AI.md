@@ -8,12 +8,13 @@ tags:
   - AWS
   - AI
   - Deeplearning
+
+header-mask: true
 ---
 
-<br> 
 
-안녕하세요 마개입니다.  
-​
+
+&nbsp;안녕하세요 마개입니다.  
 이번에 AWS를 이용하여 AI 서비스를 구축하는 책에 대해 소개를 해보고자 합니다.
 {: .notice--info}
 

@@ -11,13 +11,13 @@ tags:
 toc: true
 toc_sticky: true
 toc_label: "SQL 쿡북 리뷰"
+header-mask: true
 ---
 
-<br> 
 
-안녕하세요 마개입니다.  
-​
-이번에 딥러닝 관련 책에 대해 리뷰를 해보는 시간을 가져보도록 하겠습니다.
+
+&nbsp;안녕하세요 마개입니다.  
+​이번에 딥러닝 관련 책에 대해 리뷰를 해보는 시간을 가져보도록 하겠습니다.
 {: .notice--info}
 
 <br><br>

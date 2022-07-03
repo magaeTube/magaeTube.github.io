@@ -14,12 +14,17 @@ header-mask: true
 
 ---
 
-![image](https://user-images.githubusercontent.com/78892113/166467929-97635fc7-fa14-4c5a-8211-b171e9d96d0a.png){: .align-center}{: width="80%" height="80%"} 
+
+
+&nbsp;안녕하세요 마개입니다.  
+AWS EC2 서버를 이용하여 Docker의 Registry를 만들려고 합니다.
+{: .notice--info}
 
 <br>
 
-안녕하세요 마개입니다.  
-AWS EC2 서버를 이용하여 Docker의 Registry를 만들려고 합니다.
+![image](https://user-images.githubusercontent.com/78892113/166467929-97635fc7-fa14-4c5a-8211-b171e9d96d0a.png){: .align-center}{: width="80%" height="80%"} 
+
+<br>
   
 EC2의 서버 스펙은 다음과 같이 하였습니다.
   

@@ -13,13 +13,18 @@ header-mask: true
 
 ---
 
+
+
+&nbsp;안녕하세요 마개입니다.  
+AWS EC2를 운영하다 디스크 용량이 가득 차서 점검을 해본 사항에 대해 공유합니다.
+{: .notice--info}
+
+<br>
+
 ![image](https://user-images.githubusercontent.com/78892113/166467929-97635fc7-fa14-4c5a-8211-b171e9d96d0a.png){: .align-center}{: width="80%" height="80%"} 
 
 
 <br>
-
-안녕하세요 마개입니다.  
-AWS EC2를 운영하다 디스크 용량이 가득 차서 점검을 해본 사항에 대해 공유합니다.
   
 AWS EC2에는 Airflow를 운영 중입니다. (Worker는 다른 서버에서 운영 중입니다.)  
 Webserver, Scheduler 등 다른 요소들을 사용 중이기 때문에 디스크는 일부러 작은 용량을 이용 중입니다. (32GiB) 이 서버에서는 Airflow와 Redis, Telegraf를 모두 Docker로 운영중입니다.

@@ -15,6 +15,14 @@ header-mask: true
 
 ---
 
+
+
+&nbsp;안녕하세요 마개입니다.  
+Python에서 AWS의 Athena를 이용할 때 발생한 에러를 다뤄보고자 합니다.
+{: .notice--info}
+
+<br>
+
 ![99C825335A071CCB21](https://user-images.githubusercontent.com/78892113/150356814-e44eff9f-4f60-41cf-88bc-b61a2d826b9b.png){: .align-center}{: width="80%" height="80%"} 
 
 

@@ -11,11 +11,13 @@ toc: true
 toc_sticky: true
 toc_label: "Apache Kafka란"
 
+header-mask: true
+
 ---
 
-<br>
 
-안녕하세요 마개입니다. 이번 글에서는 데이터 파이프라인에 많이 이용하는 Apache Kafka에 대해 대략적으로 알아보도록 하겠습니다.
+
+&nbsp;안녕하세요 마개입니다. 이번 글에서는 데이터 파이프라인에 많이 이용하는 Apache Kafka에 대해 대략적으로 알아보도록 하겠습니다.
 {: .notice--info}
 
 <br><br>
