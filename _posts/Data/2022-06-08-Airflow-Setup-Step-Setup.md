@@ -64,7 +64,7 @@ header-mask: true
 
 * 어떠한 **<span style="color:red">버전</span>**을 설치할 것인지 
 * **<span style="color:red">직접</span>** 설치할 것인지, **<span style="color:red">Docker</span>**를 사용하여 설치할 것인지 
-* 어떠한 **<span style="color:red">Executor</span>를 설정할 것인지 
+* 어떠한 **<span style="color:red">Executor</span>**를 설정할 것인지 
 
 <br><br>
 
