@@ -175,3 +175,9 @@ None
 dtype은 **`dict`** 자료형으로 각 컬럼마다 타입을 설정합니다. 그 후에 read_csv에서 **`dtype`** 파라미터를 통해 호출하면 데이터가 원하는 형태로 불러오는 것을 확인하실 수 있습니다.
 
 CSV 파일을 불러올 때 '0'이 사라지는 문제로 꽤나 골치 아팠는데 위와 같이 두 가지의 방법을 상황에 맞게 이용해서 해결할 수 있었습니다.
+
+{% if page.comments %}
+<div id="post-disqus" class="container">
+{% include disqus.html %}
+</div>
+{% endif %}
