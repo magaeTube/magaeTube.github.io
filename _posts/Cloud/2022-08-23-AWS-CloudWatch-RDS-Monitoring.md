@@ -84,3 +84,17 @@ dashboard 정보를 입력하라고 나오면 정보에 맞게 작성하고 `Add
 <br>
 
 ​![image](https://user-images.githubusercontent.com/78892113/185963157-530df5c4-4957-42c6-980f-9b8a2bccef29.png){: .align-center}
+
+Metrics의 정보를 보면 <u>timezone이 UTC</u>로 되어있습니다. 이를 변경하도록 하겠습니다. 
+
+<br>
+
+![image](https://user-images.githubusercontent.com/78892113/186455030-12bd5b8d-a7e4-4cd4-b217-ab8a2ed2c2e9.png)
+
+대시보드의 우측 상단을 보면 `Custom`이 있습니다.
+
+<br>
+
+![image](https://user-images.githubusercontent.com/78892113/186455139-3e46f593-c469-42d4-8077-799ae9c13243.png)
+
+"Custom"을 클릭하면 위와 같은 화면이 나오는데 여기서 UTC를 `Local timezone`으로 변경하고 Apply 버튼을 클릭합니다. 그러면 대시보드에서 timezone이 변경된 것을 확인할 수 있습니다.
