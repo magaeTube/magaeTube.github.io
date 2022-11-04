@@ -27,7 +27,7 @@ Query에서 String 값을 가진 여러 컬럼을 이어붙일 때 여러 방법
 SELECT 'a', 'b', 'c'
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/200019308-f6289175-2cd9-4ad8-bedc-a5b0a0aa63c9.png)
+![image](https://user-images.githubusercontent.com/78892113/200019308-f6289175-2cd9-4ad8-bedc-a5b0a0aa63c9.png){: .align-center}
 
 예를 들어 a, b, c라는 값을 가진 컬럼이 3개가 있다고 가정합니다.  
 이 3가지 컬럼에 콤마(,)까지 추가하여 이어붙여보겠습니다.
@@ -47,7 +47,7 @@ SELECT 'a', 'b', 'c'
 SELECT 'a' || ', ' || 'b' || ', ' || 'c'
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/200019797-dc45b125-7e22-428b-9d80-fb7e15a53556.png)
+![image](https://user-images.githubusercontent.com/78892113/200019797-dc45b125-7e22-428b-9d80-fb7e15a53556.png){: .align-center}
 
 이 `||` 연산자를 이용해서 합치려고 하는 칼럼들 사이에 콤마를 기입하면 결과가 위와 같이 "a, b, c"로 잘 합쳐진 것을 확인할 수 있습니다.
 
@@ -63,7 +63,7 @@ SELECT 'a' || ', ' || 'b' || ', ' || 'c'
 SELECT CONCAT('a', ', ', 'b', ', ', 'c')
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/200020324-bd97bd13-a031-428f-93df-1e372bbe0c7e.png)
+![image](https://user-images.githubusercontent.com/78892113/200020324-bd97bd13-a031-428f-93df-1e372bbe0c7e.png){: .align-center}
 
 `concat` 안에는 합치고자 하는 문자열과 칼럼 값을 넣어주면 됩니다. 
 
@@ -79,7 +79,7 @@ SELECT CONCAT('a', ', ', 'b', ', ', 'c')
 SELECT CONCAT_WS(', ', 'a', 'b', 'c')
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/200020668-78a0d4e9-bfdd-4f5b-a1a7-351d97915728.png)
+![image](https://user-images.githubusercontent.com/78892113/200020668-78a0d4e9-bfdd-4f5b-a1a7-351d97915728.png){: .align-center}
 
 `concat_ws` 안에 첫 번째 인수로는 `구분자`, 그 뒤로는 `배열` 또는 `값`들을 입력하면 됩니다. 마찬가지로 결과는 제대로 나오는 것을 확인할 수 있습니다. 
 
@@ -102,7 +102,7 @@ NULL 값을 같이 넣어서 위의 3가지 방법을 이용해 보겠습니다.
 SELECT 'a' || ', ' || null || ', ' || 'c'
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/200021091-6b7d8317-99ed-4c2c-be40-14304ad6e349.png)
+![image](https://user-images.githubusercontent.com/78892113/200021091-6b7d8317-99ed-4c2c-be40-14304ad6e349.png){: .align-center}
 
 중간 값에 `NULL` 값을 넣으면 위와 같이 에러가 발생되거나 
 
@@ -112,7 +112,7 @@ SELECT 'a' || ', ' || null || ', ' || 'c'
 SELECT 'a' || NULL || 'b'
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/200021224-53a50c11-a632-4a2d-b589-3aaa7bd6244e.png)
+![image](https://user-images.githubusercontent.com/78892113/200021224-53a50c11-a632-4a2d-b589-3aaa7bd6244e.png){: .align-center}
 
 위와 같이 분명히 'a'와 'b'값이 있음에도 불구하고 빈값이 출력되는 것을 확인할 수 있습니다.
 
@@ -129,7 +129,7 @@ SELECT 'a' || NULL || 'b'
 SELECT CONCAT('a', ', ', NULL, ', ', 'c')
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/200021436-69330ea9-7ce5-4bed-bd35-f7f1114a3d33.png)
+![image](https://user-images.githubusercontent.com/78892113/200021436-69330ea9-7ce5-4bed-bd35-f7f1114a3d33.png){: .align-center}
 
 `concat`의 경우에도 중간에 `NULL` 값이 있으면 결과가 빈값으로 나오는 것을 볼 수 있습니다.
 
@@ -145,7 +145,7 @@ SELECT CONCAT('a', ', ', NULL, ', ', 'c')
 SELECT CONCAT_WS(', ', 'a', NULL, 'c')
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/200021760-1621711e-41c9-4f3b-89e8-7432a56f5a5d.png)
+![image](https://user-images.githubusercontent.com/78892113/200021760-1621711e-41c9-4f3b-89e8-7432a56f5a5d.png){: .align-center}
 
 `concat_ws`의 경우 여러 값들을 구분자 기준으로 합치기 때문에 NULL 값은 무시하고 제대로 출력된 것을 보실 수 있습니다.
 
