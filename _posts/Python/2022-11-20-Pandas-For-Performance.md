@@ -1,6 +1,6 @@
 ---
 title:  "[Pandas] For 문 이용 시 속도 개선 방법"
-date:   2022-11-25 00:00:00 +0900
+date:   2022-11-20 00:00:00 +0900
 categories:
   - Python
 tags:
