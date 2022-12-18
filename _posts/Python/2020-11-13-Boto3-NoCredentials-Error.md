@@ -1,5 +1,5 @@
 ---
-title:  "[Boto3] 파이썬 - EC2 연동 에러 (NoCredentials Error)"
+title:  "[AWS] 파이썬 - ec2 연동 에러 (botocore.exceptions.NoCredentialsError: Unable to locate credentials)"
 date:   2020-11-13 00:00:00 +0900
 categories:
   - Python
