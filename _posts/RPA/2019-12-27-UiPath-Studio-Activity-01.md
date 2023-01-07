@@ -1,6 +1,6 @@
 ---
 title:  "[RPA UiPath] 5강. 많이 쓰는 Activity - 1편. 기본 Activity"
-date:   2019-12-15 09:00:00 +0900
+date:   2019-12-27 09:00:00 +0900
 categories:
   - RPA
 tags:
