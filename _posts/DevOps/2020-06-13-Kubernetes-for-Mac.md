@@ -31,7 +31,7 @@ Docker Desktop으로 Kubernetes를 설정하는 것은 생각보다 간단합니
 
 <br>
 
-![image](https://user-images.githubusercontent.com/78892113/212546454-533abfdf-07e5-41dd-b1ab-ebcf518c6d81.png){: .align-center}{: width="20%" height="20%"}
+![image](https://user-images.githubusercontent.com/78892113/212546454-533abfdf-07e5-41dd-b1ab-ebcf518c6d81.png){: .align-center}{: width="50%" height="50%"}
 
 
 이것을 클릭하여 **`Preferences`** 메뉴를 클릭합니다.
