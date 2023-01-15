@@ -12,4 +12,4 @@ tags:
 
 <br>
 
-[![User Interface](http://img.youtube.com/vi/yXYnZECh4v4/maxresdefault.jpg)](https://www.youtube.com/watch?v=yXYnZECh4v4)
+[![User Interface](http://img.youtube.com/vi/yXYnZECh4v4/sddefault.jpg)](https://www.youtube.com/watch?v=yXYnZECh4v4)
