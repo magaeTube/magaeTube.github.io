@@ -10,6 +10,10 @@ tags:
 
 ---
 
+&nbsp;안녕하세요 마개입니다.  
+2강에서는 UiPath에 대한 설명과 설치하는 방법에 대해 설명드립니다.
+{: .notice--info}
+
 <br>
 
 [![UiPath 소개](http://img.youtube.com/vi/Kp85rH_1lsM/maxresdefault.jpg)](https://www.youtube.com/watch?v=Kp85rH_1lsM)
