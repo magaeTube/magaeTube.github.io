@@ -10,6 +10,10 @@ tags:
 
 ---
 
+&nbsp;안녕하세요 마개입니다.  
+13강에서는 E-mail을 발신/수신하는 방법에 대해서 알아봅니다.  
+{: .notice--info}
+
 <br>
 
 [![Email](http://img.youtube.com/vi/tAq5q4uYnY0/maxresdefault.jpg)](https://www.youtube.com/watch?v=tAq5q4uYnY0)
