@@ -10,6 +10,10 @@ tags:
 
 ---
 
+&nbsp;안녕하세요 마개입니다.  
+마지막 15강에서는 RPA 프로젝트에 관한 이야기를 하고자 합니다.  
+{: .notice--info}
+
 <br>
 
 [![Project](http://img.youtube.com/vi/QyZltXCRpL8/maxresdefault.jpg)](https://www.youtube.com/watch?v=QyZltXCRpL8)
