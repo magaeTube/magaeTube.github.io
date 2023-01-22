@@ -10,6 +10,10 @@ tags:
 
 ---
 
+&nbsp;안녕하세요 마개입니다.  
+2강에서는 StudioX 유저 인터페이스에 대해 알아보겠습니다.  
+{: .notice--info}
+
 <br>
 
 [![User Interface](http://img.youtube.com/vi/yXYnZECh4v4/sddefault.jpg)](https://www.youtube.com/watch?v=yXYnZECh4v4)
