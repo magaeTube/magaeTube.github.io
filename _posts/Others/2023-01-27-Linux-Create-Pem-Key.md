@@ -44,6 +44,9 @@ $ ssh-keygen -f druid.pub -e -m pem
 # 위의 결과값 복사하여 PEM file 생성
 $ vim druid.pem
 
+# PEM file 권한 변경
+$ sudo chmod 400 druid.pem
+
 # 원격 접속 테스트
 $ ssh -i druid.pem ubuntu@[원격서버 IP]
 ```
