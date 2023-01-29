@@ -10,6 +10,10 @@ tags:
 
 ---
 
+&nbsp;안녕하세요 마개입니다.  
+14강에서는 StudioX를 이용하여 자동으로 메일을 보내는 예제를 진행합니다.  
+{: .notice--info}
+
 <br>
 
 [![Email Automation](http://img.youtube.com/vi/kv1beelrOxQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=kv1beelrOxQ)
