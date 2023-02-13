@@ -35,17 +35,8 @@ ssh-rsa AAAAB3Nza(.....생략.....)bMxxJDJJ magae@magae
 $ vim ~/.ssh/authorized_keys
 
 # [클라이언트]에서 private key를 PEM 포맷으로 변경
-# ssh-keygen -f [파일이름].pub -e -m pem
-$ ssh-keygen -f druid.pub -e -m pem
------BEGIN RSA PUBLIC KEY-----
-(.............................생략..............................)
------END RSA PUBLIC KEY-----
-
-# 위의 결과값 복사하여 PEM file 생성
-$ vim druid.pem
-
-# PEM file 권한 변경
-$ sudo chmod 400 druid.pem
+# cp [파일이름] [파일이름].pem
+$ cp druid druid.pem
 
 # 원격 접속 테스트
 $ ssh -i druid.pem ubuntu@[원격서버 IP]
