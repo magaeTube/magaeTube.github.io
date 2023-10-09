@@ -18,7 +18,8 @@ header-mask: true
 
 
 &nbsp;안녕하세요 마개입니다.  
-​이번에는 NVIDIA 그래픽카드가 달린 PC에 TensorFlow GPU를 세팅해서 사용해 보겠습니다.
+​이번에는 NVIDIA 그래픽카드가 달린 PC에 TensorFlow GPU를 세팅해서 사용해 보겠습니다.  
+업데이트 : 2023.10.09
 {: .notice--info}
 
 <br>
@@ -32,8 +33,8 @@ header-mask: true
 <br>
 
 저의 PC 환경은 다음과 같습니다.  
-**OS :** Ubuntu 20.04 LTS (Focal Fossa)  
-**그래픽카드 :** NVIDIA GeForce RTX 3080  
+**OS :** Ubuntu 22.04 LTS (Jammy Jellyfish)  
+**그래픽카드 :** NVIDIA GeForce RTX 4070 Ti  
 
 그래픽카드가 무엇인지 정확하게 모르신다면 아래와 같이 명령어로 확인을 해보시면 됩니다. (**<span style="color:red">Ubuntu</span>** 기준입니다.)  
 
@@ -41,7 +42,7 @@ header-mask: true
 $ lspci | grep VGA
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/166945001-35b8a390-efcc-42d1-988a-266df821c0e4.png){: .align-center}
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/13f5cbd1-a959-42cb-a7e7-76576a1764cc){: .align-center}
 
 <br>
 
@@ -51,7 +52,7 @@ $ lspci | grep VGA
 $ sudo update-pciids
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/166945127-95371fb7-bd10-498c-a7ba-e274aed60aba.png){: .align-center}
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/6b39c2ba-dae2-4b81-a25f-885847896507){: .align-center}
 
 <br>
 
@@ -101,7 +102,7 @@ xla_global_id: -1
 
 <a href="https://www.nvidia.com/download/index.aspx?lang=en-us">NVIDIA 드라이버 다운로드</a>  
 
-![image](https://user-images.githubusercontent.com/78892113/166946526-b9970fd2-85c1-47db-bfed-97fdc97784ce.png){: .align-center}
+![imagae](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/60f0c96c-9c61-41b5-a44e-46170bb31bed){: .align-center}
 
 <br>
 
@@ -112,9 +113,9 @@ xla_global_id: -1
 $ nvidia-smi
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/166946708-95daf046-cc45-4a88-b08a-ebf9ec87af83.png){: .align-center}{: width="80%" height="80%"}
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/7c68fc30-b2ec-4b09-a1ce-01d29d39c87f){: .align-center}
 
-위와 같이 잘 뜨는 것을 확인할 수 있습니다. 여기서 봐야 할 것은 CUDA Version인데 저의 경우 **<span style="color:red">11.4</span>**로 나와있는 것을 보실 수 있습니다.
+위와 같이 잘 뜨는 것을 확인할 수 있습니다. 여기서 봐야 할 것은 CUDA Version인데 저의 경우 **<span style="color:red">12.2</span>**로 나와있는 것을 보실 수 있습니다.
 
 ​<br><br>
 
@@ -126,24 +127,25 @@ $ nvidia-smi
 
 <a href="https://developer.nvidia.com/cuda-toolkit-archive">CUDA Toolkit</a> 
 
-![image](https://user-images.githubusercontent.com/78892113/166947159-933664a0-ffad-4ce3-b1ca-0aa2db64a21a.png){: .align-center}
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/63400205-dbb3-4a7a-ac64-0957e94b72a3){: .align-center}
 
-위의 사이트로 들어가면 굉장히 많은 버전의 CUDA Toolkit이 있는 것을 보실 수 있는데 각자의 CUDA 버전에 맞는 것을 확인하여 다운로드 진행합니다. 저의 경우 11.4.0 버전을 선택하였습니다.
+위의 사이트로 들어가면 굉장히 많은 버전의 CUDA Toolkit이 있는 것을 보실 수 있는데 각자의 CUDA 버전에 맞는 것을 확인하여 다운로드 진행합니다. 저의 경우 12.2.0 버전을 선택하였습니다.
 
-![image](https://user-images.githubusercontent.com/78892113/166947256-3d7f94b1-3dc2-4c9f-8a1e-5c93c25aff66.png){: .align-center}
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/8d6a8481-fd15-4546-b14e-753a2633b3cf)
+{: .align-center}
 
 그러면 위와 같이 다음 화면이 나오는데 각자의 환경에 맞게 선택을 합니다. 
 
-저의 경우 Ubuntu 20.04를 이용하고 있기 때문에 <u>[Linux] - [x86_64] - [Ubuntu] - [20.04] - [deb(local)]</u> 을 선택하였습니다. 
+저의 경우 Ubuntu 22.04를 이용하고 있기 때문에 <u>[Linux] - [x86_64] - [Ubuntu] - [22.04] - [deb(local)]</u> 을 선택하였습니다. 
 
 그러면 저의 경우 아래와 같이 명령어 가이드가 나오게 되는데 이를 하나씩 실행하겠습니다.
 
 ```bash
-$ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-ubuntu2004.pin
-$ sudo mv cuda-ubuntu2004.pin /etc/apt/preferences.d/cuda-repository-pin-600
-$ wget https://developer.download.nvidia.com/compute/cuda/11.4.0/local_installers/cuda-repo-ubuntu2004-11-4-local_11.4.0-470.42.01-1_amd64.deb
-$ sudo dpkg -i cuda-repo-ubuntu2004-11-4-local_11.4.0-470.42.01-1_amd64.deb
-$ sudo apt-key add /var/cuda-repo-ubuntu2004-11-4-local/7fa2af80.pub
+$ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
+$ sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
+$ wget https://developer.download.nvidia.com/compute/cuda/12.2.0/local_installers/cuda-repo-ubuntu2204-12-2-local_12.2.0-535.54.03-1_amd64.deb
+$ sudo dpkg -i cuda-repo-ubuntu2204-12-2-local_12.2.0-535.54.03-1_amd64.deb
+$ sudo cp /var/cuda-repo-ubuntu2204-12-2-local/cuda-*-keyring.gpg /usr/share/keyrings/
 $ sudo apt-get update
 $ sudo apt-get -y install cuda
 ```
@@ -159,10 +161,11 @@ $ sudo apt-get -y install cuda
 다음으로는 CUDA에 대한 환경 변수를 설정해야 합니다.
 
 ```bash
-$ export PATH=$PATH:/usr/local/cuda-11.4/bin
-$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.4/lib64
-$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.4/include
-$ export CUDADIR=/usr/local/cuda-11.4
+# sudo vim /etc/profile
+$ export PATH=$PATH:/usr/local/cuda-12.2/bin
+$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.2/lib64
+$ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-12.2/include
+$ export CUDADIR=/usr/local/cuda-12.2
 
 $ source /etc/profile
 ```
@@ -175,7 +178,7 @@ $ source /etc/profile
 $ nvcc -V
 ```
 
-![image](https://user-images.githubusercontent.com/78892113/166947745-e4116405-7d25-4391-b4b3-fda7311b9420.png){: .align-center}
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/5cc1dcd5-4a45-4a5c-ad99-5d696d2d1c98){: .align-center}
 
 
 <br><br>
@@ -188,11 +191,11 @@ CUDA를 설치한 이후에는 cuDNN SDK를 다운로드해야 합니다.
 
 <a href="https://developer.nvidia.com/cudnn">cuDNN SDK 다운로드</a> 
 
-![image](https://user-images.githubusercontent.com/78892113/166948118-178d4027-f8bd-43c0-9043-49c620648764.png){: .align-center}
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/8091d6cc-d631-46fe-9c2c-253c78ce5808){: .align-center}
 
 <br>
 
-위의 사이트로 이동하여 **<span style="color:red">Download cuDNN</span>** 버튼을 선택합니다.
+위의 사이트로 이동하여 **<span style="color:red">Download cuDNN Library</span>** 버튼을 선택합니다.
 
 ![image](https://user-images.githubusercontent.com/78892113/166948269-b17fbe38-dba4-4b87-bf86-90eb7448715d.png){: .align-center}
 
@@ -200,23 +203,21 @@ CUDA를 설치한 이후에는 cuDNN SDK를 다운로드해야 합니다.
 
 그러면 위와 같은 화면이 나오는데 회원가입을 합니다. (계정이 이미 있다면 로그인합니다.) 
 
-![image](https://user-images.githubusercontent.com/78892113/166948334-b6e0c38b-fb38-4037-a77d-0e08ad3a7876.png){: .align-center}
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/ab6fb7eb-7faf-478b-a8b4-b99bdccebd80){: .align-center}
 
 <br>
 
-회원가입 후 간단한 설문조사를 한 후 다운로드를 진행합니다. 저는 **<span style="color:red">Archived cuDNN Releases</span>**를 선택했습니다.
+회원가입 후 간단한 설문조사를 한 후 다운로드를 진행합니다. Software License에 대한 동의 여부를 묻는 것에 동의를 체크합니다.
 
-![image](https://user-images.githubusercontent.com/78892113/166948518-e0d9bbde-4f72-40b6-a273-c41847152e3f.png){: .align-center}{: width="80%" height="80%"}
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/d37e8076-fde4-480f-98be-dd9f62647a0f){: .align-center}{: width="80%" height="80%"}
 
 <br>
 
-그러면 위와 같이 나오는데 각자의 버전에 맞는 것을 선택해 주세요
+그러면 위와 같이 나오는데 저는 **<span style="color:red">Download cuDNN v8.9.5 [September 12th, 2023], for CUDA 12.x</span>**를 선택합니다.
 
-저는 **<span style="color:red">Download cuDNN v8.2.4 [September 2nd, 2021], for CUDA 11.4</span>**를 선택했습니다.
+![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/0066062d-2b1b-4fc6-957f-e67a81333797){: .align-center}{: width="80%" height="80%"}
 
-![image](https://user-images.githubusercontent.com/78892113/166948666-8c8ed803-46c1-446d-86f4-4e95a1e8b43e.png){: .align-center}{: width="80%" height="80%"}
-
-그리고 **<span style="color:red">cuDNN Library for Linux [x86_64]</span>**를 선택해서 다운로드합니다.
+그리고 **<span style="color:red">Local Installer for Linux x86_64 (Tar)</span>**를 선택해서 다운로드합니다.
 
 ​다운로드가 완료되면 압축을 풀고 파일을 복사합니다.  
 
@@ -224,14 +225,14 @@ CUDA를 설치한 이후에는 cuDNN SDK를 다운로드해야 합니다.
 
 ```bash
 # 압축 해제
-$ tar -xvzf cudnn-11.4-linux-x64-v8.2.4.15.tgz
+$ tar -xf cudnn-linux-x86_64-8.9.5.29_cuda12-archive.tar.xz
 
 # 파일 복사
-$ sudo cp cuda/include/cudnn* /usr/local/cuda/include
-$ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
+$ sudo cp cudnn-linux-x86_64-8.9.5.29_cuda12-archive/include/cudnn*.h /usr/local/cuda/include
+$ sudo cp cudnn-linux-x86_64-8.9.5.29_cuda12-archive/lib/libcudnn* /usr/local/cuda/lib64
 
 # 권한 변경
-$ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
+$ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
 ```
 
 이렇게 파일을 복사했다면 이제 링크를 다시 걸어야 합니다.
@@ -239,13 +240,13 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 <br>
 
 ```bash
-$ sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_adv_train.so.8.2.4 /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_adv_train.so.8
-$ sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8.2.4 /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8
-$ sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8.2.4 /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8
-$ sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8.2.4 /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8
-$ sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_ops_train.so.8.2.4 /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_ops_train.so.8
-$ sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_cnn_infer.so.8.2.4 /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn_cnn_infer.so.8
-$ sudo ln -sf /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn.so.8.2.4 /usr/local/cuda-11.4/targets/x86_64-linux/lib/libcudnn.so.8
+$ sudo ln -sf /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_adv_train.so.8.9.5 /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_adv_train.so.8
+$ sudo ln -sf /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8.9.5 /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_ops_infer.so.8
+$ sudo ln -sf /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8.9.5 /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_cnn_train.so.8
+$ sudo ln -sf /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8.9.5 /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_adv_infer.so.8
+$ sudo ln -sf /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_ops_train.so.8.9.5 /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_ops_train.so.8
+$ sudo ln -sf /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_cnn_infer.so.8.9.5 /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn_cnn_infer.so.8
+$ sudo ln -sf /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn.so.8.9.5 /usr/local/cuda-12.2/targets/x86_64-linux/lib/libcudnn.so.8
 $ sudo ldconfig
 ```
 
