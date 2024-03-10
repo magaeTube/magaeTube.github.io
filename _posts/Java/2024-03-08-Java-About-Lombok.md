@@ -229,3 +229,66 @@ public class UserLombokModel {
 ```
 
 &nbsp;위와 같이 클래스 위에 `@NoArgsConstructor`를 지정해주면 됩니다.
+
+<br>
+
+## @RequiredArgsConstructor
+
+&nbsp;특정 변수만을 활용하는 생성자를 자동 완성시켜주는 어노테이션입니다. 추가할 변수에 `@NonNull` 어노테이션을 붙이거나 final로 선언하면 의존성을 주입할 수 있습니다.
+
+```java
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+
+@Getter
+@RequiredArgsConstructor
+public class UserLombokModel {
+
+    @NonNull
+    private String userId;
+    private final String userName;
+    private String gender;
+    private Integer age;
+    private String emailAddress;
+
+    /*
+    // 다음과 같이 지정한 변수를 이용한 생성자를 완성시켜줍니다.
+    public UserLombokModel(String userId, String userName) {
+        this.userId = userId;
+        this.userName = userName;
+    }
+    */
+}
+```
+
+&nbsp;위와 같이 @NonNull 또는 final을 이용하여 생성자를 만들 수 있습니다.
+
+<br>
+
+## @ToString
+
+&nbsp;`@ToString` 어노테이션을 활용하면 클래스 변수들에 대한 ToString 메소드를 자동으로 완성시켜줍니다. 여기서 제외할 변수에 대해서는 @ToString.Exclude 어노테이션을 붙여주면 됩니다.
+
+```java
+import lombok.ToString;
+import lombok.AllArgsConstructor;
+
+@ToString
+@AllArgsConstructor
+public class UserLombokModel {
+
+    @ToString.Exclude
+    private String userId;
+    private final String userName;
+    private String gender;
+    private Integer age;
+    private String emailAddress;
+
+}
+```
+
+<br>
+
+## @Data
+
+&nbsp;`@Data` 어노테이션을 사용하면 @Getter, @Setter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode를 자동 완성시켜줍니다. 편하긴 하지만 너무 무겁기 때문에 실무에서는 지양합니다.
