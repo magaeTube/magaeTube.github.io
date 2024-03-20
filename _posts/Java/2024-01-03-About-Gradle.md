@@ -1,5 +1,5 @@
 ---
-title:  "Gradle이란"
+title:  "[Java] Gradle이란"
 date:   2024-01-03 00:00:00 +0900
 categories:
   - Java
