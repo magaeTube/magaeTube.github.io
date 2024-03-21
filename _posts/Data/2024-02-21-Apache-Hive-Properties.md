@@ -45,3 +45,4 @@ header-mask: true
 |hive.stats.fetch.partition.stats||`true` 또는 `false`. 파티션 통계정보 여부|
 |hive.support.concurrency||`true` 또는 `false`. 병렬 트랜잭션 허용 여부|
 |hive.stats.autogather||`true` 또는 `false`. 통계정보 수집 여부|
+|hive.strict.timestamp.conversion||`true` 또는 `false`. Date/Timestamp를 Numeric으로 변환할 수 있게 제한을 둘지 여부|
