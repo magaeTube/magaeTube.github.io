@@ -53,6 +53,9 @@ Producer 클러스터는 Datashare에 대한 제어 권한을 가지고 있습�
 -- salesshare라는 DATASHARE 생성
 CREATE DATASHARE salesshare;
 
+-- public이라는 schema 추가
+ALTER DATASHARE salesshare ADD SCHEMA public;
+
 -- salesshare라는 DATASHARE에 데이터를 공유할 테이블 public.tickit_sales_redshift 추가 
 ALTER DATASHARE salesshare ADD TABLE public.tickit_sales_redshift;
 
