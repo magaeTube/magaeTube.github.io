@@ -5,6 +5,9 @@ categories:
   - Data
 tags:
   - Data
+toc: true
+toc_sticky: true
+toc_label: "Overview"
 header-img: https://github.com/magaeTube/magaeTube.github.io/assets/78892113/cd41dda4-ecce-48bb-b333-f7dc528df3a2
 header-mask: true
 
@@ -26,18 +29,52 @@ header-mask: true
 
 &nbsp;모든 것을 다 할 필요는 없다고 했지만 여러 영역으로 지속적으로  공부해야 하는 것은 맞습니다. 위 이미지에서 나타난 영역이 많기 때문에 이를 다음과 같이 나눠보았습니다.  
 
+* Operating System
 * Programming Language
-* SQL
-* Development Skills
-* Databases
-* Cluster Computing
-* Data Processing
-* Messaging
-* Object Storage
-* DataWarehouse
-* Monitoring / Data Visualization
-* AI
-* MLOps
-* Cloud
+* SQL & NoSQL
+* DataWarehouse & Object Storage
+* Distributed Computing
+* Workflow Orchestration
+* Streaming Data Processing
+* Cloud Computing
+* ETC - Monitoring / Data Visualization
+* ETC - CI/CD
+* ETC - MLOps
 
 &nbsp;위와 같이 영역을 나누었는데 계속 말했던 것처럼 모든 것을 볼 수는 없고 필요하다고 생각되는 것들을 보겠습니다.
+
+<br><br>
+
+# Operating System
+&nbsp;데이터 엔지니어링이나 모든 IT는 기본적으로 OS 위에서 돌아갑니다. 데이터 엔지니어링에 사용되는 많은 기술들은 보통 리눅스 환경에서 돌아가는 것들이 많기 때문에 리눅스에 대한 공부가 필요합니다. 기본적인 명렁어나 스크립트 같은 어느 정도의 지식이 있으면 됩니다.
+
+# Programming Language
+&nbsp;엔지니어링의 기본은 프로그래밍 언어입니다. 프로그래밍 언어의 종류는 매우 여러 가지인데 Data Engineering에서 주로 사용하는 언어는 Python, Java, Scala입니다. 하둡 기반의 오픈소스들은 자바로 되어있는 것들이 많기에 자바와 데이터 엔지니어링중 가장 핫한 스파크는 스칼라로 된 것이 많기에 스칼라도 중요하게 생각했습니다. 그러나 최근에는 특히 많이 사용하는 것은 Python입니다. 전에는 파이썬이 자바와 스칼라에 비해 성능적으로 많이 떨어진다고 했지만 최근에는 성능상으로 많이 따라왔기 때문에 스파크도 파이썬을 많이 이용하기도 하고 Airflow나 Superset 같은 오픈 소스들도 파이썬으로 구성되어 있습니다.
+
+<br><br>
+
+# SQL & NoSQL
+&nbsp;Data Engineering에서 가장 중요하고 기본이 되는 것이 SQL이라고 생각합니다. 데이터 엔지너이링 다음으로 작업하는 데이터 분석이나 AI를 위해서는 데이터를 추출하는 작업이 시작인데 이때 사용하는 것이 SQL이고 모든 데이터베이스, 데이터웨어하우스 등에서 사용하는 기본이기 때문에 중요합니다.
+
+<br><br>
+
+# DataWarehouse & Storage
+&nbsp;데이터를 추출하는 작업을 진행했다면 다음은 저장하는 작업입니다. 기존의 RDBMS로는 빅데이터를 담을 수 없었기에 이를 해결하기 위해 Storage가 나오고 분석을 위한 데이터웨어하우스가 나왔습니다. 
+
+<br>
+
+# Distributed Computing
+&nbsp;Distributed Computing은 분산 처리를 기술을 말합니다. 분산처리가 필요한 이유는 데이터가 많아지다보니 하나의 컴퓨팅 기술로는 한계가 있었던 것이죠. 그렇기에 여러 대의 컴퓨팅을 이용한 분산 처리가 필요하게 되었고 데이터 엔지니어링에서 이것이 제일 중요한 기술 중 하나로 여겨졌습니다.
+
+<br>
+
+# Workflow Orchestration
+&nbsp;데이터 엔지니어링은 데이터를 추출하고 프로세싱하고 저장하는 등의 과정을 거치는데 이를 매번 수동으로 할 수는 없습니다. 한 번의 작업만 필요한 경우 수동으로 하면 되지만 주기적으로 필요한 작업의 경우 크론을 이용하기도 합니다. 하지만 점점 데이퍼 파이프라인의 수가 증가하고 직관적이며 정교한 작업을 하기 위해 툴이 필요하죠. 대표적으로는 Apache Airflow가 있습니다.
+
+<br>
+
+# Streaming Data Processing
+&nbsp;데이터를 처리하는 방법에는 주기적으ㅗ 처리하는 것과 실시간으로 처리해야하는 경우가 있습니다. 실시간으로 처리해야할 때 이러한 Streaming 기술들을 이용하면 됩니다.
+
+<br>
+
