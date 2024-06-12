@@ -2,7 +2,7 @@
 title:  "[RPA UiPath] 4강. 변수 및 자료형 (Variables and Types)"
 date:   2019-12-15 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

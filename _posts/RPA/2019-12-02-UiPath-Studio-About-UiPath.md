@@ -2,7 +2,7 @@
 title:  "[RPA UiPath] 2강. UiPath 소개 및 설치"
 date:   2019-12-02 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

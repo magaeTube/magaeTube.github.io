@@ -2,7 +2,7 @@
 title:  "[RPA UiPath] 1강 RPA란"
 date:   2019-11-28 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

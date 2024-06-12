@@ -2,7 +2,7 @@
 title:  "[RPA UiPath] 13강. E-mail - 처리한 결과는 마지막에 보내야지"
 date:   2020-02-24 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

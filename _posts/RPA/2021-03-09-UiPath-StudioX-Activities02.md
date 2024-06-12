@@ -2,7 +2,7 @@
 title:  "[RPA UiPath StudioX] 공통 액티비티 2편"
 date:   2021-03-09 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

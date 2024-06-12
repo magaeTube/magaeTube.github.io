@@ -2,7 +2,7 @@
 title:  "[RPA UiPath StudioX] 엑셀 필터를 이용해 데이터를 나눠보자"
 date:   2021-03-21 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

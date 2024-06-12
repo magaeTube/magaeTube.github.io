@@ -2,7 +2,7 @@
 title:  "[RPA UiPath StudioX] UiPath StudioX 사용법 소개"
 date:   2021-03-06 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

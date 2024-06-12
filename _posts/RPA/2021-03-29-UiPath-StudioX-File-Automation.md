@@ -2,7 +2,7 @@
 title:  "[RPA UiPath StudioX] 파일과 폴더를 조작하기"
 date:   2021-03-29 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

@@ -2,7 +2,7 @@
 title:  "[RPA UiPath] 3강. Hello World"
 date:   2019-12-09 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

@@ -2,7 +2,7 @@
 title:  "[RPA UiPath] 7강. 레코딩 (Recording)"
 date:   2020-01-13 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

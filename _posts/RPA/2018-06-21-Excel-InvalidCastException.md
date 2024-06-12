@@ -2,7 +2,7 @@
 title:  "[RPA] UiPath 엑셀 오류 (System.InvalidCastException: Unable to cast COM object of type)"
 date:   2018-06-21 00:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

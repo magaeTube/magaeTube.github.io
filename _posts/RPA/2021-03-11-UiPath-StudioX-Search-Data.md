@@ -2,7 +2,7 @@
 title:  "[RPA UiPath StudioX] 네이버 날씨 정보 검색하기"
 date:   2021-03-11 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

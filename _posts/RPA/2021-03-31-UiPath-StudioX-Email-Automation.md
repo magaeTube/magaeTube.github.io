@@ -2,7 +2,7 @@
 title:  "[RPA UiPath StudioX] 자동으로 결과 이메일 보내기"
 date:   2021-03-31 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

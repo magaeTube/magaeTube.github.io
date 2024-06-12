@@ -2,7 +2,7 @@
 title:  "[RPA UiPath] 11강 #2. 데이터테이블과 엑셀 (DataTable & Excel) - 엑셀도 손쉽게 작업하자 !!"
 date:   2020-02-12 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

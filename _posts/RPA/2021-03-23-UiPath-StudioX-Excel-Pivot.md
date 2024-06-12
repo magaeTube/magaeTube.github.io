@@ -2,7 +2,7 @@
 title:  "[RPA UiPath StudioX] 엑셀 피벗테이블을 만들어보자"
 date:   2021-03-23 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

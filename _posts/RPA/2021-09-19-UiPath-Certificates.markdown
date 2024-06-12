@@ -2,7 +2,7 @@
 title:  "RPA 자격증 살펴보기 (UiPath)"
 date:   2021-09-19 16:28:48 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

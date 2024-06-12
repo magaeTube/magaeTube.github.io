@@ -2,7 +2,7 @@
 title:  "[RPA UiPath StudioX] 네이버 날씨 데이터 저장하기"
 date:   2021-03-15 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

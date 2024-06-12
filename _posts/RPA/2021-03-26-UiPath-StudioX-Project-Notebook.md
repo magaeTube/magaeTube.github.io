@@ -2,7 +2,7 @@
 title:  "[RPA UiPath StudioX] 데이터를 마음대로 가공하기"
 date:   2021-03-26 09:00:00 +0900
 categories:
-  - RPA
+  - UiPath
 tags:
   - RPA
   - UiPath

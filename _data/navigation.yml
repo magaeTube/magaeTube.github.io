@@ -41,7 +41,7 @@ sidebar-category:
       - title: "GCP"
         url: "/GCP"
         category: "GCP"
-        
+
   - title: "DevOps"
     children:
       - title: "DevOps"
@@ -50,9 +50,9 @@ sidebar-category:
 
   - title: "RPA"
     children:
-      - title: "RPA"
-        url: "/RPA"
-        category: "RPA"
+      - title: "UiPath"
+        url: "/UiPath"
+        category: "UiPath"
 
   - title: "ETC"
     children:
