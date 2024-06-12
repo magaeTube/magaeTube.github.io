@@ -2,7 +2,7 @@
 title:  "[Redshift] DataShare"
 date:   2023-11-30 00:00:00 +0900
 categories:
-  - Cloud
+  - AWS
 tags:
   - Cloud
   - AWS

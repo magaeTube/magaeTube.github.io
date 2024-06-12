@@ -2,7 +2,7 @@
 title:  "[EC2] Instance Type"
 date:   2024-03-08 00:00:00 +0900
 categories:
-  - Cloud
+  - AWS
 tags:
   - Cloud
   - AWS

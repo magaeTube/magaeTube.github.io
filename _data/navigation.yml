@@ -35,10 +35,13 @@ sidebar-category:
 
   - title: "Cloud"
     children:
-      - title: "Cloud"
-        url: "/Cloud"
-        category: "Cloud"
-
+      - title: "AWS"
+        url: "/AWS"
+        category: "AWS"
+      - title: "GCP"
+        url: "/GCP"
+        category: "GCP"
+        
   - title: "DevOps"
     children:
       - title: "DevOps"

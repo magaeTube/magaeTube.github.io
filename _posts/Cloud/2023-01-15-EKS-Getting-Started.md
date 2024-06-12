@@ -2,7 +2,7 @@
 title:  "[EKS] 시작해보기"
 date:   2023-01-15 00:00:00 +0900
 categories:
-  - Cloud
+  - AWS
 tags:
   - Cloud
   - AWS

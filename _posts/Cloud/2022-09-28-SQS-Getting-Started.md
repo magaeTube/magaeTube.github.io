@@ -2,7 +2,7 @@
 title:  "[SQS] Queue 생성하기"
 date:   2022-09-28 00:00:00 +0900
 categories:
-  - Cloud
+  - AWS
 tags:
   - Cloud
   - AWS

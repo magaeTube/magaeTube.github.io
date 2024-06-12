@@ -2,7 +2,7 @@
 title:  "[BigQuery] 구글 빅쿼리 - GIS로 지리 정보 이용하기"
 date:   2020-07-03 00:00:00 +0900
 categories:
-  - Cloud
+  - GCP
 tags:
   - Cloud
   - GCP

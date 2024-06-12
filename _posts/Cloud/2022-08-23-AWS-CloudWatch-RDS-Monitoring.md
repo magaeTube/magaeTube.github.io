@@ -2,8 +2,9 @@
 title:  "[RDS] CloudWatch를 이용하여 모니터링하기"
 date:   2022-08-23 00:00:00 +0900
 categories:
-  - Cloud
+  - AWS
 tags:
+  - Cloud
   - AWS
   - CloudWatch
   - RDS

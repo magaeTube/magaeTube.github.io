@@ -2,7 +2,7 @@
 title:  "[Athena] No output location provided 에러"
 date:   2022-11-04 00:00:00 +0900
 categories:
-  - Cloud
+  - AWS
 tags:
   - Cloud
   - AWS

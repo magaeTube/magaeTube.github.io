@@ -2,7 +2,7 @@
 title:  "[BigQuery] 구글 빅쿼리 (2) - 시작하기"
 date:   2020-07-01 00:00:00 +0900
 categories:
-  - Cloud
+  - GCP
 tags:
   - Cloud
   - GCP

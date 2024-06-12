@@ -2,7 +2,7 @@
 title:  "[Athena] String 이어붙이기 사용 시 유의 사항"
 date:   2022-11-04 00:00:00 +0900
 categories:
-  - Cloud
+  - AWS
 tags:
   - Cloud
   - AWS
