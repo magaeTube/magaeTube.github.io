@@ -2,6 +2,9 @@
 title: "Others"
 layout: archive
 permalink: /Others
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

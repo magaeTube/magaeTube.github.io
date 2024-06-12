@@ -2,6 +2,9 @@
 title: "Tool"
 layout: archive
 permalink: /Tool
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

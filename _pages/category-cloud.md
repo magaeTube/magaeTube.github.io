@@ -2,6 +2,9 @@
 title: "Cloud"
 layout: archive
 permalink: /Cloud
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

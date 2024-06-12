@@ -2,6 +2,9 @@
 title: "Python"
 layout: archive
 permalink: /Python
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

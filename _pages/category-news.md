@@ -2,6 +2,9 @@
 title: "News"
 layout: archive
 permalink: /News
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

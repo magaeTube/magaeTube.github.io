@@ -2,6 +2,9 @@
 title: "Blog"
 layout: archive
 permalink: /Blog
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 

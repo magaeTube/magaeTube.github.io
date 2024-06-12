@@ -2,6 +2,9 @@
 title: "RPA"
 layout: archive
 permalink: /RPA
+author_profile: true
+sidebar:
+    nav: "sidebar-category"
 ---
 
 
