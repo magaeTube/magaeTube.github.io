@@ -16,3 +16,55 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+
+sidebar-category:
+  - title: "Programming"
+    children:
+      - title: "Python"
+        url: "/Python"
+        category: "Python"
+      - title: "Java"
+        url: "/Java"
+        category: "Java"
+  
+  - title: "Data"
+    children:
+      - title: "Data"
+        url: "/Data"
+        category: "Data"
+
+  - title: "Cloud"
+    children:
+      - title: "Cloud"
+        url: "/Cloud"
+        category: "Cloud"
+
+  - title: "DevOps"
+    children:
+      - title: "DevOps"
+        url: "/DevOps"
+        category: "DevOps"
+
+  - title: "RPA"
+    children:
+      - title: "RPA"
+        url: "/RPA"
+        category: "RPA"
+
+  - title: "ETC"
+    children:
+      - title: "Book"
+        url: "/Book"
+        category: "Book"
+      - title: "Others"
+        url: "/Others"
+        category: "Others"
+      - title: "Tool"
+        url: "/Tool"
+        category: "Tool"
+      - title: "News"
+        url: "/News"
+        category: "News"
+      - title: "Blog"
+        url: "/Blog"
+        category: "Blog"

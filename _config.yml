@@ -301,12 +301,23 @@ defaults:
       share: true
       related: true
       show_date: true
+      sidebar:
+        nav: "sidebar-category"
 
   # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
-      footer: true
+  # - scope:
+  #     path: "_pages"
+  #     type: pages
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     footer: true
+  #     sidebar:
+  #       nav: "sidebar-category"
+
+  # - scope:
+  #     path: ""
+  #     type: docs
+  #   values:
+  #     sidebar:
+  #       nav: "docs"
