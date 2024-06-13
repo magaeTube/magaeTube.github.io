@@ -3,6 +3,7 @@ title:  "[Airflow] Secrets Backend"
 date:   2023-01-10 00:00:00 +0900
 categories:
   - Data
+  - Airflow
 tags:
   - Data
   - Airflow

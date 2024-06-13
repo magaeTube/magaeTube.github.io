@@ -3,6 +3,7 @@ title:  "[Hadoop] MacOS Hadoop 설치 및 세팅"
 date:   2020-10-10 00:00:00 +0900
 categories:
   - Data
+  - Hadoop
 tags:
   - Data
   - Hadoop

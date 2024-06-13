@@ -3,6 +3,7 @@ title:  "[Apache Hive] 속성"
 date:   2024-02-21 00:00:00 +0900
 categories:
   - Data
+  - Hive
 tags:
   - Data
   - Hive
@@ -45,8 +46,11 @@ header-mask: true
 |hive.stats.fetch.partition.stats||`true` 또는 `false`. 파티션 통계정보 여부||
 |hive.support.concurrency||`true` 또는 `false`. 병렬 트랜잭션 허용 여부||
 |hive.stats.autogather||`true` 또는 `false`. 통계정보 수집 여부||
+|hive.stats.column.autogather||`true` 또는 `false`.||
 |hive.strict.timestamp.conversion||`true` 또는 `false`. Date/Timestamp를 Numeric으로 변환할 수 있게 제한을 둘지 여부||
 |hive.exec.compress.intermediate|`false`|HIVE 처리 중간 과정에서 발생하는 파일을 압축할지 여부|0.2.0|
 |hive.intermediate.compression.codec||HIVE 처리 중간 과정에서 사용할 압축 코덱||
 |hive.exec.reducers.bytes.per.reducer|256MB|리듀서당 사이즈|0.14.0|
 |hive.exec.reducers.max|1009|리듀서의 최대 개수|0.14.0|
+|hive.strict.checks.large.query|true|order by 개수에 대한 제한을 걸지 않고 파티션 테이블에 필터링을 하지 않는 경우 제한됨||
+hive.blobstore.use.output-committer

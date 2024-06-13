@@ -3,9 +3,10 @@ title:  "Apache Kafka란"
 date:   2022-02-19 00:00:00 +0900
 categories:
   - Data
+  - Kafka
 tags:
   - Data
-  - Pipelline
+  - Pipeline
   - Kafka
 toc: true
 toc_sticky: true

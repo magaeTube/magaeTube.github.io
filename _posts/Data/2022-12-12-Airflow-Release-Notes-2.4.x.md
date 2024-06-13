@@ -3,6 +3,7 @@ title:  "[Airflow] Release Notes - 2.4.x"
 date:   2022-12-12 00:00:00 +0900
 categories:
   - Data
+  - Airflow
 tags:
   - Data
   - Airflow

@@ -3,6 +3,7 @@ title:  "[Airflow] DAG에 이슈가 있을 때 체크포인트"
 date:   2023-01-28 00:00:00 +0900
 categories:
   - Data
+  - Airflow
 tags:
   - Data
   - Airflow

@@ -3,6 +3,7 @@ title:  "[BI] Apache Superset은.."
 date:   2020-11-03 00:00:00 +0900
 categories:
   - Data
+  - Superset
 tags:
   - Data
   - Superset

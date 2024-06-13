@@ -3,6 +3,7 @@ title:  "[Airflow] 커스텀 XCom 사용"
 date:   2023-02-21 00:00:00 +0900
 categories:
   - Data
+  - Airflow
 tags:
   - Data
   - Airflow

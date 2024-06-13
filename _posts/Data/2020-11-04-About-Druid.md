@@ -3,6 +3,7 @@ title:  "[Data Engineering] Apache Druid는.."
 date:   2020-11-04 00:00:00 +0900
 categories:
   - Data
+  - Druid
 tags:
   - Data
   - Druid

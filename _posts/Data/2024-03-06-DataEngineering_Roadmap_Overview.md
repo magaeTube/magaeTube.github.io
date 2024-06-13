@@ -3,6 +3,7 @@ title:  "[Data Engineering Roadmap] 1. 개요"
 date:   2024-03-06 00:00:00 +0900
 categories:
   - Data
+  - DataEngineering
 tags:
   - Data
 toc: true

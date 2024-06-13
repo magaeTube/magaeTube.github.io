@@ -3,6 +3,7 @@ title:  "[Apache Spark] 속성"
 date:   2024-03-21 00:00:00 +0900
 categories:
   - Data
+  - Spark
 tags:
   - Data
   - Spark
@@ -35,3 +36,4 @@ header-mask: true
 |spark.yarn.maxAppAttempts|1|||
 |spark.dynamicAllocation.enabled|false|동적 자원 할당을 사용할지 여부||
 |spark.driver.maxResultSize|1g|각 Spark action에서 모든 파티션들의 결과 총 사이즈|1.2.0|
+|spark.sql.hive.convertMetastoreOrc|

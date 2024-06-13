@@ -3,8 +3,10 @@ title:  "[Data Engineering] InfluxDB 소개"
 date:   2020-11-06 00:00:00 +0900
 categories:
   - Data
+  - DataOthers
 tags:
   - Data
+  - InfluxDB
 toc: true
 toc_sticky: true
 toc_label: "InfluxDB"

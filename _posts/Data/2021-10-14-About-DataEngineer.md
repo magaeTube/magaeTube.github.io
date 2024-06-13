@@ -3,6 +3,7 @@ title:  "[Data 포지션] Data Engineer"
 date:   2021-10-14 09:00:00 +0900
 categories:
   - Data
+  - DataEngineering
 tags:
   - Data
   - DataEngineering

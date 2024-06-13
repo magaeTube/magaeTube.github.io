@@ -3,6 +3,7 @@ title:  "[Airflow] 데몬(Daemon) 실행이 되지 않을 때"
 date:   2021-01-05 00:00:00 +0900
 categories:
   - Data
+  - Airflow
 tags:
   - Data
   - DataEngineering

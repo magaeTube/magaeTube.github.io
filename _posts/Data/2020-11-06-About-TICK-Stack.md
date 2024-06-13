@@ -3,6 +3,7 @@ title:  "[Data Engineering] TICK Stack이란"
 date:   2020-11-06 00:00:00 +0900
 categories:
   - Data
+  - DataOthers
 tags:
   - Data
 toc: true

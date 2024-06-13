@@ -3,6 +3,7 @@ title:  "[BI] Grafana 소개"
 date:   2020-11-09 00:00:00 +0900
 categories:
   - Data
+  - DataOthers
 tags:
   - Data
   - Visualization

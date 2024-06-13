@@ -3,6 +3,8 @@ title:  "[Data Engineering] Druid - Superset 연동하기"
 date:   2020-11-05 00:00:00 +0900
 categories:
   - Data
+  - Druid
+  - Superset 
 tags:
   - Data
   - Druid

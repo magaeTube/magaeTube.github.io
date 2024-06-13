@@ -3,6 +3,7 @@ title:  "Airflow 구축 및 변천사 - 도입 배경 및 선정"
 date:   2022-06-06 09:00:00 +0900
 categories:
   - Data
+  - Airflow
 tags:
   - Data
   - Airflow

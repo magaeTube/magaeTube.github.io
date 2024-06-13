@@ -3,6 +3,7 @@ title:  "[Apache Spark] Storage Format"
 date:   2024-01-07 00:00:00 +0900
 categories:
   - Data
+  - Spark
 tags:
   - Data
   - Spark

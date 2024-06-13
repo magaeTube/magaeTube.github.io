@@ -3,6 +3,7 @@ title:  "Airflow 구축 및 변천사 - 모니터링"
 date:   2022-06-11 09:00:00 +0900
 categories:
   - Data
+  - Airflow
 tags:
   - Data
   - Airflow

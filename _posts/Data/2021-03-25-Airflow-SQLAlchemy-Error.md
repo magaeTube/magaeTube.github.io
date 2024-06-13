@@ -3,6 +3,7 @@ title:  "[Airflow] Airflow 실행 명령어 에러"
 date:   2021-03-25 00:00:00 +0900
 categories:
   - Data
+  - Airflow
 tags:
   - Data
   - DataEngineering
