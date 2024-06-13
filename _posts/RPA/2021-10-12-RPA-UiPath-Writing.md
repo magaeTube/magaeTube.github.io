@@ -3,6 +3,7 @@ title:  "[집필 후기] 당신의 칼퇴를 도와주는 UiPath 업무 자동�
 date:   2021-10-12 00:00:00 +0900
 categories:
   - UiPath
+  - Book
 tags:
   - RPA
   - UiPath
