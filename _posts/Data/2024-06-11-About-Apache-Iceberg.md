@@ -3,6 +3,7 @@ title:  "[Apache Iceberg] Big Data File Format"
 date:   2024-06-11 00:00:00 +0900
 categories:
   - Data
+  - Iceberg
 tags:
   - Data
   - Iceberg
