@@ -60,6 +60,12 @@ sidebar-category:
         url: "/DataOthers"
         category: "DataOthers"
 
+  - title: "AI"
+    children:
+      - title: "Tensorflow"
+        url: "/Tensorflow"
+        category: "Tensorflow"
+
   - title: "Cloud"
     children:
       - title: "AWS"

@@ -2,7 +2,8 @@
 title:  "TensorFlow GPU 세팅하기"
 date:   2022-04-28 00:00:00 +0900
 categories:
-  - Data
+  - AI
+  - Tensorflow
 tags:
   - TensorFlow
   - GPU
