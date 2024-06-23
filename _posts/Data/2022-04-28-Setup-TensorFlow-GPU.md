@@ -9,6 +9,7 @@ tags:
   - NVIDIA
 toc: true
 toc_sticky: true
+toc_label: "TensorFlow GPU 세팅"
 header-img: https://user-images.githubusercontent.com/78892113/166944077-ca6a7bbf-f71e-4bb4-910e-c244124b3013.png
 
 header-mask: true
@@ -36,7 +37,7 @@ header-mask: true
 **OS :** Ubuntu 22.04 LTS (Jammy Jellyfish)  
 **그래픽카드 :** NVIDIA GeForce RTX 4070 Ti  
 
-그래픽카드가 무엇인지 정확하게 모르신다면 아래와 같이 명령어로 확인을 해보시면 됩니다. (**<span style="color:red">Ubuntu</span>** 기준입니다.)  
+그래픽카드가 무엇인지 정확하게 모르신다면 아래와 같이 명령어로 확인을 해보시면 됩니다. (`Ubuntu` 기준입니다.)  
 
 ```bash
 $ lspci | grep VGA
@@ -46,7 +47,7 @@ $ lspci | grep VGA
 
 <br>
 
-저와 같이 위의 명령어로 바로 확인이 가능하면 다행인데 만약에 그래픽카드 이름이 잘 안 보이는 경우에는 아래 명령어를 추가로 진행한 후에 다시 명령어를 실행합니다.  
+&nbsp;저와 같이 위의 명령어를 이용해서 바로 확인이 가능하면 다행인데 만약에 그래픽카드 이름이 잘 안 보이는 경우에는 아래 명령어를 추가로 진행한 후에 다시 명령어를 실행합니다.  
   
 ```bash
 $ sudo update-pciids
@@ -56,7 +57,7 @@ $ sudo update-pciids
 
 <br>
 
-이렇게 확인이 되면 이제 TensorFlow GPU를 세팅해 보겠습니다.
+이렇게 확인이 되면 이제 `TensorFlow GPU`를 세팅해 보겠습니다.
 
 <br><br>
 
@@ -76,7 +77,7 @@ print(device_lib.list_local_devices())
 
 ![image](https://user-images.githubusercontent.com/78892113/166945857-60e5684a-364e-497e-b388-5d1accbc64a0.png){: .align-center}
 
-그러면 위와 같은 결과가 나오게 되고  
+그러면 위와 같은 결과가 나오게 되고 마지막은 다음과 같은 결과를 볼 수 있습니다.  
 
 ```bash
 Skipping registering GPU devices...
@@ -90,7 +91,7 @@ xla_global_id: -1
 ]
 ```
 
-마지막은 위와 같은 결과가 있는 것을 볼 수 있습니다. 이를 통해 아직은 CPU만 사용이 가능한 것을 알 수 있습니다.
+이를 통해 아직은 CPU만 사용이 가능한 것을 알 수 있습니다.
 
 <br><br>
 
@@ -98,7 +99,7 @@ xla_global_id: -1
 
 <br>
 
-위에서 확인했던 나의 NVIDIA 그래픽카드의 종류를 확인하고 NVIDIA 홈페이지에서 드라이버를 다운로드합니다.  
+위에서 확인했던 나의 `NVIDIA` 그래픽카드의 종류를 확인하고 NVIDIA 홈페이지에서 <u>드라이버를 다운로드</u>합니다.  
 
 <a href="https://www.nvidia.com/download/index.aspx?lang=en-us">NVIDIA 드라이버 다운로드</a>  
 
@@ -106,8 +107,7 @@ xla_global_id: -1
 
 <br>
 
-각자에 맞는 버전을 세팅하고 검색합니다. 이후에 나오는 결과 파일을 다운로드해서 설치합니다.
-설치가 완료되면 다음과 같은 명령어로 설치가 잘 되어있는지 확인합니다.
+&nbsp;각자에 맞는 버전을 세팅하고 검색합니다. 이후에 나오는 결과 파일을 다운로드해서 설치합니다. 설치가 완료되면 다음과 같은 명령어로 설치가 잘 되어있는지 확인합니다.
 
 ```bash
 $ nvidia-smi
@@ -115,7 +115,7 @@ $ nvidia-smi
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/7c68fc30-b2ec-4b09-a1ce-01d29d39c87f){: .align-center}
 
-위와 같이 잘 뜨는 것을 확인할 수 있습니다. 여기서 봐야 할 것은 CUDA Version인데 저의 경우 **<span style="color:red">12.2</span>**로 나와있는 것을 보실 수 있습니다.
+&nbsp;위와 같이 잘 뜨는 것을 확인할 수 있습니다. 여기서 봐야 할 것은 `CUDA Version`인데 저의 경우 **<span style="color:red">12.2</span>**로 나와있는 것을 보실 수 있습니다.
 
 ​<br><br>
 
@@ -123,22 +123,18 @@ $ nvidia-smi
 
 <br>
 
-이제 나의 CUDA 버전을 확인하였으니 Toolkit을 설치합시다.
+이제 나의 CUDA 버전을 확인하였으니 `Toolkit`을 설치합시다.
 
 <a href="https://developer.nvidia.com/cuda-toolkit-archive">CUDA Toolkit</a> 
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/63400205-dbb3-4a7a-ac64-0957e94b72a3){: .align-center}
 
-위의 사이트로 들어가면 굉장히 많은 버전의 CUDA Toolkit이 있는 것을 보실 수 있는데 각자의 CUDA 버전에 맞는 것을 확인하여 다운로드 진행합니다. 저의 경우 12.2.0 버전을 선택하였습니다.
+위의 사이트로 들어가면 굉장히 많은 버전의 `CUDA Toolkit`이 있는 것을 보실 수 있는데 각자의 CUDA 버전에 맞는 것을 확인하여 다운로드 진행합니다. 저의 경우 `12.2.0` 버전을 선택하였습니다.
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/8d6a8481-fd15-4546-b14e-753a2633b3cf)
 {: .align-center}
 
-그러면 위와 같이 다음 화면이 나오는데 각자의 환경에 맞게 선택을 합니다. 
-
-저의 경우 Ubuntu 22.04를 이용하고 있기 때문에 <u>[Linux] - [x86_64] - [Ubuntu] - [22.04] - [deb(local)]</u> 을 선택하였습니다. 
-
-그러면 저의 경우 아래와 같이 명령어 가이드가 나오게 되는데 이를 하나씩 실행하겠습니다.
+&nbsp;그러면 위와 같이 다음 화면이 나오는데 각자의 환경에 맞게 선택을 합니다. 저의 경우 <u>Ubuntu 22.04</u>를 이용하고 있기 때문에 `[Linux] - [x86_64] - [Ubuntu] - [22.04] - [deb(local)]` 을 선택하였습니다. 그러면 저의 경우 아래와 같이 명령어 가이드가 나오게 되는데 이를 하나씩 실행하겠습니다.
 
 ```bash
 $ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
@@ -150,7 +146,7 @@ $ sudo apt-get update
 $ sudo apt-get -y install cuda
 ```
 
-설치가 완료되면 다음 단계로 환경 변수를 설정합니다.
+설치가 완료되면 다음 단계로 `환경 변수`를 설정합니다.
 
 <br><br>
 
@@ -158,7 +154,7 @@ $ sudo apt-get -y install cuda
 
 <br>
 
-다음으로는 CUDA에 대한 환경 변수를 설정해야 합니다.
+&nbsp;다음으로는 CUDA에 대한 환경 변수를 설정해야 합니다. 아래와 같이 환경 변수를 설정하도록 합니다.
 
 ```bash
 # sudo vim /etc/profile
@@ -172,7 +168,7 @@ $ source /etc/profile
 
 <br>
 
-다음으로 nvcc 명령어를 통해 CUDA driver 버전을 확인합니다.
+다음으로 nvcc 명령어를 통해 `CUDA driver` 버전을 확인합니다.
 
 ```bash
 $ nvcc -V
@@ -187,7 +183,7 @@ $ nvcc -V
 
 <br>
 
-CUDA를 설치한 이후에는 cuDNN SDK를 다운로드해야 합니다. 
+CUDA를 설치한 이후에는 `cuDNN SDK`를 다운로드해야 합니다. 
 
 <a href="https://developer.nvidia.com/cudnn">cuDNN SDK 다운로드</a> 
 
@@ -195,7 +191,7 @@ CUDA를 설치한 이후에는 cuDNN SDK를 다운로드해야 합니다.
 
 <br>
 
-위의 사이트로 이동하여 **<span style="color:red">Download cuDNN Library</span>** 버튼을 선택합니다.
+위의 사이트로 이동하여 `Download cuDNN Library` 버튼을 선택합니다.
 
 ![image](https://user-images.githubusercontent.com/78892113/166948269-b17fbe38-dba4-4b87-bf86-90eb7448715d.png){: .align-center}
 
@@ -213,11 +209,11 @@ CUDA를 설치한 이후에는 cuDNN SDK를 다운로드해야 합니다.
 
 <br>
 
-그러면 위와 같이 나오는데 저는 **<span style="color:red">Download cuDNN v8.9.5 [September 12th, 2023], for CUDA 12.x</span>**를 선택합니다.
+그러면 위와 같이 나오는데 저는 `Download cuDNN v8.9.5 [September 12th, 2023], for CUDA 12.x`를 선택합니다.
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/0066062d-2b1b-4fc6-957f-e67a81333797){: .align-center}{: width="80%" height="80%"}
 
-그리고 **<span style="color:red">Local Installer for Linux x86_64 (Tar)</span>**를 선택해서 다운로드합니다.
+그리고 `Local Installer for Linux x86_64 (Tar)`를 선택해서 다운로드합니다.
 
 ​다운로드가 완료되면 압축을 풀고 파일을 복사합니다.  
 
