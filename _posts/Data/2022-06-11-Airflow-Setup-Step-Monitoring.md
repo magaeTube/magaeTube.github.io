@@ -48,20 +48,13 @@ Airflow를 처음 도입하게 된 배경부터 구축을 넘어 마지막으로
 <br><br>
 
 # 초기 : StatsD + Node Exporter + Prometheus
-
-<br>
-
 &nbsp;처음에는 Airflow 공식 문서에서 제공하는 방법인 `StatsD`를 이용했습니다.  
 &nbsp;StatsD는 NodeJS에서 실행되는 데몬 프로그램입니다. 이를 통해 <u>Airflow의 Counters, Gauges, Timers 통계 정보</u>를 얻을 수 있습니다. 각 정보에 대해서는 <a href="https://airflow.apache.org/docs/apache-airflow/stable/logging-monitoring/metrics.html">공식 문서</a>를 참고하시길 바랍니다. 서비스 측면에서는 `StatsD`를 이용했다면 시스템 측면에서는 `Node Exporter`를 이용했습니다. Node Exporter는 <u>OS 정보나 하드웨어 정보 등 시스템 메트릭을 수집하는 Exporter</u>입니다. 이 Node Exporter로 CPU나 Memory 정보 등을 수집하여 대시보드로 보여주었습니다. `Prometheus`는 모니터링 시스템과 Timeseries 데이터용 데이터베이스입니다. 오픈소스로 메트릭 수집 및 대시보드를 구축하는데 Grafana와 함께 많이 사용합니다. 마지막으로 `Grafana`는 대시보드 툴입니다. 시계열 데이터에 대한 대시보드에 특화되어 있는 대시보드 툴로 Graphite, InfluxDB, Prometheus 등을 지원합니다. 
 
 <br><br>
 
 ## 설치
-
-<br>
-
 ### StatsD
-
 &nbsp;Airflow 서비스들을 모두 Docker로 구성했기 때문에 StatsD 또한 Docker로 구성했습니다. 이미지는 `prom/statsd-exporter`를 이용했습니다.
 
 ```yaml
@@ -195,10 +188,7 @@ scrape_configs:
 <br><br>
 
 # 개선 : Telegraf + InfluxDB + Grafana
-
-<br>
-
-Exporter들과 Prometheus을 이용하다가 `Telegraf`와 `InfluxDB`로 변경하기로 했습니다. 이유는 다음과 같습니다. 
+&nbsp;Exporter들과 Prometheus을 이용하다가 `Telegraf`와 `InfluxDB`로 변경하기로 했습니다. 이유는 다음과 같습니다. 
 
 * StatsD와 Node 각 Exporter를 무겁게 쓰는 것보단 **하나의 Agent**로 관리하자
 * 사내에서 **통합으로 사용**하고 있는 모니터링 시스템에 적용하기로 위해 InfluxDB로 변경하자
@@ -373,9 +363,6 @@ srw-rw-rw- 1 root docker 0 Mar 10 04:21 /var/run/docker.sock
 <br><br>
 
 ### Grafana
-
-<br>
-
 &nbsp;이렇게 `Telegraf`와 `InfluxDB`를 통해 수집된 정보들을 `Grafana`로 대시보드를 구성했습니다. Grafana에서는 기본적으로 다양한 대시보드 템플릿을 제공하고 있습니다. ​위의 사이트에서 각자의 상황에 맞는 `Data Source`, `Collector Types`을 지정하고 검색하면 다양한 대시보드가 나옵니다. 여기서 각자의 버전에 맞고 본인이 생각하기에 이쁜(?) 대시보드를 찾아서 적용하면 됩니다. InfluxDB의 경우 1.x나 2.x의 Query 방식 자체가 다르기 때문에 반드시 본인의 InfluxDB에 맞는 것을 찾아서 적용해야 합니다. 
 &nbsp;시스템 메트릭의 경우 마음에 드는 대시보드를 이용해서 적용하고 그 외에는 Docker와 Airflow에 대한 정보를 따로 적용했습니다.
 
@@ -387,4 +374,4 @@ srw-rw-rw- 1 root docker 0 Mar 10 04:21 /var/run/docker.sock
 <br><br>
 
 # 결론
-&nbsp;총 4편으로 Airflow를 처음에 구축하고 개선, 모니터링까지 했던 경험을 정리해 보았습니다. Elasticsearch에 데이터 로그 축적하기, 모니터링을 더 구체적으로 하기 등 더 개선해야 할 부분들은 있다고 생각합니다. 이러한 개선 작업들에 대해서는 추후에 하나씩 개선하고 포스팅하도록 하겠습니다.
+&nbsp;총 4편으로 Airflow를 처음에 구축하고 개선, 모니터링까지 했던 경험을 정리해 보았습니다. `Elasticsearch`에 데이터 로그 축적하기, 모니터링을 더 구체적으로 하기 등 더 개선해야 할 부분들은 있다고 생각합니다. 이러한 개선 작업들에 대해서는 추후에 하나씩 개선하고 포스팅하도록 하겠습니다.
