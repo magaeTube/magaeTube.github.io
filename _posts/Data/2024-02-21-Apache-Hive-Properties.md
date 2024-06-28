@@ -22,7 +22,7 @@ header-mask: true
 
 <br><br>
 
-|속성명|기본값| 설명                                                                      |버전
+|속성명|기본값| 설명                                                                      |버전|
 |----|----|-------------------------------------------------------------------------|--|
 |hive.compute.query.using.stats|false| 통계 정보 수집을 위한 설정으로 min, max, count(1) 같은 정보를 메타스토어에 저장함.                 ||
 |hive.exec.dynamic.partition|false| DML/DDL에 파티션 동적 할당을 허용할지 말지 설정                                          ||
@@ -53,4 +53,4 @@ header-mask: true
 |hive.exec.reducers.bytes.per.reducer|256MB|리듀서당 사이즈|0.14.0|
 |hive.exec.reducers.max|1009|리듀서의 최대 개수|0.14.0|
 |hive.strict.checks.large.query|true|order by 개수에 대한 제한을 걸지 않고 파티션 테이블에 필터링을 하지 않는 경우 제한됨||
-hive.blobstore.use.output-committer
+|hive.blobstore.use.output-committer||||
