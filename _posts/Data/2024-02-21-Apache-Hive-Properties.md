@@ -22,6 +22,8 @@ header-mask: true
 
 <br><br>
 
+* <a href="https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties">https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties</a>
+
 |속성명|기본값| 설명                                                                      |버전|
 |----|----|-------------------------------------------------------------------------|--|
 |hive.compute.query.using.stats|false| 통계 정보 수집을 위한 설정으로 min, max, count(1) 같은 정보를 메타스토어에 저장함.                 ||
