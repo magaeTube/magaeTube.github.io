@@ -7,7 +7,9 @@ tags:
   - Python
   - AWS
   - Boto3
-toc: false
+toc: true
+toc_sticky: true
+toc_label: "Boto3 NoCredentialError"
 header-img: https://user-images.githubusercontent.com/78892113/208301254-de81f938-1a15-4cae-a45e-74f87861000f.png
 header-mask: true
 
