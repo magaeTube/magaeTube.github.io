@@ -1,6 +1,6 @@
 ---
 title:  "[BI] Apache Superset 설치"
-date:   2020-11-05 00:00:00 +0900
+date:   2020-11-04 00:00:00 +0900
 categories:
   - Data
   - Superset
