@@ -7,6 +7,9 @@ tags:
   - Tool
   - Git
 header-img: https://github.com/magaeTube/magaeTube.github.io/assets/78892113/f42a15cb-4401-4810-88e6-d777ee29ee52
+toc: true
+toc_sticky: true
+toc_label: "GIT Error"
 header-mask: true
 
 ---
