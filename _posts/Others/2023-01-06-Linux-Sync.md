@@ -15,7 +15,7 @@ Linux 서버 2개가 있을 때 2개 서버 간에 양방향으로 파일을 동
 
 <br>
 
-# lsyncd, rsync 설치 및 대상 디렉터리 생성 (A, B서버 모두)
+## lsyncd, rsync 설치 및 대상 디렉터리 생성 (A, B서버 모두)
 
 ```sh
 $ sudo apt-get update
@@ -52,7 +52,7 @@ $ sudo chown -R magae:magae /data
 
 <br>
 
-# ssh-keygen 공유 (A, B서버 모두)
+## ssh-keygen 공유 (A, B서버 모두)
 
 ```sh
 # 키 생성
@@ -84,7 +84,7 @@ $ ssh magae@상대서버IP
 
 <br>
 
-# lsync config파일 작성 (A, B서버 모두)
+## lsync config파일 작성 (A, B서버 모두)
 
 ```sh
 $ cd /etc
@@ -119,7 +119,7 @@ sync {
 
 <br>
 
-# lsync log 디렉터리 및 파일 생성 후 시스템 재시작
+## lsync log 디렉터리 및 파일 생성 후 시스템 재시작
 
 ```sh
 $ cd /var/log
@@ -133,7 +133,7 @@ $ sudo systemctl enable lsyncd
 
 <br>
 
-# lsync 로그를 통해 확인
+## lsync 로그를 통해 확인
 
 ```sh
 $ tail -1000f lsyncd.log
@@ -148,7 +148,7 @@ Fri Jan  6 10:43:41 2023 Normal: Startup of "/data/" finished: 0
 
 <br>
 
-# 테스트
+## 테스트
 ```sh
 # A서버
 $ cd /data
