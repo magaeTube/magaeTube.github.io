@@ -103,7 +103,7 @@ None
 
 <br><br>
 
-# Converts 이용
+## Converts 이용
 
 Pandas의 `read_csv` 파라미터를 보면 `converters`라는 파라미터가 있습니다. `converters`는 특정 컬럼의 값들을 변환시키는 함수를 적용하는 파라미터입니다. read_csv 파라미터들에 대한 상세한 설명은 <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_csv.html">URL</a>을 참고해 주세요.
 
@@ -140,7 +140,7 @@ None
 
 <br><br>
 
-# dtype 이용
+## dtype 이용
 
 두 번째 방법으로는 `read_csv` 메서드의 `dtype` 파라미터를 이용하는 방법입니다. `dtype` 파라미터는 read_csv 메서드를 통해 데이터를 불러올 때 컬럼들의 데이터 타입을 미리 정의하는 방법입니다. 미리 정의한 후에 CSV 파일을 불러오기 때문에 지정한 타입들로 데이터를 불러올 수 있는 것입니다. 예제로 보겠습니다.
 
