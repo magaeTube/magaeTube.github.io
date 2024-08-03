@@ -25,7 +25,7 @@ header-mask: true
 
 <br>
 
-# GCP 접속
+## GCP 접속
 
 <a href="https://cloud.google.com">GCP URL</a>로 접속합니다.
 
@@ -43,7 +43,7 @@ header-mask: true
 
 <br><br>
 
-# 새로운 프로젝트 생성
+## 새로운 프로젝트 생성
 
 새로운 프로젝트를 만들어서 진행해봅시다.
 
@@ -72,7 +72,7 @@ header-mask: true
 
 <br><br>
 
-# BigQuery로 넘어가기
+## BigQuery로 넘어가기
 
 이렇게 되면 프로젝트 생성은 완료가 되었습니다. 이제 BigQuery를 이용해보도록 하겠습니다.  
 메인 페이지에서 왼쪽에 목록을 보면 아랫부분에 **`[빅데이터]`** 안에 **`[BigQuery]`**가 있는 것을 확인할 수 있습니다. 
