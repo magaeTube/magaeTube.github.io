@@ -10,6 +10,10 @@ tags:
   - NoSQL
 ---
 
+&nbsp;안녕하세요 마개입니다.  
+MongoDB를 이용해서 개발할 때 일어난 에러에 대해 공유합니다.  
+{: .notice--info}
+
 <br><br>
 
 MongoDB를 이용해서 Collection을 생성할 때 아래와 같은 에러가 발생할 수 있다.
