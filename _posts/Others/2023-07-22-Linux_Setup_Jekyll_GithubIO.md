@@ -15,7 +15,7 @@ tags:
 
 <br><br>
 
-# Ruby 설치
+## Ruby 설치
 
 Jekyll는 Ruby 환경에서 돌아가기 때문에 Ruby를 설치해야 합니다. 이에 따라 먼저 이 과정을 진행합니다.
 
@@ -40,7 +40,7 @@ $ source ~/.bashrc
 
 <br><br>
 
-# Jekyll 설치
+## Jekyll 설치
 
 Jekyll는 위에서 설정했던 gem을 이용해서 설치하도록 합니다. 
 
@@ -50,7 +50,7 @@ $ gem install jekyll bundler
 
 <br><br>
 
-# 의존성 버전 패키지 설치 및 실행하기
+## 의존성 버전 패키지 설치 및 실행하기
 
 기존에 만들어놓았던 Github IO가 있다면 해당 프로젝트를 clone을 해온 뒤에 작업합니다. 
 
