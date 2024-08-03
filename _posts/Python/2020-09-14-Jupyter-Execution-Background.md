@@ -25,7 +25,7 @@ header-mask: true
 
 <br><br>
 
-# Jupyter Notebook 실행하기
+## Jupyter Notebook 실행하기
 
 Jupyter가 설치된 가상환경에서 다음을 실행합니다.
 
@@ -91,7 +91,7 @@ jupyter notebook --allow-root --config /root/.jupyter/jupyter_notebook_config.py
 
 <br><br>
 
-# 시작 경로 변경하기
+## 시작 경로 변경하기
 
 이번에는 실행했을 때 나오는 폴더의 위치를 변경해봅니다. ctrl + c를 눌러서 서버를 종료 시킨 후에 **`config`** 파일을 변경합니다. 
 
