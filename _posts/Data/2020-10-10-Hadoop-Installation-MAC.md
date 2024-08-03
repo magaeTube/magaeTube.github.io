@@ -25,7 +25,7 @@ header-mask: true
 
 <br><br>
 
-# 설치
+## 설치
 
 하둡의 경우 <a href="https://hadoop.apache.org/releases.html">홈페이지</a>에서 원하는 버전을 이용해서 다운로드합니다. 다운로드한 `tar.gz` 압축파일을 해제합니다.
 
@@ -58,7 +58,7 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 <br><br>
 
-# 환경 설정
+## 환경 설정
 
 하둡의 각 구성요소에 대한 설정은 주로 `XML` 파일을 이용합니다.
 * 공통 속성 : core-site.xml
@@ -80,7 +80,7 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 <br>
 
-## core-site.xml 수정
+### core-site.xml 수정
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -96,7 +96,7 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 <br>
 
-## hdfs-site.xml 수정
+### hdfs-site.xml 수정
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -112,7 +112,7 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 <br>
 
-## mapred-site.xml 수정
+### mapred-site.xml 수정
 
 ```xml
 <?xml version="1.0"?>
@@ -128,7 +128,7 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 
 <br>
 
-## yarn-site.xml 수정
+### yarn-site.xml 수정
 
 ```xml
 <?xml version="1.0"?>
@@ -162,7 +162,7 @@ hdfs namenode -format
 
 <br><br>
 
-# 시작
+## 시작
 
 **데몬 시작**
 
