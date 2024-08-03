@@ -25,7 +25,7 @@ Jupyter Notebook을 설치 완료하고 백그라운드 실행을 완료하였�
 
 <br><br>
 
-# service 생성
+## service 생성
 
 Ubuntu 환경에서 진행을 하고 여기서는 service 파일을 생성해서 진행해봅니다.
 
@@ -72,7 +72,7 @@ WantedBy=multi-user.target
 
 <br><br>
 
-# service 등록
+## service 등록
 
 위와 같이 service를 생성했다면 이를 등록합니다.
 
@@ -84,7 +84,7 @@ systemctl start jupyter.service
 
 <br><br>
 
-# 확인
+## 확인
 
 ![image](https://user-images.githubusercontent.com/78892113/209921409-e32fe0b6-48f4-4fe0-a984-75bd8002cc51.png)
 
