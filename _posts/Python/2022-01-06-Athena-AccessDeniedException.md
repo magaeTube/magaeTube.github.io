@@ -30,7 +30,7 @@ Python에서 AWS의 `Athena`를 이용할 때 발생한 에러를 다뤄보고�
 
 <br>
 
-# 에러 파악
+## 에러 파악
 &nbsp;Python에서 Athena를 이용하려고 할 때 `AccessDeniedException` 에러가 발생할 수 있습니다. 정확히는 아래 코드를 보도록 하겠습니다.
 
 <br>
@@ -75,7 +75,7 @@ botocore.exceptions.ClientError: An error occurred (AccessDeniedException) when 
 
 <br>
 
-# 원인 분석 및 해결
+## 원인 분석 및 해결
 AWS Console에 접속하여 `IAM`으로 이동합니다.  
 
 <br>
