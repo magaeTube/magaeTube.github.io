@@ -25,7 +25,7 @@ Python의 Pandas를 이용하여 구글 스프레드시트에 데이터를 업�
 
 <br><br>
 
-# GCP 서비스 계정 생성
+## GCP 서비스 계정 생성
 
 &nbsp;구글 스프레드시트 API를 이용하기 위해서는 GCP에 계정을 만들어야 합니다. 아래의 링크를 통해 접속하여 계정을 생성합니다. 저는 이미 계정이 있기 때문에 이 과정은 생략합니다.
 * <a href="https://console.cloud.google.com/apis/dashboard">https://console.cloud.google.com/apis/dashboard</a>
@@ -77,7 +77,7 @@ Python의 Pandas를 이용하여 구글 스프레드시트에 데이터를 업�
 
 <br><br>
 
-# 구글 스프레드시트 API 설정
+## 구글 스프레드시트 API 설정
 
 &nbsp;다음으로는 스프레드시트 API를 설정하고 시트와 연동해봅니다.
 
@@ -108,7 +108,7 @@ Python의 Pandas를 이용하여 구글 스프레드시트에 데이터를 업�
 
 <br><br>
 
-# 파이썬 테스트
+## 파이썬 테스트
 &nbsp;API 키를 생성하고 작업하고자 하는 구글 스프레드시트에 연동을 했다면 이제 파이썬을 이용해서 테스트해봅니다.  
 파이썬에서 SpreadSheet를 사용하기 위해서는 gspread 패키지가 필요합니다. 아래와 같이 설치합니다.
 
