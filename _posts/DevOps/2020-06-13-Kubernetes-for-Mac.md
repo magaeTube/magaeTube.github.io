@@ -23,7 +23,7 @@ header-mask: true
 
 <br>
 
-# 설치 
+## 설치 
 
 ![image](https://user-images.githubusercontent.com/78892113/212546403-4ad0b375-d6a6-411d-8a8b-2b7ed1c55a03.png){: .align-center}
 
