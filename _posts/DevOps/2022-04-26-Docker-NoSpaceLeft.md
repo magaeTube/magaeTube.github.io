@@ -34,9 +34,7 @@ AWS EC2에서 `Docker`를 운영하다 디스크 용량이 가득 차서 점검�
   
 <br><br>
 
-# 원인 찾기
-  
-<br>
+## 원인 찾기
 
 &nbsp;디스크 용량이 가득 차서 Airflow가 실행되지 않는 것을 보고 원인을 찾아 나섰습니다.
 
@@ -63,13 +61,9 @@ $ du -h --max-depth=1 /var/lib
 
 <br><br>
 
-# 해결책
+## 해결책
 
-<br>
-
-## 미사용 중인 이미지와 컨테이너 삭제
-
-<br>
+### 미사용 중인 이미지와 컨테이너 삭제
 
 ```bash
 $ docker system prune -a -f
@@ -103,7 +97,7 @@ $ sudo chmod 755 /var/lib/docker
 
 <br>
 
-## 로그 삭제
+### 로그 삭제
 &nbsp;해당 디렉터리에는 컨테이너의 `로그`가 쌓이는 디렉터리입니다.
 
 ![image](https://user-images.githubusercontent.com/78892113/166473671-1f042381-1d1f-4ee1-afff-885467486035.png){: .align-center}{: width="80%" height="80%"}
@@ -126,11 +120,9 @@ $ sudo truncate -s 0 e941de3b2cf970010b3727fddcb4e29a1c95e98e8471151e7a5b48c5157
 
 <br><br>
 
-# 근본 원인 해결하기
+## 근본 원인 해결하기
 
-<br>
-
-## 로그 데이터 용량 제한
+### 로그 데이터 용량 제한
 &nbsp;저는 `docker-compose`를 이용하여 `Telegraf` 서비스를 생성하였습니다. 해당 서비스가 많은 로그 데이터를 쌓기 때문에 파일 사이즈에 제한을 두어야 합니다. 그래서 로그 제한은 `docker-compose`파일에 지정하였습니다.
 
 ```yaml
