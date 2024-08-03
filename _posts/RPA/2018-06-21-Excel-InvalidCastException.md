@@ -12,10 +12,14 @@ toc_sticky: true
 toc_label: "엑셀 오류"
 ---
 
+&nbsp;안녕하세요 마개입니다.  
+UiPath를 이용해서 엑셀작업을 할 때 한번쯤은 발생할 수 있는 에러 내용에 대해 공유합니다.  
+{: .notice--info}
+
 <br>
 
 
-# 에러 상황
+## 에러 상황
 ---
 
 <br>
@@ -29,7 +33,7 @@ UiPath의 Excel Application Scope를 이용할 때 다음과 같은 에러가 �
 
 <br><br>
 
-# 처리 방법
+## 처리 방법
 ---
 
 * 위에서 노란색으로 친 CLSID를 복사합니다.
