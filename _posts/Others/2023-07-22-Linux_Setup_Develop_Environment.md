@@ -18,7 +18,8 @@ toc_label: "개발 환경 세팅"
 
 <br><br>
 
-# Vim
+## Vim
+---
 
 &nbsp;Linux 환경에서는 기본 편집기가 vi로 실행이 됩니다. 하지만 이보다 더 좋은 `Vim`을 이용해서 개발을 합니다. Vim은 vi의 호환 버전이라고 보면 되는데 이를 이용하기 위해 설치해봅니다.
 
@@ -31,7 +32,8 @@ $ sudo apt-get install vim
 
 <br><br>
 
-# Git
+## Git
+---
 
 &nbsp;`Git`은 소스 코드의 버전 관리를 위한 툴입니다. Vim은 처음에 설치되어 있지만 Git의 경우 설치되어 있지 않습니다. 그렇기에 직접 설치하도록 하겠습니다.
 
@@ -49,7 +51,7 @@ $ git version
 
 <br>
 
-## Git User 정보 설정
+### Git User 정보 설정
 
 &nbsp;`Git`을 처음 설치하면 유저명과 이메일 주소를 먼저 설정하고 이용해야 합니다. 이는 Commit과 Push 등 여러 이력을 추적하는데 사용되기 때문이죠. 개발 환경에 따라 다르게 설정할 수 있지만 일단은 Global 세팅을 진행합니다.
 
@@ -67,7 +69,8 @@ $ git config user.email
 
 <br><br>
 
-# 폰트 적용
+## 폰트 적용
+---
 
 &nbsp;모든 어플을 사용하는 일반 고객들에게도 `가독성`이 중요하듯이 개발을 하는 개발자들에게도 가독성은 매우 중요합니다. 대문자 I와 소문자 l을 구분한다거나 숫자 0과 대문자 O를 구분한다거나 글자 간의 크기가 일정하다거나 등등 이러한 것들이 `가독성`에 중요할 수 있습니다. 우리나라의 경우 한글도 참고해서 폰트에 신경을 써야하는데 각자가 선호하는 스타일의 폰트를 찾아서 적용해야 합니다.  
 
@@ -113,7 +116,8 @@ $ sudo fc-cache -f -v
 
 <br><br>
 
-# Pycharm
+## Pycharm
+---
 
 &nbsp;저는 현재 데이터 엔지니어로서 일을 하고 있어서 `Pycharm`은 가장 많이 사용하는 개발 툴 중에 하나입니다. Pycharm을 설치하고 유용한 Plugins도 설치해봅니다. 
 
@@ -144,7 +148,7 @@ $ ./pycharm-community-2023.1.4/bin/pycharm.sh
 
 <br>
 
-## Applications 생성
+### Applications 생성
 
 &nbsp;이 상태에서 실행하면 Ubuntu의 Applications에는 `Pycharm`이 보이지 않습니다. Applications에서 사용하기 위한 작업을 진행합니다. 떠있는 팝업창은 종료하고 다음 작업을 진행합니다.
 
@@ -173,7 +177,7 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-## Font
+### Font
 
 위에서 설치했던 `D2Coding` 폰트를 Pycharm에 적용하도록 합니다. 
 
@@ -183,13 +187,13 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-## Plugins
+### Plugins
 
 개발을 하는데 있어 Pycharm에서 사용할 수 있는 유용한 Plugin을 몇 가지 설치하겠습니다.
 
 <br>
 
-### IdeaVim
+#### IdeaVim
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/b7b04225-e1cd-4fc8-ac47-3007edc568bf)
 
@@ -197,7 +201,7 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-### Rainbow Brackets
+#### Rainbow Brackets
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/1bdb3ba5-571a-4568-846f-34cc80d9df67)
 
@@ -205,7 +209,7 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-### Atom material Icons
+#### Atom material Icons
 
 ![Screenshot from 2023-07-16 17-34-06](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/959bce31-8053-4f90-add9-2a90bd5d8b8b)
 
@@ -213,14 +217,15 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br><br>
 
-# Visual Studio Code
+## Visual Studio Code
+---
 
 &nbsp;Python 작업을 할 때는 Pycharm을 주로 이용하지만 그외 웹이나 다른 작업을 할 때는 `Visual Studio Code`를 많이 이용합니다. 그렇기 때문에 해당 프로그램도 설치를 진행해보겠습니다.  
 프로그램 다운로드의 경우 **<a href="https://code.visualstudio.com/download">공식 홈페이지</a>**에서 설치하면 됩니다. 설치가 완료되면 이번에도 Font를 적용하고 유용한 Extensions에 대해 알아보겠습니다.
 
 <br>
 
-## Font
+### Font
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/3b16c2bd-ac57-4e18-a646-1e1e845e1ba3)
 
@@ -228,13 +233,13 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-## Extensions
+### Extensions
 
 &nbsp;Pycharm에서는 Plugins을 설치하여 여러 유용한 기능들을 이용한다면 VSC에도 Extensions라는 기능으로 유용한 기능들을 사용할 수 있습니다. 유용한 기능들을 알아보도록 합니다. 
 
 <br>
 
-### Project Manager
+#### Project Manager
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/8a2553b0-788c-48cc-a5ce-7d00a3aceda8)
 
@@ -248,7 +253,7 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-### Code Runner
+#### Code Runner
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/15180616-37da-4adb-b8e0-84dfa010f595)
 
@@ -256,7 +261,7 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-### Error Lens
+#### Error Lens
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/d0885bda-57ff-4c9f-a53f-92636dd45a23)
 
@@ -264,7 +269,7 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-### Output Colorizer
+#### Output Colorizer
 
 ![Output Colorizer](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/123c90bd-827b-4f91-b7ca-e4cf151d57e9)
 
@@ -272,7 +277,7 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-### Log File Highlighter
+#### Log File Highlighter
 
 ![Log File Highlighter](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/f55867f1-6503-4d95-a006-88da9cda7965)
 
@@ -280,7 +285,7 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-### Rainbow CSV
+#### Rainbow CSV
 
 ![Rainbow CSV](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/dfeb1157-9e78-464a-a538-249bc353218f)
 
@@ -288,7 +293,7 @@ $ sudo chmod 775 /usr/share/applications/pycharm.desktop
 
 <br>
 
-### Better Shell Syntax
+#### Better Shell Syntax
 
 ![Better Shell Syntax](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/eb9bf693-8629-47f1-b6c4-70fbd104496a)
 
