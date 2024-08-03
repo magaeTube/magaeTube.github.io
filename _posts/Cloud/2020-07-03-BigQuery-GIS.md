@@ -42,7 +42,7 @@ BigQuery는 GIS 기능을 제공하여 효과적인 시각화를 제공한다고
 
 <br><br>
 
-# 예제에 맞는 Query 작성
+## 예제에 맞는 Query 작성
 
 해당 예제에 맞게 결과가 나오도록 먼저 쿼리를 짜야 하는데요. 쿼리를 작성할 때는 **`ANSI-SQL`** 방식으로 작성을 하면 됩니다. 하나 추가해야 하는 것이 지도에 표시하기 위해서 위도와 경도를 이용하고 `GEOGRAPHY` 형태로 변환시키는 작업이 필요합니다. 이럴 때 사용되는 함수가 **`ST_GeogPoint(경도, 위도)`**입니다. 그러면 해당 내용을 가지고 쿼리를 작성합니다. (데이터 수가 많아서 30개로만 제한을 걸었습니다.)
 
@@ -66,13 +66,13 @@ SELECT country_region,
 
 <br><br>
 
-# BigQuery Geo Viz에서 결과 시각화 
+## BigQuery Geo Viz에서 결과 시각화 
 
 **`BigQuery Geo Viz`**는 Google Maps API를 이용하여 BigQuery에서 지리 공간 데이터를 시각화하는 웹 도구를 말합니다. 해당 도구를 이용하기 위해서는 데이터에 대한 액세스 권한을 먼저 인증하고 부여해야 합니다. 
 
 <br>
 
-## Geo Viz 이동 및 데이터 허용
+### Geo Viz 이동 및 데이터 허용
 
 <a href="https://bigquerygeoviz.appspot.com/?hl=ko">URL</a>을 통해 페이지를 이동하면 다음과 같은 페이지가 나오게 됩니다.
 
@@ -84,7 +84,7 @@ SELECT country_region,
 
 <br>
 
-## Query 작성
+### Query 작성
 
 ![image](https://user-images.githubusercontent.com/78892113/209806790-bf03c7e6-2969-4690-b141-0fb13337ec8b.png){: .align-center}
 
@@ -92,7 +92,7 @@ SELECT country_region,
 
 <br>
 
-## 데이터 확인, 위치 설정
+### 데이터 확인, 위치 설정
 
 ![image](https://user-images.githubusercontent.com/78892113/209806800-cb4e37e7-97d6-489e-97b0-90b4a389c52f.png){: .align-center}
 
