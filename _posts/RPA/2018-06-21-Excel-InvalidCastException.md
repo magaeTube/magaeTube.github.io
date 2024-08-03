@@ -22,8 +22,6 @@ UiPath를 이용해서 엑셀작업을 할 때 한번쯤은 발생할 수 있는
 ## 에러 상황
 ---
 
-<br>
-
 UiPath의 Excel Application Scope를 이용할 때 다음과 같은 에러가 발생할 수 있습니다. 
 
 ![image](https://user-images.githubusercontent.com/78892113/143771933-0ffee76e-09d6-4105-8930-d0d3f3bb39ab.png)
