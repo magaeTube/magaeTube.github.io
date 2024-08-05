@@ -26,10 +26,9 @@ Elasticsearch에서 하나의 필드가 아니라 여러 필드에 쿼리를 하
 <br><br>
 
 
-# Multi Match 개념과 사용법
----
+## Multi Match 개념과 사용법
 
-ES에서 여러 필드에 쿼리를 하고자 할 때 `multi_match`를 이용하여 여러 필드를 쿼리할 수 있습니다. 가장 기본적인 사용법을 먼저 보겠습니다.
+&nbsp;ES에서 여러 필드에 쿼리를 하고자 할 때 `multi_match`를 이용하여 여러 필드를 쿼리할 수 있습니다. 가장 기본적인 사용법을 먼저 보겠습니다.
 
 ```sh
 GET /_search
@@ -81,10 +80,9 @@ GET /_search
 
 <br><br>
 
-# multi_match 타입
----
+## multi_match 타입
 
-`multi_match`는 내부적으로 정의되는 `type` 파라미터에 따라 실행법이 달라집니다. 
+&nbsp;`multi_match`는 내부적으로 정의되는 `type` 파라미터에 따라 실행법이 달라집니다. 
 
 * `best_fields` : 기본값으로 모든 필드에 매치되는 도큐먼트를 찾지만 가장 잘 맞는 필드의 `_score`를 이용합니다.
 * `most_fields` : 모든 필드에나 매치되는 도큐먼트를 찾아서 각 필드의 `_score`를 결합합니다.
@@ -95,8 +93,8 @@ GET /_search
 
 <br>
 
-## best_fields
-`best_fields`는 동일 필드에서 가장 많이 발견되는 여러 단어를 검색할 때 유용합니다.  
+### best_fields
+&nbsp;`best_fields`는 동일 필드에서 가장 많이 발견되는 여러 단어를 검색할 때 유용합니다.  
 예를 들면 한 필드에서 “brown fox”가 한 필드의 “brown”과 다른 필드의 “fox”보다 의미있습니다.
 
 <br>
@@ -140,9 +138,9 @@ GET /_search
 
 <br>
 
-## most_fields
+### most_fields
 
-`most_fields` 타입은 다른 방법으로 분석된 같은 텍스트가 포함된 여러 필드를 검색할 때 유용합니다. 모든 Field에 대해 Match되는 각 field에 대해 점수를 계산하고 모두 합한다. 예시를 보도록 하겠습니다.
+&nbsp;`most_fields` 타입은 다른 방법으로 분석된 같은 텍스트가 포함된 여러 필드를 검색할 때 유용합니다. 모든 Field에 대해 Match되는 각 field에 대해 점수를 계산하고 모두 합한다. 예시를 보도록 하겠습니다.
 
 ```sh
 GET /_search
@@ -178,9 +176,9 @@ GET /_search
 
 <br>
 
-## phrase and phrase_prefix
+### phrase and phrase_prefix
 
-`phrase`와 `phrase_prefix` 타입들은 `best_fields` 처럼 동작하지만 `match` 쿼리 대신에 `match_phrase` 또는 `match_phrase_prefix` 쿼리를 사용합니다.
+&nbsp;`phrase`와 `phrase_prefix` 타입들은 `best_fields` 처럼 동작하지만 `match` 쿼리 대신에 `match_phrase` 또는 `match_phrase_prefix` 쿼리를 사용합니다.
 
 <br>
 
@@ -217,9 +215,9 @@ GET /_search
 
 <br>
 
-## cross_fields
+### cross_fields
 
-`cross_fields`는 여러 필드들이 매치되는 구조화된 도큐먼트에 유용합니다.  
+&nbsp;`cross_fields`는 여러 필드들이 매치되는 구조화된 도큐먼트에 유용합니다.  
 예를 들어 `first_name` 과 `last_name` 필드들에 “Will Smith”를 검색한다면 가장 좋은 매치는 한쪽 필드에는 “Will” 다른 한쪽에는 “Smith”가 검색되도록 하는 것입니다.  
 이러한 방식의 쿼리 중 하나의 방법은 `first_name` 과 `last_name` 필드들을 `full_name` 하나의 필드에 입력하는 것입니다.  
 
