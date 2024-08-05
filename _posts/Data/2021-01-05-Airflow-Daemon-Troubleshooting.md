@@ -16,6 +16,10 @@ header-mask: true
 
 ---
 
+&nbsp;안녕하세요 마개입니다.  
+Airflow를 이용하다가 갑자기 Daemon이 실행되지 않는 경우가 있습니다. 이런 경우에 대해 알아봅니다.  
+{: .notice--info}
+
 ![image](https://user-images.githubusercontent.com/78892113/169574664-4efcf70e-f846-4919-9a00-730e8f799fe6.png){: .align-center}{: width="80%" height="80%"}
 
 <br>
