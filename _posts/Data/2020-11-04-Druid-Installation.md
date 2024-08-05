@@ -27,20 +27,20 @@ Docker를 이용하는 방법과 Docker를 이용하지 않는 방법이 있는�
 
 <br><br>
 
-# 필요사항
+## 필요사항
 
 * **OS** : Linux, Mac OS X, Unix 계열 OS (윈도우는 지원하지 않습니다.)
 * **Java** : 8u92 이상 
 
 <br><br>
 
-# 다운로드
+## 다운로드
 
 현재 나와있는 `Druid`를 먼저 <a href="https://www.apache.org/dyn/closer.cgi?path=/druid/0.20.0/apache-druid-0.20.0-bin.tar.gz">다운로드</a>합니다.  
 
 <br><br>
 
-# 압축 해제
+## 압축 해제
 
 <br>
 
@@ -59,7 +59,7 @@ cd apache-druid-0.20.0/
 
 <br><br>
 
-# 실행하기
+## 실행하기
 
 개인 PC에서 진행하기 때문에 `micro-quickstart`로 진행합니다.
 
@@ -75,7 +75,7 @@ cd apache-druid-0.20.0/
 
 <br><br>
 
-# console 확인
+## console 확인
 
 <a href="http://localhost:8888">http://localhost:8888</a>로 접속해서 아래 화면과 같이 `Druid`가 실행되는지 확인합니다.
 
