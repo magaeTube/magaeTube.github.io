@@ -27,7 +27,7 @@ header-mask: true
 
 <br>
 
-# Druid 데이터베이스 드라이버 설치 
+## Druid 데이터베이스 드라이버 설치 
 
 Superset에서 데이터베이스 connection을 만들기 위해서 드라이버를 설치해야 합니다.  
 공식 홈페이지 가이드는 <a href="https://superset.apache.org/docs/databases/installing-database-drivers/">링크</a>에서 확인 가능합니다.
@@ -54,7 +54,7 @@ superset run -p 8080 --with-threads --reload --debugger
 
 <br><br>
 
-# Druid 데이터베이스 생성
+## Druid 데이터베이스 생성
 
 `Superset` 페이지를 실행시킵니다.
 
@@ -95,7 +95,7 @@ Database 정보를 입력하는 창이 뜨는데 위의 두 군데를 작성합�
 
 <br><br>
 
-# 시각화 만들어보기
+## 시각화 만들어보기
 
 이번에는 연결된 Druid 데이터베이스에 있는 정보를 가져와서 간단한 시각화를 만들어보겠습니다.
 
