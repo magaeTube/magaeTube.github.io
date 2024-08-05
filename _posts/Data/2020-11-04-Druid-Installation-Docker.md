@@ -25,7 +25,7 @@ header-mask: true
 
 <br><br>
 
-# 디렉터리 생성
+## 디렉터리 생성
 
 저의 경우 새로운 디렉터리를 만들고 그 안에 `docker-compose.yml`을 작업하고자 합니다.
 
@@ -33,19 +33,19 @@ header-mask: true
 
 <br><br>
 
-# docker-compose.yml 작성
+## docker-compose.yml 작성
 
 Druid에서 제공하는 기본 <a href="https://github.com/apache/druid/blob/master/distribution/docker/docker-compose.yml">docker-compose.yml</a> 파일을 보고 작성합니다. 작성 과정은 생략합니다.
 
 <br><br>
 
-# environment 작성
+## environment 작성
 
 `docker-compose`를 실행할 때 환경 설정들을 지정해야 하는데 이 또한 Druid에서 제공하는 기본 <a href="https://github.com/apache/druid/blob/master/distribution/docker/environment">environment</a>를 이용합니다. 이 또한 복붙하였기 때문에 작성 과정은 생략합니다.
 
 <br><br>
 
-# docker-compose 실행
+## docker-compose 실행
 
 이렇게 작성한 `docker-compose`를 실행합니다.
 
@@ -65,7 +65,7 @@ docker-compose up
 
 <br><br>
 
-# 확인
+## 확인
 
 <br>
 
