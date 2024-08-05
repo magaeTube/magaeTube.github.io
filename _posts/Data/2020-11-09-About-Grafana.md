@@ -25,7 +25,7 @@ header-mask: true
 
 <br>
 
-# Grafana란
+## Grafana란
 
 `Grafana`란 시계열 매트릭 데이터를 시각화하는데 최적화된 오픈소스 Visualization Tool입니다. 다양한 DB를 연결하여 데이터를 가져와서 시각화할 수 있으며 간단한 클릭으로 완료할 수 있습니다. <a href="https://play.grafana.org/d/000000012/grafana-play-home?orgId=1">링크</a>를 통해 체험해볼 수 있습니다.
 
@@ -35,13 +35,13 @@ header-mask: true
 
 <br><br>
 
-# 설치
+## 설치
 
 설치는 `Ubuntu 20.04` 환경에서 진행하였습니다.
 
 <br>
 
-## Repository 추가
+### Repository 추가
 
 ```sh
 sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
@@ -54,7 +54,7 @@ sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
 
 <br>
 
-## 키 다운로드
+### 키 다운로드
 
 ```sh
 curl https://packages.grafana.com/gpg.key | sudo apt-key add -
@@ -64,7 +64,7 @@ curl https://packages.grafana.com/gpg.key | sudo apt-key add -
 
 <br>
 
-## Grafana 설치
+### Grafana 설치
 
 ```sh
 sudo apt-get install grafana
@@ -74,7 +74,7 @@ Ubuntu 환경이기에 `apt-get`으로 Grafana를 설치합니다.
 
 <br>
 
-## 서비스 등록 및 시작
+### 서비스 등록 및 시작
 
 설치가 완료되면 서비스에 등록하여 실행하도록 합니다.
 
@@ -86,7 +86,7 @@ sudo systemctl enable grafana-server
 
 <br>
 
-## 접속
+### 접속
 <a href="http://localhost:3000/login">http://localhost:3000/login</a>으로 접속하여 확인합니다.
 
 <br>
