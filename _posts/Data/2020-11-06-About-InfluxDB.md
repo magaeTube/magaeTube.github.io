@@ -26,7 +26,7 @@ header-mask: true
 
 <br>
 
-# InfluxDB
+## InfluxDB
 
 현재 사용할 수 있는 시계열 데이터베이스 중에서 가장 유명하며 Go 언어로 작성이 되었습니다. Influxdata의 `TICK Stack` 중 하나이며 빠른 처리를 자랑합니다. 그 외에 동시성 및 I/O 처리 성능이 뛰어나며 압축 알고리즘을 적용하여 저장 용량 측면에서도 뛰어납니다. InfluxDB는 2022년 11월 기준 TimeSeries DBMS 중에서 압도적인 점수로 1위를 기록하고 있습니다.
 
@@ -36,7 +36,7 @@ header-mask: true
 
 <br><br>
 
-# 용어
+## 용어
 
 InfluxDB와 RDB에서 사용하는 용어를 비교하면 아래와 같습니다.
 
@@ -58,7 +58,7 @@ column의 경우 `key`라고 하는데 **tag key**와 **field key**가 존재합
 
 <br><br>
 
-# 설치
+## 설치
 
 이제 InfluxDB를 설치해보겠습니다. OS는 Ubuntu 20.04에서 진행을 하였습니다.  
 먼저 InfluxDB를 다운로드합니다.
@@ -109,7 +109,7 @@ influx
 
 <br><br>
 
-# 설정
+## 설정
 
 접속이 되면 처음에 관리자용 계정을 하나 만듭니다.
 
