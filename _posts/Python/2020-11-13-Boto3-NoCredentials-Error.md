@@ -28,7 +28,7 @@ Python에서 AWS SDK를 통해 EC2를 제어하려고 합니다. 이때 boto3 �
 
 <br>
 
-# 개발 내용
+## 개발 내용
 
 EC2 인스턴스의 경우 AWS Console에서 미리 생성을 해놓은 상태입니다. 샘플 코드이기 때문에 간단하게 작성해봅니다.
 
@@ -54,7 +54,7 @@ EC2 인스턴스가 서울 리전에 존재하기 때문에 환경 변수에 리
 
 <br><br>
 
-# 에러
+## 에러
 
 ![image](https://user-images.githubusercontent.com/78892113/208301648-dcd0230a-c40c-4f49-b8d4-cd685f71463a.png)
 
@@ -63,7 +63,7 @@ EC2 인스턴스가 서울 리전에 존재하기 때문에 환경 변수에 리
 
 <br><br>
 
-# 해결 방안
+## 해결 방안
 
 개발 환경은 Ubuntu에서 진행하고 있습니다. CLI를 설치하지 않았기에 따로 `credentials`를 지정해줘야 합니다. AWS에서는 해당 `credentials`를 `~/.aws/credentials` 경로로 바라봅니다. 그렇기에 해당 경로에 파일을 만들어줍니다.
 
