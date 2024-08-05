@@ -20,7 +20,7 @@ header-mask: true
 
 <br>
 
-# TICK Stack
+## TICK Stack
 
 `TICK Stack`은 Influxdata라는 회사에서 제공하는 오픈소스 솔루션입니다. 여기에서 TICK은 **Telegraf + InfluxDB + Chronograf + Kapacitor**의 앞글자를 따서 만든 것을 말합니다. ELK Stack과 마찬가지로 각각 다른 역할을 수행하는 기술들을 합쳐놓은 것을 말합니다.
 
@@ -34,24 +34,24 @@ header-mask: true
 
 <br><br>
 
-## Telegraf
+### Telegraf
 
 가장 앞단에 있는 `Telegraf`입니다. `Telegraf`는 데이터를 수집하기 위한 **서버 에이전트**입니다. 수행 중인 시스템에서 직접 데이터를 가져오던지 API를 통해서도 데이터를 가져오는 형태로 작동합니다. MongoDB, MySQL, Redis 등 다양한 데이터베이스와 Kafka와 같은 메시지 큐, IoT 등 약 120개 정도의 플러그인을 제공합니다.
 
 <br><br>
 
-## InfluxDB
+### InfluxDB
 
 `InfluxDB`는 오픈소스 **시계열 데이터베이스(TSDB)**입니다. Go 언어로 작성되었으며 모니터링, metrics, 센터 데이터, 실시간 분석 등 시계열 데이터의 저장과 검색에 최적화되어 있습니다.
 
 <br><br>
 
-## Chronograf
+### Chronograf
 
 `Chronograf`는 **시각화 오픈소스**입니다. 기본적으로 데이터 시각화를 위해 대시보드를 제공하고 모니터링과 알람, 자동화를 제공합니다. 
 
 <br><br>
 
-## Kapacitor
+### Kapacitor
 
 `Kapacitor`는 **데이터처리 엔진**입니다. InfluxDB로부터 streaming 데이터와 batch 데이터 모두 처리 가능합니다. 일반적인 로직이나 자체적으로 만든 기능과 연동하여 수행할 수 있습니다. HipChat, OpsGenie, Alerta, Sensu, PagerDuty, Slack 등과 연동하여 사용할 수 있습니다. 
