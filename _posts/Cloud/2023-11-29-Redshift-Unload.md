@@ -25,19 +25,19 @@ AWS Redshift의 여러 기능 중에 UNLOAD에 대해 살펴봅니다. <a href="
 
 <br><br>
 
-# Unload 기능이란
+## Unload 기능이란
 
 Redshift상에 있는 대량의 데이터를 파일로 내려주고자 할 때 사용하는 기능입니다. 많은 데이터를 S3에 저장하고 분석을 하기 위해 사용하면 됩니다. 일반적인 SELECT로 검색하여 분석하는 것보다 속도가 더 빠릅니다.
 
 <br>
 
-# 필수 권한
+## 필수 권한
 
 UNLOAD를 사용하려면 S3에 쓸 수 있는 (Write) 권한과 Redshift에 SELECT 권한이 필요합니다.
 
 <br>
 
-# 구문
+## 구문
 
 ```sql
 UNLOAD (
@@ -52,9 +52,9 @@ IAM_ROLE
 
 <br>
 
-## Options
+### Options
 
-### FORMAT 
+#### FORMAT 
 
 ```sql
 UNLOAD (
@@ -73,7 +73,7 @@ IAM_ROLE
 
 <br>
 
-### PARTITION BY
+#### PARTITION BY
 
 ```sql
 UNLOAD (
@@ -88,7 +88,7 @@ PARTITION BY (column_name) [INCLUDE]
 
 <br>
 
-### HEADER
+#### HEADER
 
 ```sql
 UNLOAD (
@@ -103,7 +103,7 @@ HEADER
 
 <br>
 
-### DELIMITER
+#### DELIMITER
 
 ```sql
 UNLOAD (
@@ -118,7 +118,7 @@ DELIMITER [AS] 'delimiter-char'
 
 <br>
 
-### FIXEDWIDTH 
+#### FIXEDWIDTH 
 
 ```sql
 UNLOAD (
@@ -137,7 +137,7 @@ FIXEDWIDTH [AS] 'fixedwidth-spec'
 
 <br>
 
-### ENCRYPTED
+#### ENCRYPTED
 
 ```sql
 UNLOAD (
@@ -153,7 +153,7 @@ ENCRYPTED [AUTO]
 
 <br>
 
-### KMS_KEY_ID
+#### KMS_KEY_ID
 
 ```sql
 UNLOAD (
@@ -169,7 +169,7 @@ KMS_KEY_ID 'key-id'
 
 <br>
 
-### BZIP2, GZIP, ZSTD
+#### BZIP2, GZIP, ZSTD
 
 ```sql
 UNLOAD (
@@ -184,7 +184,7 @@ BZIP2 or GZIP or ZSTD
 
 <br>
 
-### ADDQUOTES
+#### ADDQUOTES
 
 ```sql
 UNLOAD (
@@ -205,7 +205,7 @@ ADDQUOTES
 
 <br>
 
-### NULL AS
+#### NULL AS
 
 ```sql
 UNLOAD (
@@ -222,7 +222,7 @@ NULL AS 'null-string'
 
 <br>
 
-### ESCAPE
+#### ESCAPE
 
 ```sql
 UNLOAD (
@@ -244,7 +244,7 @@ UNLOAD에서 ESCAPE를 이용했다면 COPY에서도 ESCAPE를 무조건 사용�
 
 <br>
 
-### ALLOWOVERWRITE
+#### ALLOWOVERWRITE
 
 ```sql
 UNLOAD (
@@ -259,7 +259,7 @@ ALLOWOVERWRITE
 
 <br>
 
-### CLEANPATH
+#### CLEANPATH
 
 ```sql
 UNLOAD (
@@ -274,7 +274,7 @@ CLEANPATH는 파일을 unload하기 전에 S3 경로에 있는 파일들을 제�
 
 <br>
 
-### PARALLEL
+#### PARALLEL
 
 ```sql
 UNLOAD (
@@ -289,7 +289,7 @@ UNLOAD 기능은 기본적으로 병렬 처리를 이용해 데이터를 작성�
 
 <br>
 
-### MAXFILESIZE
+#### MAXFILESIZE
 
 ```sql
 UNLOAD (
@@ -304,7 +304,7 @@ S3에 생성하는 파일의 최대 크기를 지정할 수 있습니다. 5MB ~ 
 
 <br>
 
-### ROWGROUPSIZE
+#### ROWGROUPSIZE
 
 ```sql
 UNLOAD (
@@ -319,7 +319,7 @@ ROWGROUPSIZE [AS] size [ MB | GB ]
 
 <br>
 
-### EXTENSION
+#### EXTENSION
 
 ```sql
 UNLOAD (

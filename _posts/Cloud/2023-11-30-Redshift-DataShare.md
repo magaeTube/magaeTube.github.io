@@ -25,7 +25,7 @@ AWS Redshift의 여러 기능 중에 DataShare에 대해 살펴봅니다. <a hre
 
 <br><br>
 
-# DataShare 기능이란
+## DataShare 기능이란
 
 Redshift는 DataShare라는 "데이터 공유" 기능을 제공합니다. 이는 여러 Redshift 클러스터끼리 데이터를 자동으로 공유하도록 하는 기능인데 A라는 클러스터에 있는 테이블에 데이터가 신규로 INSERT되었다면 B라는 클러스터에 있는 같은 테이블에도 해당 데이터가 실시간으로 동기화되는 기능입니다. Datashare에는 Producer와 Consumer의 개념이 나오는데 Producer 클러스터는 Datashare를 생성하고 객체를 추가하여 OUTBOUND로 다른 클러스터와 데이터를 공유할 수 있습니다. 반대로 Consumer 클러스터는 INBOUND로 다른 클러스터로부터 데이터를 공유받을 수 있습니다.   
 
@@ -33,7 +33,7 @@ Redshift는 DataShare라는 "데이터 공유" 기능을 제공합니다. 이는
 
 <br>
 
-## 고려 사항 및 제한 사항
+### 고려 사항 및 제한 사항
 
 * 동일한 리전 내에서의 DataShare는 추가 비용이 없지만 리전 간 DataShare는 추가 요금이 부가됨.
 * Producer의 데이터를 쿼리하는 데 필요한 자원들은 Consumer가 부담합니다.
@@ -43,9 +43,9 @@ Redshift는 DataShare라는 "데이터 공유" 기능을 제공합니다. 이는
 
 <br><br>
 
-# DataShare 이용하기
+## DataShare 이용하기
 
-## DataShare 생성 및 권한 관리 
+### DataShare 생성 및 권한 관리 
 
 Producer 클러스터는 Datashare에 대한 제어 권한을 가지고 있습니다. 이에 따라 Datashare에 객체를 추가하거나 제거할 수 있습니다. 그뿐만 아니라 Consumer 클러스터에 대한 권한을 부여하거나 취소할 수도 있습니다.
 
@@ -70,13 +70,13 @@ SELECT current_namespace;
 
 <br>
 
-## DataShare 메타데이터
+### DataShare 메타데이터
 
 Redshift는 생성된 Datashare에 대한 정보를 볼 수 있도록 메타데이터를 제공합니다. 
 
 <br>
 
-### SVV_DATASHARES
+#### SVV_DATASHARES
 
 사용자 클러스터에서 생성되고 (OUTBOUND) 다른 클러스터에서 공유되는 (INBOUND) datashare 목록을 확인할 수 있습니다.
 
@@ -97,7 +97,7 @@ Redshift는 생성된 Datashare에 대한 정보를 볼 수 있도록 메타데�
 
 <br>
 
-### SVV_DATASHARE_CONSUMERS
+#### SVV_DATASHARE_CONSUMERS
 
 Consumer 클러스터 목록을 확인할 수 있습니다.
 
@@ -110,7 +110,7 @@ Consumer 클러스터 목록을 확인할 수 있습니다.
 
 <br>
 
-### SVV_DATASHARE_OBJECTS
+#### SVV_DATASHARE_OBJECTS
 
 클러스터와 공유되고 있는 모든 datashare 객체 목록을 확인할 수 있습니다. 이는 슈퍼 유저에게만 공개됩니다.
 
