@@ -26,7 +26,7 @@ Elasticsearch에서 한글 형태소 분석기는 몇 가지가 있는데 그 �
 <br><br>
 
 
-# Nori란
+## Nori란
 
 `Nori` (노리)는 한글 형태소 분석기 중 하나입니다. 프랑스 엔지니어인 Jim Ferenczi에 의해 처음 개발되었고 **Elasticsearch 6.6** 버전부터 공식적으로 개발해서 지원하기 시작했습니다. AWS의 ES에는 Nori or 은전한닢이 내장되어있다.
 
@@ -36,7 +36,7 @@ Elasticsearch에서 한글 형태소 분석기는 몇 가지가 있는데 그 �
 
 <br><br>
 
-# Nori 설치
+## Nori 설치
 
 Nori를 사용하기 위해서는 Elasticsearch에 `analysis-nori` 플러그인을 설치해야 합니다. 
 
@@ -50,7 +50,7 @@ $ bin/elasticsearch-plugin remove analysis-nori
 
 <br><br>
 
-# nori_tokenizer
+## nori_tokenizer
 
 Nori는 `nori_tokenizer` 토크나이저와 `nori_part_of_speech`, `nori_readingform` 토큰 필터를 제공합니다.  
 먼저 standard와 nori_tokenizer를 비교해보겠습니다.
