@@ -25,7 +25,7 @@ Airflow를 이용하는데 있어 Task 간에 데이터를 주고 받는 방법�
 
 <br><br>
 
-# 기본 XCom의 한계 
+## 기본 XCom의 한계 
 &nbsp;Airflow에는 Task 간의 데이터 전달을 위해 `XCom`이라는 기능을 제공하는데 이 XCom은 `Metadata Database`에 저장하고 가져오는 방식이기 때문에 데이터를 저장하는데 한계가 있습니다. 각 Database 종류에 따라 허용되는 사이즈는 아래와 같습니다.
 
 <br>
@@ -44,14 +44,14 @@ Airflow를 이용하는데 있어 Task 간에 데이터를 주고 받는 방법�
 
 <br><br>
 
-# XCom 메커니즘
+## XCom 메커니즘
 &nbsp;진행하기 전에 앞서 XCom을 이용해서 데이터를 주고 받을 때는 `직렬화`와 `역직렬화`의 과정을 거칩니다. 둘다 BaseXCom 클래스를 이용하는데 데이터를 저장(push)할 때는 `serialize_value` 메서드를 이용하고 가져올(pull) 때는 `deserialize_value` 메서드를 이용합니다.  
 &nbsp;Custom XCom을 작성할 때에는 이 부분을 오버라이딩해서 Metadata Database가 아닌 원하는 `Storage`(local, AWS, GCP, Azure)에 저장하는 로직으로 변경하면 됩니다.
 
 <br><br>
 
-# Custom XCom 코드 작성
-## 디렉터리 구조
+## Custom XCom 코드 작성
+### 디렉터리 구조
 
 ![image](https://user-images.githubusercontent.com/78892113/221406006-de17f765-ddcb-4414-b322-7c27ee3dfc0e.png)
 
@@ -59,7 +59,7 @@ Airflow를 이용하는데 있어 Task 간에 데이터를 주고 받는 방법�
 
 <br>
 
-## 코드
+### 코드
 
 ```python
 # include/aws_xcom_backend.py
@@ -146,7 +146,7 @@ class CustomXComBackendS3(BaseXCom):
 
 <br>
 
-## 설정 변경
+### 설정 변경
 
 위의 코드를 개발했다면 이를 Airflow설정에 지정하여 기본 XCom으로 사용되도록 해야 합니다. 
 
@@ -163,7 +163,7 @@ AIRFLOW__CORE__XCOM_BACKEND=include.aws_xcom_backend.CustomXComBackendS3
 
 <br>
 
-## 재시작
+### 재시작
 설정이 완료되면 Airflow를 재시작합니다. 재시작하고 적용이 잘 되었는지는 파이썬 코드를 이용해서 확인합니다.
 
 <br>
@@ -180,13 +180,13 @@ print(XCom.__name__)
 
 <br>
 
-## 사용
+### 사용
 
 사용하는 방법은 특별하게 다른게 아니라 기존에 사용하던 XCom 사용 방법으로 하면 됩니다.
 
 <br>
 
-## 데이터 확인
+### 데이터 확인
 
 XCom을 사용하면 데이터는 S3에서 확인할 수 있습니다.
 * **버킷명** : airflow_xcom_test
