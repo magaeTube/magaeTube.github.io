@@ -22,7 +22,7 @@ header-mask: true
 
 <br><br>
 
-# 도서 소개
+## 도서 소개
 
 ![image](https://user-images.githubusercontent.com/78892113/182025164-d4ae5bbf-1396-4a74-93a5-9423be0b10d6.png){: .align-center}{: width="80%"}
 
