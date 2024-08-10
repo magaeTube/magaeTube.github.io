@@ -30,7 +30,7 @@ header-mask: true
 
 <br><br>
 
-# Metrics 생성
+## Metrics 생성
 
 처음으로는 필요한 서비스의 `Metrics`를 생성하도록 합니다. CloudWatch 서비스 좌측에 있는 메뉴에서 <u>[Metrics] - [All metrics]</u>로 이동합니다.
 
@@ -60,7 +60,7 @@ DB Instance별로 Metric 항목들이 나오는데 내가 모니터링이 필요
 
 <br><br>
 
-# 대시보드 생성
+## 대시보드 생성
 
 이렇게 그래프를 만들었다면 이를 대시보드에 추가하겠습니다.
 
