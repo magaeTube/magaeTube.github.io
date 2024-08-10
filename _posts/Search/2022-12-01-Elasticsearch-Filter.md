@@ -29,7 +29,7 @@ Elasticsearch에서 데이터를 인덱싱할 때 Tokenizer를 통해 Token화�
 
 <br><br>
 
-# Stop
+## Stop
 
 `stop` 필터의 경우 Token에서 불용어를 제거하는 역할을 합니다. 커스텀마이징을 하지 않는다면 기본적으로 영어의 불용어를 제거합니다.  
 영어의 불용어는 다음과 같습니다.  
@@ -37,7 +37,7 @@ Elasticsearch에서 데이터를 인덱싱할 때 Tokenizer를 통해 Token화�
 
 <br>
 
-## 예시
+### 예시
 
 ```sh
 GET /_analyze
@@ -60,7 +60,7 @@ GET /_analyze
 
 <br>
 
-## Analyzer에 추가
+### Analyzer에 추가
 
 인덱스를 생성할 때에 filter를 지정할 수 있습니다. 
 
@@ -91,7 +91,7 @@ filter를 지정할 때 설정할 수 있는 파라미터들이 있습니다.
 
 <br>
 
-## 커스텀마이징
+### 커스텀마이징
 
 새로운 token filter를 만들어 `stop` 필터를 커스텀마이징합니다.
 
@@ -148,13 +148,13 @@ PUT /my-index-000001
 
 <br><br>
 
-# Synonym
+## Synonym
 
 `synonym` 필터의 경우 분석 과정에서 동의어를 다룰 때 사용합니다.
 
 <br>
 
-## 예시
+### 예시
 
 ```sh
 PUT /test_index
@@ -220,13 +220,13 @@ PUT /test_index
 
 <br>
 
-## synonym 작성 방법
+### synonym 작성 방법
 
 2가지의 포맷으로 synonym을 작성할 수 있습니다.
 
 <br><br>
 
-### Solr synonyms
+#### Solr synonyms
 
 ```plaintext
 # Blank lines and lines starting with pound are comments.
@@ -290,7 +290,7 @@ PUT /test_index
 
 <br><br>
 
-### WordNet synonyms
+#### WordNet synonyms
 
 `WordNet` 기반 동의어들은 `format`을 이용하여 정의할 수 있습니다.
 
@@ -319,7 +319,7 @@ PUT /test_index
 
 <br><br>
 
-# nori_part_of_speech
+## nori_part_of_speech
 
 `nori_part_of_speech`는 nori에서 제공하는 filter 중 하나로 **품사** 태그들에 매칭되는 token을 제거합니다. 제공되는 품사들의 종류는 <a href="https://lucene.apache.org/core/8_7_0/analyzers-nori/org/apache/lucene/analysis/ko/POS.Tag.html">여기</a>에서 확인 가능합니다.  
 해당 필터에서는 아래와 같은 설정을 해야 합니다.
@@ -342,7 +342,7 @@ PUT /test_index
 
 <br>
 
-## 예시
+### 예시
 
 ```sh
 PUT nori_sample
@@ -382,7 +382,7 @@ GET nori_sample/_analyze
 
 <br>
 
-## 결과
+### 결과
 
 ```json
 {
