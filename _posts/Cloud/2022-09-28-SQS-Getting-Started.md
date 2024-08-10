@@ -25,7 +25,7 @@ SQS는 Simple Queue Service로 AWS에서 제공하는 Queue 서비스입니다. 
 
 <br><br>
 
-# SQS 생성
+## SQS 생성
 
 ![SQS](https://user-images.githubusercontent.com/78892113/219924851-735b7b2e-73d8-42fe-9632-b49ed2825e7d.png)
 
@@ -33,7 +33,7 @@ AWS 콘솔에 접속해서 SQS서비스로 들어오면 위와 같은 모습입�
 
 <br>
 
-## Details
+### Details
 
 ![image](https://user-images.githubusercontent.com/78892113/219925112-622d9dce-7ad7-4be1-a3af-179aff85b11f.png)
 
@@ -67,7 +67,7 @@ AWS 콘솔에 접속해서 SQS서비스로 들어오면 위와 같은 모습입�
 
 <br>
 
-## Configuration
+### Configuration
 
 ![image](https://user-images.githubusercontent.com/78892113/219926370-8091d0f6-cdb9-4df9-a33a-9e843ec039ef.png)
 
@@ -81,7 +81,7 @@ AWS 콘솔에 접속해서 SQS서비스로 들어오면 위와 같은 모습입�
 
 <br>
 
-## Encryption
+### Encryption
 
 ![image](https://user-images.githubusercontent.com/78892113/219928885-0159046a-7cc9-4f9e-a74b-69f555e749ae.png)
 
@@ -89,7 +89,7 @@ AWS 콘솔에 접속해서 SQS서비스로 들어오면 위와 같은 모습입�
 
 <br>
 
-## Access Policy
+### Access Policy
 
 ![image](https://user-images.githubusercontent.com/78892113/219929066-7f9326ff-fe2c-4a8b-9150-305a9e3ad04a.png)
 
