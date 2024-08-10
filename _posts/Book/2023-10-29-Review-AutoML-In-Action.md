@@ -21,7 +21,7 @@ header-mask: true
 
 <br><br>
 
-# 도서 소개
+## 도서 소개
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/70eb4007-fa58-4efe-a1ab-9cd54e61e716)
 {: width="80%"}
@@ -36,7 +36,7 @@ header-mask: true
 
 <br>
 
-## 머신러닝을 시작하고 싶은 비전문가를 위한 책 
+### 머신러닝을 시작하고 싶은 비전문가를 위한 책 
 
 <br>
 

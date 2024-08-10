@@ -20,7 +20,7 @@ header-mask: true
 
 <br><br>
 
-# 도서 소개
+## 도서 소개
 
 ![9791169211314](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/3c3deebc-55e2-45e3-bf9f-0530e97735fb){: width="80%"}
 
@@ -33,7 +33,7 @@ header-mask: true
 
 <br>
 
-## 잊고 지냈던 보안에 대해 경각심을 일깨워주는 책 
+### 잊고 지냈던 보안에 대해 경각심을 일깨워주는 책 
 
 <br>
 
