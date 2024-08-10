@@ -25,12 +25,12 @@ header-mask: true
 
 <br><br>
 
-# Complex Types
+## Complex Types
 &nbsp;SparkSQL에서는 여러 Data Type을 제공하고 있습니다. 여기에서도 Numeric이나 String type도 있지만 복잡한 형태인 Complex type도 있습니다. 여기에는 `ArrayType`, `MapType`, `StructType`이 있는데 하나씩 알아보도록 합니다.
 
 <br>
 
-## ArrayType
+### ArrayType
 &nbsp;ArrayType은 이름에서도 알 수 있듯이 배열 형태의 Data입니다. ArrayType은 element들을 가지는데 이 element들은 동일한 Data Type을 가집니다. 컬럼을 지정할 때는 `ARRAY<element_type>` 형태로 element의 type을 지정해서 선언해주면 됩니다. Array 타입은 또한 순서가 있는 형태로서 데이터를 가져오고자 할 때는 인덱스를 통해 접근하실 수 있습니다.
 
 <br>
@@ -49,7 +49,7 @@ SELECT col_a[1] FROM tbl_a;
 
 <br>
 
-## MapType
+### MapType
 &nbsp;MapType은 Key-Value 쌍으로 이루어진 데이터 형태를 말합니다. 이는 Python에서의 Dict와 비슷한 형태를 나타내고 한 컬럼에서 Key-Value 형태로 저장할 수 있도록 합니다. 각 키는 고유하다는 것이 특징입니다. 컬럼을 지정할 때는 `MAP<Key Type, Value Type>`으로 지정하면 되고 특정 키의 값을 가져올 때는 `컬럼명['키']` 형태로 접근하면 됩니다.
 
 <br>
@@ -68,7 +68,7 @@ SELECT col_a['age'] FROM tbl_a;
 
 <br>
 
-## StructType
+### StructType
 &nbsp;StructType은 여러 필드를 가지는 복합 데이터 타입입니다. 각 필드에는 이름과 타입을 가지고 JSON과 같은 구조적인 형태를 나타낼 때 좋습니다. 컬럼을 지정할 때는 `STRUCT<Field Name: Field Type>`으로 지정하면 되고 특정 필드의 값을 가져올 때는 `컬럼명.필드명`처럼 점(.)으로 접근하면 됩니다.
 
 <br>

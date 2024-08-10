@@ -18,7 +18,7 @@ Java를 이용하여 모델을 개발하는데 사용되는 Lombok에 대해 알
 
 <br><br>
 
-# Lombok
+## Lombok
 
 &nbsp;Lombok이란 Java 라이브러리 중 하나로 Model 클래스 등에서 많이 사용하는 `getter`, `setter`, `toString` 등의 메서드 코드를 줄여주는 라이브러리입니다. 순수하게 Java로 코딩을 한다고 하면 여러 개의 getter, setter, toString 등의 메서드를 반복하게 되는데 이는 번거로울 수 있습니다. Lombok을 사용하면 annotation으로 가볍게 정의하고 getter, setter 등의 메서드는 컴파일된 결과물인 .class에 생성되게 됩니다.  
 &nbsp;기존에 Java에서 Model을 구성할 때 어떻게 했는지 봅시다.
@@ -111,7 +111,7 @@ public class Main {
 
 <br><br>
 
-# 설치 및 적용
+## 설치 및 적용
 
 &nbsp;IntelliJ에 Lombok을 적용해봅니다.  
 
@@ -139,13 +139,13 @@ dependencies {
 
 <br><br>
 
-# 유용한 어노테이션
+## 유용한 어노테이션
 
 &nbsp;Lombok에는 여러 어노테이션을 제공하여 도움을 주고 있습니다. 여기서 많이 사용하는 어노테이션에 대해 알아봅니다.
 
 <br>
 
-## @Getter / @Setter
+### @Getter / @Setter
 
 &nbsp;Lombok에서 가장 많이 활용되는 어노테이션으로 클래스명 위에 적용시키면 모든 변수들에 적용이 가능하고 변수 이름 위에 적용하면 해당 변수들만 적용 가능합니다. 위에서 만들었던 UserModel에 Lombok을 적용해봅니다.
 
@@ -168,7 +168,7 @@ public class UserLombokModel {
 
 <br>
 
-## @AllArgsConstructor
+### @AllArgsConstructor
 
 &nbsp;AllArgsConstructor는 모든 변수를 사용하는 생성자를 자동 완성시켜주는 어노테이션입니다.
 
@@ -202,7 +202,7 @@ public class UserLombokModel {
 
 <br>
 
-## @NoArgsConstructor
+### @NoArgsConstructor
 
 &nbsp;NoArgsConstructor는 기본 생성자를 자동 완성시켜주는 어노테이션입니다. 
 
@@ -232,7 +232,7 @@ public class UserLombokModel {
 
 <br>
 
-## @RequiredArgsConstructor
+### @RequiredArgsConstructor
 
 &nbsp;특정 변수만을 활용하는 생성자를 자동 완성시켜주는 어노테이션입니다. 추가할 변수에 `@NonNull` 어노테이션을 붙이거나 final로 선언하면 의존성을 주입할 수 있습니다.
 
@@ -265,7 +265,7 @@ public class UserLombokModel {
 
 <br>
 
-## @ToString
+### @ToString
 
 &nbsp;`@ToString` 어노테이션을 활용하면 클래스 변수들에 대한 ToString 메소드를 자동으로 완성시켜줍니다. 여기서 제외할 변수에 대해서는 @ToString.Exclude 어노테이션을 붙여주면 됩니다.
 
@@ -289,6 +289,6 @@ public class UserLombokModel {
 
 <br>
 
-## @Data
+### @Data
 
 &nbsp;`@Data` 어노테이션을 사용하면 @Getter, @Setter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode를 자동 완성시켜줍니다. 편하긴 하지만 너무 무겁기 때문에 실무에서는 지양합니다.

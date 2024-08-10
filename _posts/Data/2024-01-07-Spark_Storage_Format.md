@@ -29,24 +29,24 @@ header-mask: true
 
 <br><br>
 
-# Spark는 어떠한 스토리지 포맷을 사용했을까?
+## Spark는 어떠한 스토리지 포맷을 사용했을까?
 * **Spark 1.0 to 1.3:** Java 객체로 표현되는 `RDD`
 * **Spark 1.4 to 1.6:** 행 기반 포맷으로 저장되는 `DatsSet`과 `DataFrame`
 * **Spark 2.x:** 인메모리 데이터가 저장되는 열 기반의 구조화된 `Parquet` 지원
 
 <br><br>
 
-# 데이터 스토리지 포맷의 변화
+## 데이터 스토리지 포맷의 변화
 &nbsp;위에서 봤듯이 데이터 스토리지의 포맷은 변화하고 발전했는데 두 파트로 나누어 살펴봅니다.
 
 <br>
 
-## Part1. RDD에서 행 기반 Dataset으로의 발전
+### Part1. RDD에서 행 기반 Dataset으로의 발전
 
 &nbsp;이 부분에서 Tungsten 프로젝트 이야기가 빠질 수 없습니다. Tungsten은 Spark 실행 엔진의 가장 큰 변화가 되어 왔고 많은 변화를 불러왔습니다.
 
 
-### Tungsten 프로젝트의 목적
+#### Tungsten 프로젝트의 목적
 
 &nbsp;Tungsten 프로젝트의 목적은 메모리와 CPU 효율을 올리고 퍼포먼스를 한계로 올리는 것입니다. Spark 워크 로드가 IO와 네트워크 이슈보다 CPU와 메모리로 인해 병목 현상이 늘고 있기 때문에 이러한 목적으로 설정했습니다. 
 
@@ -111,7 +111,7 @@ header-mask: true
 
 <br><br>
 
-### DataSet/DataFrame은 무엇인가?
+#### DataSet/DataFrame은 무엇인가?
 
 &nbsp;DataSet은 강력한 형식의 불변 객체이고 위에서 다루었던 2가지 문제에 대한 변화가 있습니다.
 * 행 기반의 새로운 바이너리 포맷
@@ -163,13 +163,13 @@ val students = spark.read.json(“/students.json").as[Student]
 
 <br>
 
-## Part2. 행 기반의 Dataset에서 열 기반의 Parquet으로의 발전
+### Part2. 행 기반의 Dataset에서 열 기반의 Parquet으로의 발전
 
 * Spark 2.x에서는 컬럼 기반의 스토리지 포맷을 제공함.
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/944cc3eb-22f6-431f-999b-0261ad28644f)
 
-### Columnar (열 기반) 스토리지
+#### Columnar (열 기반) 스토리지
 &nbsp;2세대 Tungsten 엔진에서는 런타임 속도를 향상시키기 위해 optimisation 기술들을 이용하려고 했고 그로 인해 `WholeStageCodeGeneration`과 `Vectorization`이라는 기술이 나왔습니다. 열 기반 스토리지로 인해 얻을 수 있는 것은 다음과 같습니다.
 
 1. 열 기반 형식에서 데이터 접근이 더 규칙적입니다. 예를 들어 열이 integer라면 우리는 4바이트 간격으로 접근하면 됩니다.
@@ -178,5 +178,5 @@ val students = spark.read.json(“/students.json").as[Student]
 
 <br>
 
-# 결론
+## 결론
 &nbsp;Spark는 RDD라는 Java 객체로 시작을 했지만 CPU와 메모리로 인한 병목현상이 늘어났고 이를 해결하기 위한 Tungsten 프로젝트를 진행했습니다. 이 프로젝트는 CPU와 메모리 사용에 대한 효율을 올려 성능을 이끌어내는 것이 목적이었고 RDD 객체를 사용했을 때의 두 가지 문제점 (불투명성, 스키마 추론)을 보완하기 위해 DataSet과 DataFrame을 이용했습니다. 이를 통해 투명성을 확보하고 스키마를 직관적으로 표현하여 성능을 향상시킬 수 있었습니다. Spark는 여기서 끝나지 않고 행 기반의 DataSet과 DataFrame을 열 기반의 구조화된 Parquet 방식으로 업그레이드했습니다. 열 기반의 스토리지는 데이터 접근이나 압축 측면에서 용이하기 때문에 이를 통해 성능을 더 향상시킬 수 있었고 현재로 오게 되었습니다. 

@@ -25,7 +25,7 @@ header-mask: true
 
 <br>
 
-# Naming Convention
+## Naming Convention
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/819af885-d863-4938-b538-3ea6483cc6fd)
 
@@ -33,7 +33,7 @@ header-mask: true
 
 <br>
 
-## Instance Family
+### Instance Family
 
 &nbsp;Instance Family에는 각 인스턴스가 어떠한 형태에 특화된 인스턴스인지 나타내고 있습니다. 인스턴스에 올라가는 서비스의 형태, CPU 아니면 메모리를 많이 사용하는지 등에 따라 맞춰 형태를 지정하면 됩니다.
 
@@ -58,7 +58,7 @@ header-mask: true
 
 <br>
 
-## Processor Family
+### Processor Family
 
 &nbsp;Processor Familes는 Processor 종류에 따라 다르게 나누었습니다.
 
@@ -68,7 +68,7 @@ header-mask: true
 
 <br>
 
-## Additional Capability
+### Additional Capability
 
 &nbsp;그외에 추가적인 능력에 따라 부여되는 네이밍입니다.
 
@@ -82,11 +82,11 @@ header-mask: true
 
 <br>
 
-## Instance Size
+### Instance Size
 
 &nbsp;마지막으로 인스턴스 사이즈는 특화된 Instance Family에 따라 지정한 사이즈만큼 스펙이 달라지게 됩니다. nano, small, large, xlarge, 4xlarge 등등 여러 종류가 있으며 Instance Family마다 다르기 때문에 맞는 사양을 찾아서 지정하면 됩니다. 해당 부분은 <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#AvailableInstanceTypes">링크</a>에서 찾으실 수 있습니다.
 
 <br>
 
-# 참고 링크
+## 참고 링크
 * <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html">https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html</a>

@@ -21,7 +21,7 @@ Build Tool로 많이 사용하는 Gradle에 대해 알아봅니다.
 ![Gradle_logo](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/fdc4d8cb-bd62-484c-9835-6280edb7a8a3)
 
 
-# Gradle이란
+## Gradle이란
 
 Gradle은 Build Tool 중에 하나로 Compile과 Test 등 여러 작업을 자동화하는 기능을 제공하며 여러 특징을 가지고 있습니다.
 * JVM의 가장 유명한 빌드시스템이고 Android와 Kotlin의 기본 시스템임.
@@ -30,20 +30,20 @@ Gradle은 Build Tool 중에 하나로 Compile과 Test 등 여러 작업을 자�
 
 <br>
 
-# 지원가능한 프로그래밍 언어와 프레임워크
+## 지원가능한 프로그래밍 언어와 프레임워크
 
 Gradle은 Android, Java, Kotlin, Groovy, Scala, Javascript, C/C++을 지원하고 IDE툴인 Android Studio, IntelliJ, Visual Studio Code, Eclipse, NetBeans와 호환이 됩니다.
 
 <br>
 
-# 핵심 개념
+## 핵심 개념
 
-## Gradle Basics
+### Gradle Basics
 Gradle은 빌드 스크립트를 통해 빌드, 테스트, 배포를 자동화합니다. Gradle의 아키텍처는 다음과 같습니다.
 
 ![gradle architecture](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/b91405c7-a4a8-4796-8837-71e321e2b38c){: .align-center}
 
-### Core Concept
+#### Core Concept
 * **Projects** : Gradle 프로젝트는 애플리케이션이나 라이브러리와 같은 빌드할 수 있는 소프트웨어의 일부분으로 하나의 프로젝트에는 `root project` 라고 불리는 프로젝트가 빌드되고 다수의 프로젝트의 경우 하나의 `root project`와 여러 개의 `subprojects` 로 구성됩니다.
 * **Build Scripts** : 프로젝트를 빌드하기 위해 필요한 단계를 지정할 수 있습니다. 각 프로젝트는 하나 이상의 Scripts를 가질 수 있습니다.
 * **Dependency Management** : 외부 리소스를 선언하고 사용하기 위한 자동화된 기술입니다.
@@ -52,7 +52,7 @@ Gradle은 빌드 스크립트를 통해 빌드, 테스트, 배포를 자동화�
 
 <br>
 
-### Gradle Project 구조
+#### Gradle Project 구조
 Gradle을 이용하면 프로젝트의 루트 디렉터리에 `gradlew`, `gradle.bat`이 존재하여 Gradle을 사용중이라는 것을 알 수 있습니다. 이외에 프로젝트 구조는 다음과 같습니다.
 
 ```shell
@@ -81,7 +81,7 @@ project
 
 <br><br>
 
-## Gradle Wrapper Basics
+### Gradle Wrapper Basics
 Gradle을 빌드하는데 추천하는 방식은 Wrapper를 사용하는 것입니다.
 
 ![Gradle Wrapper](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/08fe0684-df1e-45b2-911d-bd950f3bc49d){: .align_center}
@@ -101,7 +101,7 @@ $ .\gradlew.bat build
 
 <br><br>
 
-## CLI Basics
+### CLI Basics
 
 ![Gradle CLI](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/08fe0684-df1e-45b2-911d-bd950f3bc49d){: .align_center}
 
@@ -121,7 +121,7 @@ $ gradle -h
 
 <br><br>
 
-## Settings File Basics
+### Settings File Basics
 
 ![Settings File](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/fd22d8a3-4474-40d0-9f24-efadfcffcc91){: .align_center}
 
@@ -129,7 +129,7 @@ $ gradle -h
 
 <br>
 
-### Settings Script
+#### Settings Script
 
 설정 파일은 스크립트입니다. Groovy로 작성할 때에는 `settings.gradle`이라는 파일 이름으로 작성하고 Kotlin으로 작성할 때는 `settings.gradle.kts` 라는 파일 이름으로 작성합니다. Gradle 스크립트에서는 Groovy와 Kotlin만 사용 가능합니다. 설정 파일은 일반적으로 프로젝트의 root 디렉터리에서 찾을 수 있습니다.
 
@@ -145,13 +145,13 @@ Groovy로 작성한 설정 파일의 모습입니다. 여기서 `rootProject.nam
 
 <br><br>
 
-## Build File Basics
+### Build File Basics
 
 ![Build File](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/e0a25e83-ed61-4772-9ac6-6c3a06c739f5){: .align_center}
 
 Build 파일에서는 속성, task, plugin에 대한 내용을 작성하고 Gradle이 사용하는 라이브러리 또는 플러그인을 추가하고 소스 코드에서 사용하는 라이브러리들을 추가할 수도 있습니다.
 
-### Build scripts
+#### Build scripts
 
 Build 스크립트는 Groovy로 작성할 때는 `build.gradle` 이라는 이름으로, Kotlin으로 작성할 때는 `build.gradle.kts` 라는 이름으로 작성합니다.
 
@@ -169,7 +169,7 @@ application {
 
 <br><br>
 
-## Dependency Management Basics
+### Dependency Management Basics
 
 ![Dependency Management](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/34c97618-7073-4137-bb35-ecee10053f4b){: .align_center}
 
@@ -196,7 +196,7 @@ $ ./gradlew :프로젝트명:dependencies
 
 <br><br>
 
-## Task Basics
+### Task Basics
 
 ![Tasks](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/3d32a05e-baf1-4c1c-9d4f-cb7670434369){: .align_center}
 
@@ -247,7 +247,7 @@ BUILD SUCCESSFUL in 904ms
 
 <br><br>
 
-## Plugins Basics
+### Plugins Basics
 
 ![Plugins](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/9720b45c-c657-4127-8e13-463247488f8e){: .align_center}
 
@@ -291,7 +291,7 @@ jibDockerBuild - Builds a container image to a Docker daemon.
 
 <br>
 
-# 설치
+## 설치
 
 Gradle은 Linux, macOS, Windows등 주요 OS에서 설치가 가능하며 Gradle을 설치하기에 앞서 Java Development Kit (JDK) 8 버전 이상이 필요합니다. JDK의 버전은 아래와 같은 명령어로 확인하실 수 있습니다.
 

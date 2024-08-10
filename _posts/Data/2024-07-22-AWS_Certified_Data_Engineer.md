@@ -29,7 +29,7 @@ header-mask: true
 
 <br>
 
-# 소개
+## 소개
 &nbsp;정식 명칭은 `AWS Certified Data Engineer - Associate`로 데이터 관련 AWS 서비스에 대한 역량과 지식, 데이터 수집 및 변환, 프로그래밍 개념을 적용한 데이터 파이프라인 오케스트레이션, 데이터 모델 설계, 데이터 수명 주기 관리, 데이터 품질 보장 능력을 검증하는 자격증입니다.  
 
 &nbsp;그외에 주요한 내용은 다음과 같습니다.
@@ -47,7 +47,7 @@ header-mask: true
 
 <br>
 
-# 시험 일정 예약
+## 시험 일정 예약
 &nbsp;시험의 경우 미리 예약을 통해 진행하실 수 있습니다. 일정 예약 사이트 (<a href='https://www.aws.training/certification'>https://www.aws.training/certification</a>)를 통해 접속을 합니다. 
 
 <br>
@@ -87,7 +87,7 @@ header-mask: true
 
 <br><br>
 
-# 시험 준비
+## 시험 준비
 
 ![image](https://github.com/user-attachments/assets/1ca26b1b-9902-4af3-ac42-9a1b85d9d62a)
 
