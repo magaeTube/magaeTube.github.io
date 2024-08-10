@@ -25,7 +25,7 @@ Airflow를 운영함에 있어 DAG에 이슈가 있을 때 체크해봐야할 �
 
 <br><br>
 
-# DAG가 UI에 나타나지 않을 때 
+## DAG가 UI에 나타나지 않을 때 
 
 * UI에 import error가 있는지 체크합니다. error가 발견되면 코드 상에 error가 있는 것입니다.
 * 페이지를 새로고침하기 전에 5분 기다리세요.
@@ -36,7 +36,7 @@ Airflow를 운영함에 있어 DAG에 이슈가 있을 때 체크해봐야할 �
 
 <br><br>
 
-# 의존성 충돌이 있을 때 
+## 의존성 충돌이 있을 때 
 
 * `PythonVirtualenvOperator`를 사용하세요.
 * `DockerOperator`를 사용하세요.
@@ -44,7 +44,7 @@ Airflow를 운영함에 있어 DAG에 이슈가 있을 때 체크해봐야할 �
 
 <br><br>
 
-# Task가 실행되지 않을 때 (Running)
+## Task가 실행되지 않을 때 (Running)
 
 * DAG가 중지 상태가 아닌지 확인하세요.
 * DAG의 `start_date`가 과거 날짜인지 확인하세요.
@@ -56,7 +56,7 @@ Airflow를 운영함에 있어 DAG에 이슈가 있을 때 체크해봐야할 �
 
 <br><br>
 
-# Log가 보이지 않을 때 
+## Log가 보이지 않을 때 
 
 * Task Instance를 clear하여 task를 재실행해보세요.
 * `log_fetch_timeout_sec` 속성을 5초 이상으로 늘려보세요.
