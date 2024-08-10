@@ -20,7 +20,7 @@ header-mask: true
 
 <br><br>
 
-# 도서 소개
+## 도서 소개
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/b87ec69f-a988-4124-9d76-39a3b2accc91)
 {: width="80%"}
@@ -34,7 +34,7 @@ header-mask: true
 
 <br>
 
-## 실생활에서 사용할 수 있는 데이터 분석의 A to Z 
+### 실생활에서 사용할 수 있는 데이터 분석의 A to Z 
 
 <br>
 
