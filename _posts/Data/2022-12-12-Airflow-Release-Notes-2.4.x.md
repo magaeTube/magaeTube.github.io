@@ -29,18 +29,18 @@ header-mask: true
 
 <br>
 
-# 메인 변경사항
+## 메인 변경사항
 
 <br>
 
-## 1. `Dataset` 이라는 새로운 개념과 `Data-aware` 스케줄링이 추가되었습니다.
+### 1. `Dataset` 이라는 새로운 개념과 `Data-aware` 스케줄링이 추가되었습니다.
 
 스케줄링 방법 중에서 `dataset`이 업데이트되면 실행되는 방법입니다.  
 * 참고 <a href="https://airflow.apache.org/docs/apache-airflow/stable/concepts/datasets.html#">URL</a>
 
 <br><br>
 
-## 2. context manager에서 사용되는 DAG들은 더이상 변수로 할당하지 않아도 됩니다.
+### 2. context manager에서 사용되는 DAG들은 더이상 변수로 할당하지 않아도 됩니다.
 
 ```python
 # AS-IS
@@ -81,7 +81,7 @@ with DAG(dag_id="example", auto_register=False):
 
 <br><br>
 
-## 3. `schedule_interval` 과 `timetable` argument는 더이상 사용되지 않습니다.
+### 3. `schedule_interval` 과 `timetable` argument는 더이상 사용되지 않습니다.
 
 대신 `schedule` 이라는 argument를 추가하여 cron 표현식이나 timedelta 객체, timetable 객체 또는 dataset 객체들을 수용할 수 있습니다. 
 
@@ -120,7 +120,7 @@ with DAG(
 
 <br><br>
 
-## 4. Smart Sensor는 삭제되었습니다.
+### 4. Smart Sensor는 삭제되었습니다.
 
 <br><br>
 
