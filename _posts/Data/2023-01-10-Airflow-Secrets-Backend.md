@@ -29,13 +29,13 @@ header-mask: true
 
 <br><br>
 
-# 조회 경로
+## 조회 경로
 
 `connection`이나 `variable`을 찾을 때 Airflow는 환경 변수에서 먼저 찾고 그 다음으로 메타스토어 데이터베이스에서 찾습니다. 하지만 대체안으로 `secrets backend`을 사용한다면 이것이 첫 번째가 되고 그 다음으로 환경변수, 메타스토어 데이터베이스 순서대로 찾습니다. 이러한 순서는 변경할 수 없는 부분입니다. 
 
 <br><br>
 
-# Configuration
+## Configuration
 
 Secrets Backend를 이용하기 위해서는 configuration에서 `[secrets]` 세션에 지정해야 합니다.
 
@@ -52,13 +52,13 @@ backend_kwargs =
 
 <br><br>
 
-# Hashicorp Vault Secrets Backend
+## Hashicorp Vault Secrets Backend
 
 Hashicorp Vault를 적용하기 위해서는 설정값을 아래와 같이 변경합니다.
 
 <br>
 
-## Configuration
+### Configuration
 
 ```conf
 [secrets]
@@ -76,7 +76,7 @@ $ export VAULT_ADDR="http://127.0.0.1:8200"
 
 <br>
 
-## Connections 저장 및 조회
+### Connections 저장 및 조회
 
 위에서 지정한 `backend_kwargs`에서 `connections_path`를 `connections`, `mount_point`를 `airflow` 라고 지정하고 connection id가 `smtp_default`라면 아래와 같이 저장하려고 할 수 있습니다.
 
@@ -104,7 +104,7 @@ conn_uri    smtps://user:host@relay.example.com:465
 
 <br>
 
-## Variables 저장 및 조회
+### Variables 저장 및 조회
 
 Connections를 진행할 때와 비슷합니다. 위에 지정한 `backend_kwargs`에서 `variables_path`를 `variables`, `mount_point`를 `airflow`라고 지정하고 variable의 key가 `hello`라면 아래와 같이 지정해서 저장할 수 있습니다.
 
