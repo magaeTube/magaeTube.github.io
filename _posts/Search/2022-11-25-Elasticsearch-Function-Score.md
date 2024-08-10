@@ -29,9 +29,9 @@ Elasticsearch에서 용어나 필드를 부스팅하는데 한계가 있다보�
 
 <br><br>
 
-# 기본적인 쿼리 형태 
+## 기본적인 쿼리 형태 
 
-## 한 가지의 function만 사용할 때 
+### 한 가지의 function만 사용할 때 
 
 ```json
 GET /_search
@@ -51,7 +51,7 @@ GET /_search
 
 <br>
 
-## 여러 종류의 function을 이용할 때 
+### 여러 종류의 function을 이용할 때 
 
 ```json
 GET /_search
@@ -127,13 +127,13 @@ GET /_search
 
 <br><br>
 
-# 지원되는 function 종류
+## 지원되는 function 종류
 
 function_score를 이용할 때 여러 function을 지원하고 있는데 지원되는 function에 대해 알아봅니다.
 
 <br>
 
-## script_score
+### script_score
 
 `script_score`는 script를 이용하여 추가적인 score 계산을 할 수 있습니다.
 script에는 도큐먼트에 있는 다른 숫자 필드 값을 이용할 수 있습니다. 이 때는 `doc['필드명']` 형식으로 이용합니다.
@@ -190,7 +190,7 @@ GET /_search
 
 <br>
 
-## weight
+### weight
 
 `weight`는 Elasticsearch에서 제공되는 `weight` 값에 특정 값을 곱할 수 있게 제공합니다.
 
@@ -202,7 +202,7 @@ GET /_search
 
 <br>
 
-## random_score
+### random_score
 
 `random_score`는 0부터 1미만 균일하게 분포된 값을 score로 제공합니다. 기본적으로 내부 루씬의 도큐먼트 id를 랜덤하게 사용하기 때문에 재사용할 수는 없습니다.  
 score 값을 재사용하길 원한다면 `seed`와 `field`를 제공하고 있어 이를 이용하면 됩니다.
@@ -223,7 +223,7 @@ GET /_search
 
 <br>
 
-## field_value_factor
+### field_value_factor
 
 `field_value_factor`는 score에 영향을 주기 위해서 도큐먼트의 `field`를 이용할 수 있게 제공합니다. 이는 `script_score` 기능과 유사하지만 스크립트의 과부하를 피합니다. 여러 값의 필드에 사용된다면 첫번째 값에만 적용이 됩니다.
 
