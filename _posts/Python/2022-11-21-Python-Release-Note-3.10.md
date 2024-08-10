@@ -24,9 +24,9 @@ Python 3.10 버전에서의 변경사항에 대해 알아봅니다.
 
 <br><br>
 
-# 메이저 변경사항
+## 메이저 변경사항
 
-## 새로운 구문
+### 새로운 구문
 
 * **<a href="https://peps.python.org/pep-0634/">PEP 634</a>** (Structual Pattern Matching: Specification) : 파이썬 버전 Switch Case로 파이썬에서는 `match-case` 구문임.
 * **<a href="https://peps.python.org/pep-0635/">PEP 635</a>** (Structual Pattern Matching: Motivation and Rationale) : `match-case` 구문의 동기와 이론
@@ -35,19 +35,19 @@ Python 3.10 버전에서의 변경사항에 대해 알아봅니다.
 
 <br>
 
-## 기본 라이브러리의 새로운 특징
+### 기본 라이브러리의 새로운 특징
 
 * **<a href="https://peps.python.org/pep-0618/">PEP 618</a>** (Add Optional Length-Checking To zip) : `zip`함수 구문을 이용할 경우 데이터의 길이를 체크할 수 있음. `strict`를 True로 설정할 경우 이터러블 중 하나가 먼저 소진되면 에러 발생.
 
 <br>
 
-## Interpreter 개선
+### Interpreter 개선
 
 * **<a href="https://peps.python.org/pep-0626/">PEP 626</a>** (Precise line numbers for debugging and other tools) : 디버깅과 다른 툴들을 위한 정확한 line 번호로 trace를 실행했을 때 실행되는 코드의 모든 라인이나 실행되는 코드 라인을 보여주고 에러발생시 정확한 위치를 제공함.
 
 <br>
 
-## 새로운 typing 특징
+### 새로운 typing 특징
 
 * **<a href="https://peps.python.org/pep-0604/">PEP 604</a>** (Allow writing union types as `X | Y`) : `Union[X, Y]` 형태를 `|` 연산자를 이용해 `X | Y` 로 사용가능함. `isinstance` 및 `issubclass` 호출에 나올 수 있음.
 * **<a href="https://peps.python.org/pep-0612/">PEP 612</a>** (Parameter Specification Variables) : `typing.ParamSpec` 과 `typing.Concatenate` 를 사용하면 호출 가능한 객체에 추상적인 타입 정의 정보를 주석달 수 있음.
@@ -55,7 +55,7 @@ Python 3.10 버전에서의 변경사항에 대해 알아봅니다.
 
 <br>
 
-## 중요한 지원 중단, 삭제, 제한 사항들
+### 중요한 지원 중단, 삭제, 제한 사항들
 
 * **<a href="https://peps.python.org/pep-0623/">PEP 623</a>** (Deprecate and prepare for the removal of the wstr member in PyUnicodeObject)
 * **<a href="https://peps.python.org/pep-0632/">PEP 632</a>** (Deprecate distutils module) : distutils 패키지 대신 Setuptools 패키지를 사용할 것.
