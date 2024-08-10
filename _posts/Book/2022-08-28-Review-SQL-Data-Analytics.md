@@ -23,7 +23,7 @@ header-mask: true
 
 <br><br>
 
-# 도서 소개
+## 도서 소개
 
 ![image](https://user-images.githubusercontent.com/78892113/187079579-0fdc5533-6ba8-4f30-a17a-98b1bf6bee1f.png){: .align-center}{: width="80%"}
 
@@ -56,7 +56,7 @@ header-mask: true
 
 <br>
 
-# 총평
+## 총평
 
 평소에 데이터를 다룰 때 SQL은 데이터 추출용으로 이용하고 파이썬을 이용해서 데이터를 가공하고 분석하는 방식으로 하고 있습니다. 이 책을 보면서 SQL로도 이렇게까지 할 수 있구나라는 새로운 사실들이 많았고 실제로 분석할 때 이용해 보고자 합니다. 
 
