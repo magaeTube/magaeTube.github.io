@@ -21,7 +21,7 @@ header-mask: true
 
 <br><br>
 
-# 도서 소개
+## 도서 소개
 
 ![image](https://github.com/magaeTube/magaeTube.github.io/assets/78892113/13d9c600-08be-4abd-a5c0-d0b754d7e8c1){: width="80%"}
 
@@ -35,7 +35,7 @@ header-mask: true
 
 <br>
 
-## 빅데이터 시대에 둘러봐야할 책 
+### 빅데이터 시대에 둘러봐야할 책 
 
 <br>
 

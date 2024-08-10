@@ -21,7 +21,7 @@ header-mask: true
 
 <br><br>
 
-# 도서 소개
+## 도서 소개
 
 ![image](https://user-images.githubusercontent.com/78892113/236678033-adc3abf6-6ebf-4376-9c13-5b25e09e38a9.png){: .align-center}{: width="80%"}
 
@@ -34,7 +34,7 @@ header-mask: true
 
 <br>
 
-## 간단하지만 필요한 것은 다 있는 책 
+### 간단하지만 필요한 것은 다 있는 책 
 
 <br>
 
@@ -58,7 +58,7 @@ Chapter 9. 배포
 
 <br><br>
 
-# 총평
+## 총평
 
 웹 개발, 딥러닝 모델 서빙, API 개발 등 백엔드 영역이 중요하고 강조가 되는 가운데 해당 책은 파이썬으로 개발된 FastAPI 프레임워크에 대한 내용들을 다룹니다. 또 다른 파이썬 웹 프레임워크인 Django와 Flask가 먼저 이름값을 날리며 유명해졌지만 이 FastAPI가 나오면서 더 각광받고 있습니다. 
 
