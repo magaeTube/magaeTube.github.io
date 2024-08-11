@@ -19,8 +19,7 @@ toc_label: "Data Engineer"
 
 <br><br>
 
-# 하는 업무
----
+## 하는 업무
 
 <br>
 
@@ -38,8 +37,7 @@ Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_med
 
 <br>
 
-## 데이터 파이프라인 구축
----
+### 데이터 파이프라인 구축
 
 ![victor-UoIiVYka3VY-unsplash](https://user-images.githubusercontent.com/78892113/137110378-b21f0000-c841-4ea1-8f0e-a23060661be0.jpg){: width="80%"}
 
@@ -52,8 +50,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 ​<br>
 
-## 데이터 수집
----
+### 데이터 수집
 
 <br>
 
@@ -61,8 +58,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-## 데이터 처리 
----
+### 데이터 처리 
 
 <br>
 
@@ -70,8 +66,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-## 데이터 저장
----
+### 데이터 저장
 
 <br>
 
@@ -79,8 +74,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-# 필요 역량
----
+## 필요 역량
 
 <br>
 
@@ -89,8 +83,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-## SQL & NoSQL
----
+### SQL & NoSQL
 
 <br>
 
@@ -99,8 +92,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-## 프로그래밍 언어
----
+### 프로그래밍 언어
 
 <br>
 
@@ -108,8 +100,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-## 분산처리
----
+### 분산처리
 
 <br>
 
@@ -117,8 +108,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-## 스트리밍 데이터 관리
----
+### 스트리밍 데이터 관리
 
 <br>
 
@@ -126,8 +116,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-## 워크플로우 관리
----
+### 워크플로우 관리
 
 <br>
 
@@ -135,8 +124,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-## 클라우드 / 컨테이너
----
+### 클라우드 / 컨테이너
 
 <br>
 
@@ -146,8 +134,7 @@ Photo by <a href="https://unsplash.com/@victor_g?utm_source=unsplash&utm_medium=
 
 <br><br>
 
-## 데이터 분석 / 시각화
----
+### 데이터 분석 / 시각화
 
 <br>
 
