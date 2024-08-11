@@ -24,7 +24,7 @@ header-mask: true
 
 <br><br>
 
-# 도서 소개
+## 도서 소개
 
 ![SQL쿡북](https://user-images.githubusercontent.com/78892113/160118175-87bf1763-7bf9-407c-ac3e-08bcbf5ef32e.jpeg){: width="80%"}
 
@@ -53,7 +53,7 @@ header-mask: true
 
 ​<br><br>
 
-# 도서 목차
+## 도서 목차
 
 <br>
 
@@ -83,7 +83,7 @@ Chapter 14. 기타 다양한 기법
 
 <br><br>
 ​
-# 책의 구성
+## 책의 구성
 
 <br>
 
@@ -99,7 +99,7 @@ Chapter 14. 기타 다양한 기법
 
 ​<br><br>
 
-# 총평
+## 총평
 
 <br>
 
