@@ -27,7 +27,7 @@ header-mask: true
 
 <br><br>
 
-# Apache Kafka와 탄생배경
+## Apache Kafka와 탄생배경
 
 <br>
 
@@ -59,7 +59,7 @@ Kafka는 데이터 스트림을 레코드로 유지하는 방식으로 작동하
 
 <br><br>
 
-# Kafka의 주요 개념
+## Kafka의 주요 개념
 
 <br>
 
@@ -81,7 +81,7 @@ Kafka는 Pub-Sub (발행-구독) 모델을 기반으로 크게 Producer, Consume
 
 <br><br>
 
-# Kafka의 장점
+## Kafka의 장점
 
 <br>
 
