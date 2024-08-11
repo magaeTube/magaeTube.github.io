@@ -21,7 +21,7 @@ StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되
 
 <br><br>
 
-# 응답자 유형
+## 응답자 유형
 
 <br>
 
@@ -31,7 +31,7 @@ StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되
 
 <br><br>
 
-## Learning how to code
+### Learning how to code
 
 <br>
 
@@ -43,7 +43,7 @@ StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되
 
 <br><br>
 
-## Developer Type
+### Developer Type
 
 <br>
 
@@ -55,7 +55,7 @@ StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되
 
 <br><br>
 
-# Technology
+## Technology
 
 <br>
 
@@ -78,9 +78,9 @@ StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되
 
 <br>
 
-## Most popular technologies
+### Most popular technologies
 
-### Programming, scripting, and markup languages
+#### Programming, scripting, and markup languages
 > 1위 : JavaScript  
 > 2위 : HTML/CSS  
 > 3위 : Python
@@ -97,7 +97,7 @@ StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되
 
 <br>
 
-### Databases
+#### Databases
 > 1위 : MySQL  
 > 2위 : PostgreSQL  
 > 3위 : SQLite  
@@ -112,7 +112,7 @@ StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되
 
 <br>
 
-### Cloud Platforms
+#### Cloud Platforms
 > 1위 : AWS  
 > 2위 : Google Cloud Platform  
 > 3위 : Microsoft Azure  
@@ -125,7 +125,7 @@ StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되
 
 <br>
 
-### Web Frameworks
+#### Web Frameworks
 > 1위 : React.js  
 > 2위 : jQuery  
 > 3위 : Express  
@@ -148,7 +148,7 @@ Svelte는 React.js나 Vue.js와 같은 프론트엔드 프레임워크입니다.
 
 <br>
 
-### Other Frameworks and Libraries
+#### Other Frameworks and Libraries
 > 1위 : .NET Framework  
 > 2위 : NumPy  
 > 3위 : .NET Core / .NET 5  
@@ -165,11 +165,11 @@ Svelte는 React.js나 Vue.js와 같은 프론트엔드 프레임워크입니다.
 
 <br>
 
-## Most loved, dreaded, and wanted
+### Most loved, dreaded, and wanted
 
 <br>
 
-### Programming, Scripting, and Markup Languages
+#### Programming, Scripting, and Markup Languages
 > Loved vs Dreaded  
 > 1위 : Rust  
 > 2위 : Clojure  
@@ -198,7 +198,7 @@ Svelte는 React.js나 Vue.js와 같은 프론트엔드 프레임워크입니다.
 
 <br>
 
-### Databases
+#### Databases
 > Loved vs Dreaded  
 > 1위 : Redis  
 > 2위 : PostgreSQL  
@@ -227,7 +227,7 @@ Svelte는 React.js나 Vue.js와 같은 프론트엔드 프레임워크입니다.
 
 <br>
 
-### Web Frameworks
+#### Web Frameworks
 > Loved vs Dreaded  
 > 1위 : Svelte  
 > 2위 : ASP .NET Core  
@@ -254,7 +254,7 @@ Svelte는 React.js나 Vue.js와 같은 프론트엔드 프레임워크입니다.
 
 <br>
 
-### Other Tools
+#### Other Tools
 > Loved vs Dreaded  
 > 1위 : Git  
 > 2위 : Docker  
@@ -281,7 +281,7 @@ Svelte는 React.js나 Vue.js와 같은 프론트엔드 프레임워크입니다.
 
 <br><br>
 
-## Worked with vs Want to work with
+### Worked with vs Want to work with
 
 <br>
 
@@ -291,7 +291,7 @@ Stackoverflow에서는 올해에 코드 다이어그램을 이용하여 시각�
 
 <br>
 
-### Programming, Scripting, and Markup Languages
+#### Programming, Scripting, and Markup Languages
 
 ![image](https://user-images.githubusercontent.com/78892113/162982602-3ddd4d49-33c0-48ec-b407-16264ca25246.png)
 
@@ -301,7 +301,7 @@ Stackoverflow에서는 올해에 코드 다이어그램을 이용하여 시각�
 
 <br>
 
-### Web Frameworks
+#### Web Frameworks
 
 ![image](https://user-images.githubusercontent.com/78892113/162982749-9c9fd42a-b0d8-4136-93bf-25f35d2cd6fc.png)
 
@@ -313,7 +313,7 @@ React.js와 Vue.js, Express가 큰 비중을 차지하지만 특이한 것을 �
 
 ​<br><br>
 
-## Learning & Problem Solving
+### Learning & Problem Solving
 
 <br>
 
@@ -321,7 +321,7 @@ React.js와 Vue.js, Express가 큰 비중을 차지하지만 특이한 것을 �
 
 <br>
 
-### What do you do when you get stuck?
+#### What do you do when you get stuck?
 
 ![image](https://user-images.githubusercontent.com/78892113/162983073-c2977c43-d3c9-4a85-913a-cf85adbd8810.png)
 
@@ -333,13 +333,13 @@ React.js와 Vue.js, Express가 큰 비중을 차지하지만 특이한 것을 �
 
 <br><br>
 
-## Top Paying Technologies
+### Top Paying Technologies
 
 가장 중요한 것 중 하나인 연봉입니다. 기술별로 연봉을 볼 수 있어서 아주 흥미로웠던 주제입니다.
 
 <br>
 
-### Programming, Scripting and Markup Languages
+#### Programming, Scripting and Markup Languages
 > 1위 : Clojure  
 > 2위 : F#  
 > 3위 : Elixir  
@@ -352,7 +352,7 @@ React.js와 Vue.js, Express가 큰 비중을 차지하지만 특이한 것을 �
 
 <br>
 
-### Databases
+#### Databases
 > 1위 : DynamoDB  
 > 2위 : Elasticsearch  
 > 3위 : Cassandra  
@@ -365,7 +365,7 @@ React.js와 Vue.js, Express가 큰 비중을 차지하지만 특이한 것을 �
 
 <br>
 
-### Web Frameworks
+#### Web Frameworks
 > 1위 : Ruby on Rails  
 > 2위 : Svelte  
 > 3위 : ASP .NET Core  
@@ -378,7 +378,7 @@ React.js와 Vue.js, Express가 큰 비중을 차지하지만 특이한 것을 �
 
 <br>
 
-### Other Frameworks and Libraries
+#### Other Frameworks and Libraries
 > 1위 : Apache Spark  
 > 2위 : .NET Core / .NET 5  
 > 3위 : Hadoop  
