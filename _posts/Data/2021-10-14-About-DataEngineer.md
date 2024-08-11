@@ -12,8 +12,6 @@ toc_sticky: true
 toc_label: "Data Engineer"
 ---
 
-<br>
-
 &nbsp;Data Engineer는 Data 분석 또는 경영진의 의사 결정을 위해 각기에 흩어져있는 데이터를 한곳으로 수집하여 저장하고 보여줄 수 있는 Data Pipeline을 구축하는 것이 주 업무입니다. Data가 굉장히 중요해진 만큼 Data 분석은 필수사항이 되었고 이를 효과적으로 하기 위해 Data Engineer가 필요합니다. Data Engineer가 하는 일이 어떤 것이 있고 필요한 역량은 무엇인지 보겠습니다.
 {: .notice--info}
 
