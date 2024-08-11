@@ -30,7 +30,7 @@ DevOps 분야에서 필요한 CI/CD 툴들에 대해 간단하게 정리를 하�
 
 <br><br>
 
-# Jenkins
+## Jenkins
 * Java 기반이며 다양한 플랫폼에서 이용 가능함 (Windows, Linux, macOS)
 * 무료, 오픈소스이며 GitHub의 16.3K Stars
 * 확장성이 좋으며 클라우드 플랫폼과 통합됨
@@ -38,14 +38,14 @@ DevOps 분야에서 필요한 CI/CD 툴들에 대해 간단하게 정리를 하�
 
 <br>
 
-# GitHub Action
+## GitHub Action
 * 소프트웨어 Workflow를 자동화할 수 있도록 도와주는 도구
 * 가격 : Public Repo (무료, Limit제한은 있음), Private Repo (GitHub 종류에 따라 가격있음)
 * <a href="https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions">About billing for GitHub Actions</a>
 
 <br>
 
-# TeamCity
+## TeamCity
 * Java 기반 CI/CD 파이프라인 도구이며 Windows, Linux 서버에 설치
 * 오픈소스 프로젝트에 무료로 사용
 * 확장성이 좋으며 클라우드 플랫폼과 통합됨 
@@ -55,7 +55,7 @@ DevOps 분야에서 필요한 CI/CD 툴들에 대해 간단하게 정리를 하�
 
 <br>
 
-# Circle CI
+## Circle CI
 * 다양한 플랫폼에서 이용 (Windows, Linux, macOS)
 * 설정하기 쉽고 GitHub, Bitbucket 등 버전 제어 시스템과 함께 사용 가능
 * CI/CD 파이프라인을 YAML을 이용하여 “워크플로우”를 제공함
@@ -65,7 +65,7 @@ DevOps 분야에서 필요한 CI/CD 툴들에 대해 간단하게 정리를 하�
 
 <br>
 
-# Travis CI
+## Travis CI
 * 오픈 소스 프로젝트, 클로즈드 소스 프로젝트 지원함
 * 파이프라인은 YAML 구문을 이용해 구성함
 * 개인 정보 보호 및 보안 솔루션을 위해 자체 호스팅 도구인 Travis CI Enterprise를 선택할 수 있음
@@ -74,7 +74,7 @@ DevOps 분야에서 필요한 CI/CD 툴들에 대해 간단하게 정리를 하�
 
 <br>
 
-# Bamboo
+## Bamboo
 * CI에 사용되는 도구로 Atlassian에서 개발한 제품 
 * Jira, Bitbucket과 같은 도구에서 작동함 
 * Repository의 변경 사항을 기반으로 빌드를 트리거할 수 있으며 Bitbucket에서 푸시 알림을 보낼 수 있음
@@ -83,7 +83,7 @@ DevOps 분야에서 필요한 CI/CD 툴들에 대해 간단하게 정리를 하�
 
 <br>
 
-# GoCD
+## GoCD
 * Thoughtworks에서 제공하는 오픈 소스 CI/CD 서버
 * 다른 도구와 차별화 요소는 VSM (Value Stream Map) 기능으로 파이프라인 전반에 걸친 완전한 종단 간 보기
 * YAML 및 JSON 형식으로 파이프라인을 구성함
@@ -92,28 +92,28 @@ DevOps 분야에서 필요한 CI/CD 툴들에 대해 간단하게 정리를 하�
 
 <br>
 
-# CodeShip
+## CodeShip
 * GitHub 프로젝트에서 직접 테스트, 빌드 및 배포를 지원함
 * YAML을 이용하여 파이프라인을 구현함
 * SSH를 사용하여 CI 환경 자체에서 빌드를 디버그할 수 있음
 
 <br>
 
-# GitLab CI/CD
+## GitLab CI/CD
 * GitLab에 내장된 도구 
 * Repository 루트 디렉터리에 있어야 하는 .gitlab-ci.yml YAML 파일에서 스크립트를 지정해야 함.
 * API 제공 
 
 <br>
 
-# Jenkins X
+## Jenkins X
 * 주로 Docker 및 Kubernetes에서 클라우드 네이티브 애플리케이션을 위한 자동화된 CI/CD를 제공하는 오픈 소스 프로젝트
 * 파이프라인을 사용한 자동화를 지원
 * 내장된 GitOps 방법론은 환경을 관리함
 
 <br>
 
-# Codefresh
+## Codefresh
 * Kubernetes에 구축된 CI/CD 플랫폼으로 완전한 GitOps 지원이 제공됨 
 * Codefresh에서 제공하는 Kubernetes 대시보드를 사용하면 배포, 실행 등을 위해 모든 클러스터를 쉽게 모니터링이 가능함
 * 각 단계는 컨테이너로 종속성에 대해 걱정할 필요 없이 파이프라인에서 동일한 단계를 구축할 수 있음
