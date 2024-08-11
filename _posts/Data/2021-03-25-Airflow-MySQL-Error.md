@@ -8,20 +8,18 @@ tags:
   - Data
   - DataEngineering
   - Airflow
-toc: true
-toc_sticky: true
 header-img: https://user-images.githubusercontent.com/78892113/169574664-4efcf70e-f846-4919-9a00-730e8f799fe6.png
 
 header-mask: true
 
 ---
 
-![image](https://user-images.githubusercontent.com/78892113/169574664-4efcf70e-f846-4919-9a00-730e8f799fe6.png){: .align-center}{: width="80%" height="80%"}
+&nbsp;안녕하세요 마개입니다. Airflow의 Executor를 SequentialExecutor에서 LocalExecutor로 변경을 하기 위해 Metadata 저장소로 MySQL을 선정하였습니다. 보통은 Airflow에서 PostgreSQL을 많이 사용하지만 사내에서는 이미 MySQL을 사용하고 있었기 때문에 MySQL을 지정하였습니다.
+{: .notice--info}
 
 <br>
 
-&nbsp;안녕하세요 마개입니다. Airflow의 Executor를 SequentialExecutor에서 LocalExecutor로 변경을 하기 위해 Metadata 저장소로 MySQL을 선정하였습니다. 보통은 Airflow에서 PostgreSQL을 많이 사용하지만 사내에서는 이미 MySQL을 사용하고 있었기 때문에 MySQL을 지정하였습니다.
-{: .notice--info}
+![image](https://user-images.githubusercontent.com/78892113/169574664-4efcf70e-f846-4919-9a00-730e8f799fe6.png){: .align-center}{: width="80%" height="80%"}
 
 <br>
 

@@ -14,12 +14,14 @@ header-mask: true
 
 ---
 
-![image](https://user-images.githubusercontent.com/78892113/169574664-4efcf70e-f846-4919-9a00-730e8f799fe6.png){: .align-center}{: width="80%" height="80%"}
+&nbsp;안녕하세요 마개입니다. Apache Airflow를 이용하여 파이프라인을 구축하고 스케줄링을 진행하고 있습니다. 로컬 환경에서 venv를 이용하여 가상환경을 구축하고 Airflow를 설치하였습니다. 설치 후 이를 실행할 때 발생한 에러를 확인해봅니다.
+{: .notice--info}
 
 <br>
 
-&nbsp;안녕하세요 마개입니다. Apache Airflow를 이용하여 파이프라인을 구축하고 스케줄링을 진행하고 있습니다. 로컬 환경에서 venv를 이용하여 가상환경을 구축하고 Airflow를 설치하였습니다. 설치 후 이를 실행할 때 발생한 에러를 확인해봅니다.
-{: .notice--info}
+![image](https://user-images.githubusercontent.com/78892113/169574664-4efcf70e-f846-4919-9a00-730e8f799fe6.png){: .align-center}{: width="80%" height="80%"}
+
+<br>
 
 Docker를 이용하지 않고 직접 설치를 하고 이용할 때에는 Airflow를 실행하는 명령어를 날려줘야 합니다.   
 (Webserver, Scheduler, Worker 등등 모두 다 따로)
