@@ -14,16 +14,14 @@ toc_label: "RPA 자격증"
 
 <br>
 
-# **개요**
-
 유튜브와 책을 통해 `RPA`를 다루고 댓글이나 카카오톡 오픈채팅방을 통해서 여러분들과 이야기를 나누다보면 가장 궁금해하시는 것들중에 하나가 RPA 자격증이 있는지, 있으면 어떻게 공부해서 취득해야할지 또는 이 자격증이 꼭 필요할지에 대해 많이들 여쭤봅니다. 이번에는 이러한 RPA 자격증에 대해서 알아보고 궁금증을 해결해보도록 하겠습니다. 
 {: .notice--info}
 
 <br>
 
-# RPA 자격증 
+## RPA 자격증 
 
-## RPA란
+### RPA란
 
 > **RPA (Robotic Process Automation)** <br>
 > 로보틱 처리 자동화, 로보틱 프로세스 자동화, 로보틱 프로세스 오토메이션(Robotic Process Automation, `RPA`)은 소프트웨어 봇 또는 인공지능(AI) 워커(worker)의 개념에 기반을 둔, 최근에 만들어진 비즈니스 프로세스 자동화 기술 형태이다. <br>(출처 : 위키피디아)
@@ -32,15 +30,14 @@ toc_label: "RPA 자격증"
 
 <br>
 
-## 자격증 소개
+### 자격증 소개
 이러한 **RPA**가 화두가 되고 주목을 받으면서 그와 관련된 자격증에 대한 관심도 쏠리게 되었습니다. RPA는 아직 국제 표준 자격증이 없습니다. 대신 각 솔루션에서 제공하는 자격증들이 있습니다. 전세계적으로 가장 유명한 솔루션들은 UiPath, Automation Anywhere, Blueprism이 있는데 우리는 글로벌 솔루션인 `UiPath`에서 제공하는 자격증에 대해 알아보겠습니다. 
 
 <br>
 <br>
 
 
-# UiPath 자격증
----
+## UiPath 자격증
 
 <br>
 
@@ -49,7 +46,7 @@ UiPath에서 제공하는 자격증들에 대해서 알아보겠습니다. UiPat
 <br>
 <br>
 
-## UiRPA
+### UiRPA
 
 <br>
 
@@ -99,7 +96,7 @@ UiPath에서 제공하는 자격증들에 대해서 알아보겠습니다. UiPat
 
 <br><br>
 
-## **UiARD**
+### **UiARD**
 
 <br>
 
@@ -154,7 +151,7 @@ UiRPA와 다르게 UiARD에서는 심화된 내용과 활용법들에 대한 내
 <br>
 <br>
 
-## 신청 방법
+### 신청 방법
 
 <br>
 
@@ -163,8 +160,7 @@ UiRPA와 다르게 UiARD에서는 심화된 내용과 활용법들에 대한 내
 <br>
 <br>
 
-### **1. 회원가입**
----
+#### **1. 회원가입**
 
 <br>
 
@@ -175,8 +171,7 @@ UiPath 자격증은 **[Pearson Education](https://wsr.pearsonvue.com/testtaker/s
 <br>
 <br>
 
-### **2. 시험 과목 선택**
----
+#### **2. 시험 과목 선택**
 
 <br>
 
@@ -187,8 +182,7 @@ UiPath 자격증은 **[Pearson Education](https://wsr.pearsonvue.com/testtaker/s
 <br>
 <br>
 
-### **3. 시험 장소와 일정 선택**
----
+#### **3. 시험 장소와 일정 선택**
 
 <br>
 
@@ -241,7 +235,7 @@ UiPath 자격증은 **[Pearson Education](https://wsr.pearsonvue.com/testtaker/s
 <br>
 <br>
 
-## 자격증 공부 방법
+### 자격증 공부 방법
 
 <br>
 
@@ -254,7 +248,7 @@ UiPath 자격증은 현재 덤프 파일 자료는 없습니다. 속성으로는
 <br>
 <br>
 
-# 개인 의견 (정리)
+## 개인 의견 (정리)
 
 <br>
 
