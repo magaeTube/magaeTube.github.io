@@ -36,20 +36,20 @@ header-mask: true
 
 <br><br><br>
 
-# 알림 방식
+## 알림 방식
 &nbsp;알림 방식을 메일을 통해 받는 것으로 초기 구축을 했었습니다. 처음에는 DAG 자체가 몇 개 없었기 때문에 Task 별로 메일이 와도 문제가 없었지만 DAG가 늘어나면 날수록 5배 정도의 양으로 메일이 오기 때문에 점점 문제가 되었습니다. 과도하게 메일이 오는 문제가 발생하였습니다 (DAG가 늘어나고 사이즈가 커지는 것은 좋지만 메일 알림은 심했다....ㅎㅎ)
 
 &nbsp;그렇기에 알림 방식을 변경하기로 했습니다. 메일보다는 회사에서 사용 중인 메신저 `Slack`을 이용하기로 하였습니다.
 
 ​<br><br>
 
-## 실행 방식
+### 실행 방식
 &nbsp;Airflow에서는 `SlackAPIPostOperator`라는 Slack 메시지 보내기용 Operator를 제공합니다. 이것을 통해서 원할 때 정해진 채널로 메시지를 보내는 방식입니다. Airflow에서 DAG의 default_args들 중에 `on_success_callback`과 `on_failure_callback`이 있습니다. 이는 각각 DAG가 <u>성공했을 때 또는 실패했을 때 실행할 콜백 함수</u>를 지정하는 것입니다. 이 속성들을 이용해서 성공했을 때 또는 실패했을 때 Slack 메시지를 보내는 방식입니다.  
 (최신 버전에서는 <u>SlackAPIPostOperator가 deprecated 되었다는 말</u>도 있어 각자의 버전에 대해 확인하시길 바랍니다.)
 
 <br><br>
 
-## 준비물
+### 준비물
 
 &nbsp;Slack을 이용하여 알림을 보내기 위해서는 몇 가지 준비물과 세팅이 필요합니다. 
 
@@ -88,7 +88,7 @@ header-mask: true
 
 <br><br>
 
-## 개발
+### 개발
 
 &nbsp;이제 기본 준비는 되었고 파이썬에 개발을 하면 됩니다. 위에서 설명했던 `SlackAPIPostOperator`를 이용하였습니다. 
 
@@ -153,7 +153,7 @@ class SlackAlert:
 
 <br><br>
 
-### 토큰 가져오기
+#### 토큰 가져오기
 &nbsp;준비물을 통해 토큰을 connection에 등록했는데 SlackAPIPostOperator에서 이용하기 위해 connection에서 정보를 가져와야 합니다. 이를 이용하기 위해 `BaseHook`으로 정보를 가져옵니다. 
 
 ```python
@@ -162,7 +162,7 @@ self.slack_token = BaseHook.get_connection("slack").password
 
 <br><br>
 
-### SlackAPIPostOperator
+#### SlackAPIPostOperator
 
 ```python
         alert = SlackAPIPostOperator(
@@ -237,12 +237,12 @@ default_args = {
 
 <br><br><br>
 
-# 로그 저장소 변경
+## 로그 저장소 변경
 &nbsp;DAG가 점점 늘어나면서 로그의 크기도 점점 쌓이게 됩니다. 처음에 Airflow를 구축할 때 아무 설정도 하지 않으면 `$AIRFLOW_HOME/airflow/logs`에 로그가 쌓이게 됩니다. 점점 쌓이다 보니 저장소를 변경해야겠다는 생각이 들어 `S3`로 변경을 하였습니다. 
 
 <br><br>
 
-## 설정
+### 설정
 
 &nbsp;S3에 로그 데이터를 쌓기 위해서는 <u>버킷을 미리 생성</u>해야 합니다. 
 
@@ -256,14 +256,14 @@ remote_base_log_folder = s3://버킷명
 
 <br><br><br>
 
-# Executor 변경
+## Executor 변경
 &nbsp;기존에 5, 6개의 DAG에서 시작해서 30~40개쯤으로 늘어나다 보니 메모리적인 부분이나 실행 부분에서 Worker를 늘리는 것이 좋겠다고 생각했습니다. 그래서 기존에 사용하던 LocalExecutor를 `CeleryExecutor`로 변경하는 것이 좋겠다고 판단하여 진행하였습니다.
 
 &nbsp;CeleryExecutor를 이용하기 위해서는 Celery를 컨트롤할 브로커가 필요합니다. Airflow에서는 RabbitMQ나 `Redis`를 이용하는데 저는 Redis를 이용하였습니다. Redis는 Docker를 이용해서 설치하였습니다. 
 
 <br><br>
 
-## 설정 변경
+### 설정 변경
 
 &nbsp;CeleryExecutor를 이용하기 위해서 `airflow.cfg`에서 설정들을 몇 개 변경해야 합니다.
 
@@ -280,7 +280,7 @@ result_backend = db+mysql://아이디:비밀번호@MYSQL호스트주소:포트/�
 
 <br><br>
 
-## 실행
+### 실행
 
 설정하였으니 실행을 해봅니다.
 
@@ -295,7 +295,7 @@ $ airflow celery flower -D
 
 <br><br>
 
-## Troubleshooting
+### Troubleshooting
 
 * **umask**
 
@@ -323,7 +323,7 @@ worker_umask = 0002
 
 <br><br><br>
 
-# Docker 변경
+## Docker 변경
 &nbsp;CeleryExecutor로 변경되면서 LocalExecutor보다 <u>관리해야 할 포인트</u>도 늘어나고 기존에 한대의 서버(PC)에서 다 운영하다 보니 <u>메모리도 부족</u>하여 다운되는 현상이 종종 일어났습니다. 그때마다 재부팅을 하고 명령어를 다시 날려서 실행시키고 이런 작업을 반복하다 보니 관리가 더 편하면 좋겠다는 생각이 들었습니다. 
 
 &nbsp;이에 따라 서로에게 영향이 가지 않도록 **Worker와 나머지를 분리**하고 모든 것들을 `Docker`로 변경해야겠다는 생각을 했습니다. 
@@ -367,7 +367,7 @@ AIRFLOW__CORE__DEFAULT_TIMEZONE: 'Asia/Seoul'
 
 <br><br>
 
-## Troubleshooting
+### Troubleshooting
 
 * **UID, GID**
 
@@ -385,5 +385,5 @@ RUN ln -snf /usr/share/zoneinfo/Asia/Seoul /etc/localtime && echo Asia/Seoul > /
 
 <br><br><br>
 
-# 결론
+## 결론
 &nbsp;처음 구축해놓은 Airflow에서의 알림 방식으로 인해 너무 자주 메일이 오는 불편함과 처리해야 하는 DAG 수도 증가해서 발생하는 메모리 부족 현상 등을 이유로 위와 같은 방식으로 개선 작업을 진행했습니다. 이전에는 서버가 자주 죽어서 평일 밤, 주말을 안 가리고 대응했었는데 이번 개선 작업을 통해 많은 부분이 해소된 것이 도움이 되었습니다. 

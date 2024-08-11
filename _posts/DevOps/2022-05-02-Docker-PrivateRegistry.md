@@ -37,7 +37,7 @@ EC2의 서버 스펙은 다음과 같이 하였습니다.
 
 <br><br>
 
-# Docker & Docker Compose 설치
+## Docker & Docker Compose 설치
 &nbsp;먼저 EC2에 Docker가 없기 때문에 `Docker`와 `Docker Compose`를 설치해야 합니다. Docker를 설치하는 것은 간단히 명령어로 대체하겠습니다. (이 때의 Docker Compose는 2.0.1 버전을 이용하였습니다.)
 
 ```bash
@@ -77,7 +77,7 @@ $ docker-compose -v
 
 <br><br>
 
-# Docker Registry 컨테이너 생성
+## Docker Registry 컨테이너 생성
 &nbsp;사용하고자 하는 `Registry` 이미지를 먼저 서버에 생성하겠습니다.
 
 ```bash
@@ -125,7 +125,7 @@ $ curl localhost:5000/v2/_catalog
 
 <br><br>
 
-# 테스트용 이미지 생성 (로컬)
+## 테스트용 이미지 생성 (로컬)
 &nbsp;이제 테스트를 해보기 위해 서버에서 이미지를 하나 만든 후 Registry에 등록해보겠습니다.
 
 ```dockerfile
@@ -163,7 +163,7 @@ $ docker run docker_hello
 
 <br><br>
 
-# 테스트용 이미지 Push (로컬)
+## 테스트용 이미지 Push (로컬)
 &nbsp;이미지를 Registry에 Push하기 위해서는 이미지 태그를 변경해야 합니다. (위에서는 이미지가 정상적으로 작동하는지 보기 위해 임의로 "docker_hello"로 작성하였지만 Registry에 등록하기 위해서는 태그를 맞춰줘야 합니다.)
 
 ```bash
@@ -197,7 +197,7 @@ $ curl localhost:5000/v2/_catalog
 
 <br><br>
 
-# 테스트용 이미지 Pull (로컬)
+## 테스트용 이미지 Pull (로컬)
 &nbsp;Registry에 등록한 이미지를 Pull하기 전에 기존에 만들었던 이미지와 컨테이너를 삭제합니다.
 
 ```bash
@@ -236,7 +236,7 @@ $ docker images
 
 <br><br>
 
-# 테스트용 이미지 Push (원격)
+## 테스트용 이미지 Push (원격)
 &nbsp;이렇게 Docker Registry는 만들었는데 우리가 개발을 할 때 각자의 PC에서 개발을 하지 Registry 서버에서 직접 하지는 않습니다. 그렇기 때문에 이번에는 각자의 PC에서 진행을 해보겠습니다. 먼저 각자의 PC에서 Registry에 담겨있는 repository를 확인하겠습니다.
 
 ```bash

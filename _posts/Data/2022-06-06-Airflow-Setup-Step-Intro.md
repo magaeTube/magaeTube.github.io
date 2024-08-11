@@ -35,17 +35,17 @@ header-mask: true
 
 <br><br>
 
-# Airflow 도입 배경
+## Airflow 도입 배경
 
 <br>
 
-## 상황
+### 상황
 
 현재의 회사에 처음 입사하였을 때 데이터 업무에 대해 시작하는 초기 단계였기 때문에 많은 것들이 없었습니다. 그중에서 데이터를 수집하고 DW에 올리는 작업 등 주기적인 작업은 배치작업으로 진행하였는데 이때 우분투 서버에서 `크론잡`을 이용하였고 당시에는 약 `5,6개 정도의 프로세스`가 실행되고 있었습니다. 
 
 <br>
 
-## 불편한 점 
+### 불편한 점 
 
 해당 프로세스들에 대한 업무를 받고 관리하였는데 아래와 같은 몇 가지 불편한 점이 있었습니다.
 
@@ -71,13 +71,13 @@ header-mask: true
 
 <br><br>
 
-# Airflow 선정 
+## Airflow 선정 
 
 위와 같은 문제들로 인해 개선이 필요하다고 생각했습니다. 먼저 개선을 하기 위해 필요한 사항들을 파악해보았는데 다음과 같았습니다.
 
 <br>
 
-## 필요 사항
+### 필요 사항
 
 * 손쉬운 프로세스 성공/실패 여부 파악
 * 문제가 발생했을 때 원인을 빠르게 파악하고 조치할 수 있는 환경
@@ -90,11 +90,11 @@ header-mask: true
 
 <br>
 
-## 툴 비교
+### 툴 비교
 
 <br>
 
-### Apache Airflow
+#### Apache Airflow
 
 ![airflow](https://user-images.githubusercontent.com/78892113/172186672-025cb8a1-cddf-4b90-b08c-a8c3634cbb90.png){: .align-center}{: width="80%" height="80%"} 
 
@@ -107,7 +107,7 @@ header-mask: true
 
 <br>
 
-### Apache Oozie
+#### Apache Oozie
 
 ![image](https://user-images.githubusercontent.com/78892113/172192514-7152f803-6218-480e-a5bd-9f0a80fd83fb.png){: .align-center}{: width="80%" height="80%"} 
 
@@ -119,7 +119,7 @@ header-mask: true
 
 <br>
 
-### Luigi
+#### Luigi
 
 ![luigi](https://user-images.githubusercontent.com/78892113/172192664-8656eb12-3f74-4b6a-8103-60df4e2d62c7.png){: .align-center}
 
@@ -130,7 +130,7 @@ header-mask: true
 
 <br><br>
 
-## 최종 선정
+### 최종 선정
 
 3가지 모두 공통적인 부분은 <u>UI를 제공하여 스케줄링을 모니터링하고 관리하기 쉽다</u>는 점입니다. 그러면 이 중에서 Apache Airflow를 선택한 이유는 다음과 같습니다.  
 

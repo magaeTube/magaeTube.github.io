@@ -30,7 +30,7 @@ header-mask: true
 
 <br><br>
 
-# 내 그래픽카드 확인하기
+## 내 그래픽카드 확인하기
 
 <br>
 
@@ -62,7 +62,7 @@ $ sudo update-pciids
 
 <br><br>
 
-# TensorFlow에서 사용 가능한 디바이스 체크하기
+## TensorFlow에서 사용 가능한 디바이스 체크하기
 
 <br>
 
@@ -96,7 +96,7 @@ xla_global_id: -1
 
 <br><br>
 
-# NVIDIA GPU 드라이버 설치 
+## NVIDIA GPU 드라이버 설치 
 
 <br>
 
@@ -120,7 +120,7 @@ $ nvidia-smi
 
 ​<br><br>
 
-# CUDA Toolkit 설치
+## CUDA Toolkit 설치
 
 <br>
 
@@ -151,7 +151,7 @@ $ sudo apt-get -y install cuda
 
 <br><br>
 
-# CUDA 환경 변수 설정
+## CUDA 환경 변수 설정
 
 <br>
 
@@ -180,7 +180,7 @@ $ nvcc -V
 
 <br><br>
 
-# cuDNN 설치
+## cuDNN 설치
 
 <br>
 
@@ -262,7 +262,7 @@ $ ldconfig -N -v $(sed 's/:/ /' <<< $LD_LIBRARY_PATH) 2>/dev/null | grep libcudn
 
 <br><br>
 
-# GPU 확인
+## GPU 확인
 
 <br>
 
