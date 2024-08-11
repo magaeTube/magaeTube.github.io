@@ -12,12 +12,10 @@ toc_label: "StackOverflow Survey"
 
 ---
 
-<br>
-
-안녕하세요 마개입니다.  
-StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되었습니다.  
-  
-작년 2020년에 이어 진행했던 설문의 결과에는 어떠한 변화가 있고 올해는 어떠한 트렌드인지 살펴보겠습니다.
+&nbsp;안녕하세요 마개입니다.  
+&nbsp;StackOverflow에서 진행한 `2021 StackOverflow Developer Survey`가 공개되었습니다.  
+&nbsp;작년 2020년에 이어 진행했던 설문의 결과에는 어떠한 변화가 있고 올해는 어떠한 트렌드인지 살펴보겠습니다.
+{: .notice--info}
 
 <br><br>
 
