@@ -56,3 +56,5 @@ header-mask: true
 |hive.exec.reducers.max|1009|리듀서의 최대 개수|0.14.0|
 |hive.strict.checks.large.query|true|order by 개수에 대한 제한을 걸지 않고 파티션 테이블에 필터링을 하지 않는 경우 제한됨||
 |hive.blobstore.use.output-committer||||
+|tez.grouping.min-size|16 MB|Tez 엔진의 매퍼 최소 사이즈||
+|tez.grouping.max-size|1 GB|Tez 엔진의 매퍼 최대 사이즈||
