@@ -36,4 +36,5 @@ header-mask: true
 |spark.yarn.maxAppAttempts|1|||
 |spark.dynamicAllocation.enabled|false|동적 자원 할당을 사용할지 여부||
 |spark.driver.maxResultSize|1g|각 Spark action에서 모든 파티션들의 결과 총 사이즈|1.2.0|
-|spark.sql.hive.convertMetastoreOrc|
+|spark.sql.hive.convertMetastoreOrc|true|Orc 파일 데이터를 읽을 때 Spark의 Native ORC Reader를 사용할지 여부. `false`로 하면 Hive의 Reader를 사용하게 됨.||
+|spark.sql.parquet.compression.codec||`parquet`를 이용해서 데이터를 저장할 때 압축형태||
