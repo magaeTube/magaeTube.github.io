@@ -37,7 +37,10 @@ header-mask: true
 |mapred.output.compress||맵리듀스 처리 결과 압축 여부||
 |mapred.output.compression.codec||맵리듀스 처리 결과 압축 방식||
 |hive.exec.compress.output||하이브 처리 결과 압축여부||
-|hive.execution.engine||`Tez`. 하이브 실행 엔진||
+|hive.execution.engine||하이브 실행 엔진. `mr`, `tez`, `spark` 가능||
+|mapred.job.queue.name||실행 엔진이 `mr`일 때 스케줄러의 큐 이름 설정||
+|tez.queue.name||실행 엔진이 `tez`일 때 스케줄러의 큐 이름 설정||
+|spark.job.queue.name||실행 엔진이 `spark`일 때 스케줄러의 큐 이름 설정||
 |hive.enforce.bucketing||`true` 또는 `false`. Hive Bucketing 설정||
 |hive.vectorized.execution.enabled||`true` 또는 `false`. Hive 벡터화 사용 여부||
 |hive.vectorized.execution.reduce.enabled||`true` 또는 `false`. 벡터화 reduce 사용 여부||
