@@ -1,5 +1,5 @@
 ---
-title:  "[SparkSQL] 성능 튜닝 경험 공유"
+title:  "[SparkSQL] SparkSQLOperator를 사용하는 Airflow 파이프라인 성능 개선기"
 date:   2024-10-24 00:00:00 +0900
 categories:
   - Data
