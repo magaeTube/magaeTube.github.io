@@ -17,7 +17,7 @@ header-mask: true
 ---
 
 &nbsp;안녕하세요 마개입니다.  
-개발을 하다가 모르는 것이 생길 때 매번 OpenAI의 ChatGPT 도움을 많이 받았었습니다. 하지만 IT 개발자로서(데이터 엔지니어지만..) 제대로 사용해보면 좋을 것 같아 API에 대해 알아보게 되었습니다. 해당 내용에 대해 기록을 남깁니다.   
+&nbsp;개발을 하다가 모르는 것이 생길 때 매번 OpenAI의 ChatGPT 도움을 많이 받았었습니다. 하지만 IT 개발자로서(데이터 엔지니어지만..) 제대로 사용해보면 좋을 것 같아 API에 대해 알아보게 되었습니다. 해당 내용에 대해 기록을 남깁니다.   
 {: .notice--info}
 
 <br>
@@ -120,7 +120,14 @@ $ curl "https://api.openai.com/v1/chat/completions" \
 
 ![image](https://github.com/user-attachments/assets/89bb218a-0715-44d8-b453-df860c983240)
 
-&nbsp;혹시 저와 같은 에러가 발생하는 분이 있다면 본인 계정이 비용이 있는지 확인하도록 합니다. 저는 아직 충전하지 않았기 때문에 비용이 없어서 발생한 문제입니다.
+&nbsp;혹시 저와 같은 에러가 발생하는 분이 있다면 본인 계정이 비용이 있는지 확인하도록 합니다. 저는 아직 충전하지 않았기 때문에 비용이 없어서 발생한 문제입니다. 해당 문제의 경우 비용을 충전해놓고 이용하면 됩니다.
+
+* 비용 충전 방법 : <a href="https://magaetube.github.io/ai/openai/OpenAI_API_Pricing/">https://magaetube.github.io/ai/openai/OpenAI_API_Pricing/</a>
+
+<br>
+
+![API](https://github.com/user-attachments/assets/e1698b5f-0473-4348-be9c-1bc7cc1932ae)
+&nbsp;충전한 이후에 다시 진행해보면 다음과 같이 잘 된 것을 확인하실 수 있습니다.
 
 <br><br>
 
