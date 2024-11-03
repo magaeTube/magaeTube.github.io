@@ -132,3 +132,8 @@ $(document).ready(function() {
 <!-- id 추가 -->
 <img src="이미지 경로" id="magnific" width="200">
 ```
+
+<br><br>
+
+## 참고 사이트
+* <a href="https://terry1213.com/blog/jekyll-magnific-popup/">https://terry1213.com/blog/jekyll-magnific-popup/</a>
