@@ -65,6 +65,9 @@ sidebar-category:
       - title: "Tensorflow"
         url: "/Tensorflow"
         category: "Tensorflow"
+      - title: "OpenAI"
+        url: "/OpenAI"
+        category: "OpenAI"
 
   - title: "Cloud"
     children:
