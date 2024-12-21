@@ -154,7 +154,7 @@ A common command: python inference_realesrgan.py -n RealESRGAN_x4plus -i infile 
 #### TroubleShooting
 &nbsp;Real-ESRGAN을 설치하고 이용하는 과정에서 겪은 문제와 해결과정을 정리합니다. 
 
-**ImportError: ....../site-packages/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkComplete_12_4, version libnvJitLink.so.12**
+**ImportError: ....../site-packages/torch/lib/../../nvidia/cusparse/lib/libcusparse.so.12: undefined symbol: __nvJitLinkComplete_12_4, version libnvJitLink.so.12**  
 &nbsp;우리가 설치한 파이썬 패키지 중에 nvidia 관련 패키지가 있는데 그것이 `LD_LIBRARY_PATH`에 등록되어 있지 않아서 발생한 에러입니다. 해당 환경변수는 공유 라이브러리의 경로를 지정하는데 사용되는 환경 변수로 CUDA환경에서는 CUDA 라이브러리와 종속성 라이브러리를 로드하는데 사용됩니다.  
 &nbsp;이미 CUDA를 설치하면서 해당 환경변수에 설정을 했지만 파이썬 패키지도 같이 설정해줘야 합니다.  
 
@@ -169,7 +169,7 @@ $ source ~/.bashrc
 
 <br>
 
-**ModuleNotFoundError: No module named 'torchvision.transforms.functional_tensor'**
+**ModuleNotFoundError: No module named 'torchvision.transforms.functional_tensor'**  
 ```sh
 ...
 ...
