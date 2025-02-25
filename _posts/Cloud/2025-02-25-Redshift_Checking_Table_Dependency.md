@@ -107,5 +107,31 @@ DROP FUNCTION [Function 명];
 
 <br><br>
 
+## 그외
+&nbsp;위에서 봤던 View를 검사할 때 안나왔던 Materialized View를 체크해야할 수도 있습니다. 이럴 때는 아래 쿼리를 이용해서 검사해봅니다.
+
+```sql
+SELECT DISTINCT 
+       c.relname
+     , n.nspname
+     , c.relkind
+  FROM pg_class c
+  JOIN pg_depend d
+    ON c.oid = d.objid
+  LEFT JOIN pg_namespace n 
+    ON c.relnamespace = n.oid
+ WHERE d.refobjid = '[스키마 명].[테이블 명]'::regclass
+;
+```
+&nbsp;위의 쿼리를 실행해서 결과가 나오면 확인합니다. 여기에서 `relname`은 클래스 명, `nspname`은 스키마 명, `relkind`는 다음과 같습니다.
+* r : 일반 테이블
+* v : View
+* m : Materialized View
+* i : Index
+
+&nbsp;위의 결과 값을 보고 해당되는 것이 나왔다면 케이스에 맞게  처리하도록 합니다.
+
+<br><br>
+
 ## 정리
 &nbsp;DROP TABLE 명령어로 테이블을 삭제할 때 다음과 같이 의존성이 있는지 확인을 하고 문제가 없다면 처리하는 것이 좋습니다. `CASCADE`는 편리하지만 불상사를 불러올 수 있기 때문에 신중하게 사용해야겠습니다.
