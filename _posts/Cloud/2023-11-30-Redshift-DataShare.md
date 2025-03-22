@@ -27,9 +27,9 @@ AWS Redshift의 여러 기능 중에 DataShare에 대해 살펴봅니다. <a hre
 
 ## DataShare 기능이란
 
-Redshift는 DataShare라는 "데이터 공유" 기능을 제공합니다. 이는 여러 Redshift 클러스터끼리 데이터를 자동으로 공유하도록 하는 기능인데 A라는 클러스터에 있는 테이블에 데이터가 신규로 INSERT되었다면 B라는 클러스터에 있는 같은 테이블에도 해당 데이터가 실시간으로 동기화되는 기능입니다. Datashare에는 Producer와 Consumer의 개념이 나오는데 Producer 클러스터는 Datashare를 생성하고 객체를 추가하여 OUTBOUND로 다른 클러스터와 데이터를 공유할 수 있습니다. 반대로 Consumer 클러스터는 INBOUND로 다른 클러스터로부터 데이터를 공유받을 수 있습니다.   
+&nbsp;Redshift는 `DataShare`라는 "데이터 공유" 기능을 제공합니다. 이는 여러 Redshift 클러스터끼리 데이터를 자동으로 공유하도록 하는 기능인데 A라는 클러스터에 있는 테이블에 데이터가 신규로 INSERT되었다면 B라는 클러스터에 있는 같은 테이블에도 해당 데이터가 실시간으로 동기화되는 기능입니다. Datashare에는 Producer와 Consumer의 개념이 나오는데 `Producer` 클러스터는 Datashare를 생성하고 객체를 추가하여 OUTBOUND로 다른 클러스터와 데이터를 공유하는 클러스터를 말하고 반대로 `Consumer` 클러스터는 INBOUND로 다른 클러스터로부터 데이터를 공유받는 클러스터를 말합니다..   
 
-이러한 DataShare에 이용할 객체로는 데이터베이스, 스키마, 테이블, 뷰 및 UDF (User Defined Function, 사용자 정의 함수)가 포함됩니다. 또한, Access Control이 가능하여 세부적으로 조정할 수 있습니다.
+&nbsp;이러한 DataShare에 이용할 객체로는 데이터베이스, 스키마, 테이블, 뷰 및 UDF (User Defined Function, 사용자 정의 함수)가 포함됩니다. 또한, Access Control이 가능하여 세부적으로 조정할 수 있습니다.
 
 <br>
 
@@ -47,11 +47,14 @@ Redshift는 DataShare라는 "데이터 공유" 기능을 제공합니다. 이는
 
 ### DataShare 생성 및 권한 관리 
 
-Producer 클러스터는 Datashare에 대한 제어 권한을 가지고 있습니다. 이에 따라 Datashare에 객체를 추가하거나 제거할 수 있습니다. 그뿐만 아니라 Consumer 클러스터에 대한 권한을 부여하거나 취소할 수도 있습니다.
+&nbsp;Producer 클러스터는 Datashare에 대한 제어 권한을 가지고 있습니다. 이에 따라 Datashare에 객체를 추가하거나 제거할 수 있습니다. 그뿐만 아니라 Consumer 클러스터에 대한 권한을 부여하거나 취소할 수도 있습니다.
 
 ```sql
+-- Producer 클러스터
 -- salesshare라는 DATASHARE 생성
-CREATE DATASHARE salesshare;
+-- 같은 계정 내 다른 클러스터와의 공유라면 설정 안해도 됨 (publicaccessible 값 : false)
+-- 다른 계정과의 공유라면 설정 필요 (publicaccessible 값 : true)
+CREATE DATASHARE salesshare [SET publicaccessible = false];
 
 -- public이라는 schema 추가
 ALTER DATASHARE salesshare ADD SCHEMA public;
@@ -60,13 +63,15 @@ ALTER DATASHARE salesshare ADD SCHEMA public;
 ALTER DATASHARE salesshare ADD TABLE public.tickit_sales_redshift;
 
 -- 권한 부여
-GRANT USAGE ON DATASHARE salesshare TO NAMESPACE '13b8833d-17c6-4f16-8fe4-1a018f5ed00d';
+-- Consumer 클러스터의 Namespace는 아래 쿼리를 실행해서 얻는 값
+GRANT USAGE ON DATASHARE salesshare TO NAMESPACE 'CONSUMER 클러스터의 NAMESPACE';
 
+-- Consumer 클러스터
 -- NAMESPACE 검색
 SELECT current_namespace;
 ```
 
-위와 같이 간단하게 Datashare를 생성하고 공유하고자 하는 테이블을 Datashare에 추가하는 작업을 살펴봤습니다. NAMESPACE의 경우 Consumer 클러스터에서 검색하여 알아내도록 합니다.
+&nbsp;위와 같이 간단하게 Datashare를 생성하고 공유하고자 하는 테이블을 Datashare에 추가하는 작업을 살펴봤습니다. `NAMESPACE`의 경우 Consumer 클러스터에서 검색하여 알아내도록 합니다.
 
 <br>
 
@@ -78,7 +83,7 @@ Redshift는 생성된 Datashare에 대한 정보를 볼 수 있도록 메타데�
 
 #### SVV_DATASHARES
 
-사용자 클러스터에서 생성되고 (OUTBOUND) 다른 클러스터에서 공유되는 (INBOUND) datashare 목록을 확인할 수 있습니다.
+사용자 클러스터에서 생성되고 (`OUTBOUND`) 다른 클러스터에서 공유되는 (`INBOUND`) datashare 목록을 확인할 수 있습니다.
 
 |열 이름|데이터 형식|설명|
 |-|-|-|
