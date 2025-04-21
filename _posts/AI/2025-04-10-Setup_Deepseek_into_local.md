@@ -22,7 +22,7 @@ header-mask: true
 
 <br>
 
-![DeepSeek](https://github.com/user-attachments/assets/56ed3a0e-9ffb-43c8-b32f-77089315122b){: .align-center}{: width="70%" height="70%"} 
+![DeepSeek](/assets/images/ai/deepseek_ci.png){: .align-center}{: width="70%" height="70%"} 
 
 <br><br>
 
@@ -66,7 +66,7 @@ $ brew install --cask ollama
 $ ollama -v
 ```
 
-![image](https://github.com/user-attachments/assets/e5d733ad-69f7-4ffc-adb8-de4c011d6ddf)
+![Ollama](/assets/images/ai/ollama_setup.png)
 
 &nbsp;버전까지 체크해서 제대로 설치되었는지 확인합니다. `Ollama`가 확인되었으면 이제 DeepSeek R1을 설치합니다.
 
@@ -81,8 +81,8 @@ $ ollama -v
 $ ollama pull deepseek-r1
 ```
 
-![image](https://github.com/user-attachments/assets/783237fa-3914-4a07-a048-4c20e99a2a2b)
-![image](https://github.com/user-attachments/assets/3ce0cc59-2084-4f47-b60e-d90fbcbd6596)
+![Deepseek Setup](/assets/images/ai/deepseek_setup1.png)
+![Deepseek Setup](/assets/images/ai/deepseek_setup2.png)
 
 &nbsp;모델을 가져왔다면 실행해봅시다.
 
@@ -97,17 +97,17 @@ $ docker run -d -p 3000:8080 \
   ghcr.io/open-webui/open-webui:main
 ```
 
-![image](https://github.com/user-attachments/assets/269d7433-4106-44e6-baf2-73ad8fdb76e7)
+![OpenWeb UI](/assets/images/ai/open_web_ui1.png)
 &nbsp;Docker 컨테이너가 정상적으로 실행되면 `localhost:3000`으로 접속하면 위와 같은 화면이 뜹니다.
 
 <br>
 
-![image](https://github.com/user-attachments/assets/33e8fa7b-6831-40eb-ae69-77b138de336f)
+![OpenWeb UI](/assets/images/ai/open_web_ui2.png)
 &nbsp;관리자 계정을 생성합니다.
 
 <br>
 
-![image](https://github.com/user-attachments/assets/7838e4d0-feb7-457f-903b-bc0177120e8d)
+![Deepseek Main UI](/assets/images/ai/deepseek_main.png)
 &nbsp;관리자 계정을 생성하면 위와 같이 DeepSeek에 대한 UI가 나오는 것을 확인하실 수 있습니다. 정상적으로 설치가 완료되었네요.
 
 <br><br>
@@ -117,5 +117,5 @@ $ docker run -d -p 3000:8080 \
 
 <br>
 
-![image](https://github.com/user-attachments/assets/88dce178-3616-4a27-ac48-7fdbb04b7dba)
+![Deepseek Test](/assets/images/ai/deepseek_test1.png)
 &nbsp;결과에서 보면 알 수 있듯이 한글에 대해서 호환이 잘 안되어있는 모습입니다. Airflow에 대한 내용은 두번째에 제대로 된 답변이 나왔는데 결과가 영어로 나온 것을 확인하실 수 있습니다. 한글에 대해 잘 호환할 수 있는 방법과 오픈소스 모델이라서 속도가 느린편인데 이러한 것에 대해서 개선점을 찾아봐야겠습니다.
