@@ -144,4 +144,5 @@ $ pip install -qU langchain_community
 ![PDFPlumber Content](/assets/images/ai/pdf_real_estate_1_pdfplumber_content.png){: .align-center}
 <br>
 ![PDFPlumber Metadata](/assets/images/ai/pdf_real_estate_1_pdfplumber_metadata.png){: .align-center}
-
+&nbsp;마지막으로 `PDFPlumber`입니다. 이 방법이 위의 `PyPDFium2`보다 더 좋아보이는 결과를 보이고 있습니다. 제목에서부터 한 줄씩 내려오면서 나타내고 있고 기존에 다른 것들과 두드러지게 차이나는 것은 괄호 안에 글자가 그대로 담겨있다는 것입니다. 위에서 봤던 다른 것들은 전부 괄호 안에 글자가 없고 뒤로 빠진 상태였다면 이 `PDFPlumber`는 제대로 담겨있는 것을 볼 수 있죠
+&nbsp;메타데이터 안에서 Key는 많지는 않지만 전부 Value를 가지고 있는 것을 볼 수 있습니다. source나 total_pages나 전부 맞는 것을 알 수가 있죠
