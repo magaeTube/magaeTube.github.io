@@ -22,7 +22,7 @@ header-mask: true
 
 <br>
 
-![Langchain](/assets/images/ai/Langchain.png){: .align-center}{: width="70%" height="70%"} 
+![RAG](/assets/images/ai/RAG.png){: .align-center}{: width="70%" height="70%"} 
 
 <br><br>
 
